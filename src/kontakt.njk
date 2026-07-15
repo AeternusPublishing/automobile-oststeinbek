@@ -1,0 +1,43 @@
+---
+layout: base.njk
+title: Kontakt
+description: "Automobile Oststeinbek – Adresse, Telefon, E-Mail und Anfahrt. Gewerbering 8, 22113 Oststeinbek bei Hamburg."
+---
+<section class="section">
+  <div class="container">
+    <p class="eyebrow">Kontakt</p>
+    <h1>So erreichen Sie uns</h1>
+    <p class="lead">Rufen Sie an, schreiben Sie uns oder kommen Sie vorbei – am besten mit kurzer Terminabsprache.</p>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="container contact-grid">
+    <div>
+      <h2>Kontaktdaten</h2>
+      <ul class="info-list">
+        <li><strong>Adresse</strong>{{ site.contact.street }}, {{ site.contact.zip }} {{ site.contact.city }}</li>
+        <li><strong>Telefon</strong><a href="tel:{{ site.contact.phoneHref }}">{{ site.contact.phone }}</a></li>
+        <li><strong>E-Mail</strong><a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></li>
+        <li>
+          <strong>Öffnungszeiten</strong>
+          <span class="muted">Platzhalter – bitte Öffnungszeiten ergänzen (z.&nbsp;B. Mo–Fr 9–18 Uhr, Sa nach Vereinbarung).</span>
+        </li>
+      </ul>
+      <div class="btn-row" style="margin-top:1.5rem;">
+        <a class="btn" href="tel:{{ site.contact.phoneHref }}">Jetzt anrufen</a>
+        <a class="btn btn-outline" href="mailto:{{ site.contact.email }}">E-Mail schreiben</a>
+      </div>
+    </div>
+    <div>
+      <h2>Anfahrt</h2>
+      <p class="muted">Sie finden uns im Gewerbegebiet Oststeinbek am östlichen Stadtrand von Hamburg – ruhig gelegen und gut erreichbar.</p>
+      <div class="panel">
+        <p style="margin:0 0 .8rem;"><strong>{{ site.name }}</strong><br>
+        {{ site.contact.street }}<br>
+        {{ site.contact.zip }} {{ site.contact.city }}</p>
+        <a class="btn btn-sm btn-outline" href="https://www.google.com/maps/search/?api=1&query={{ site.contact.street | urlencode }}+{{ site.contact.zip | urlencode }}+{{ site.contact.city | urlencode }}" target="_blank" rel="noopener">In Google Maps öffnen</a>
+      </div>
+    </div>
+  </div>
+</section>

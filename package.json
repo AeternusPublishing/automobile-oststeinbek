@@ -1,0 +1,13 @@
+{
+  "name": "automobile-oststeinbek",
+  "version": "1.0.0",
+  "description": "Website Automobile Oststeinbek – Gebrauchtwagen & Klassiker",
+  "private": true,
+  "scripts": {
+    "dev": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

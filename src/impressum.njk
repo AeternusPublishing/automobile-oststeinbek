@@ -1,0 +1,45 @@
+---
+layout: base.njk
+title: Impressum
+description: "Impressum von Automobile Oststeinbek gemäß § 5 DDG."
+---
+<section class="section">
+  <div class="container prose">
+    <h1>Impressum</h1>
+
+    <div class="notice">⚠️ Entwurf – die mit […] markierten Angaben müssen vor der Veröffentlichung durch die echten Firmendaten ersetzt werden (Rechtsform, Inhaber/Geschäftsführer, USt-IdNr., ggf. Handelsregister).</div>
+
+    <h2>Angaben gemäß § 5 DDG</h2>
+    <p>
+      [Rechtsform und Firmenname, z.&nbsp;B. „Max Mustermann e.&nbsp;K." oder „Automobile Oststeinbek GmbH"]<br>
+      {{ site.contact.street }}<br>
+      {{ site.contact.zip }} {{ site.contact.city }}<br>
+      Deutschland
+    </p>
+
+    <h3>Vertreten durch</h3>
+    <p>[Inhaber / Geschäftsführer: Vor- und Nachname]</p>
+
+    <h2>Kontakt</h2>
+    <p>
+      Telefon: <a href="tel:{{ site.contact.phoneHref }}">{{ site.contact.phone }}</a><br>
+      E-Mail: <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a>
+    </p>
+
+    <h2>Umsatzsteuer-ID</h2>
+    <p>Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br>[USt-IdNr., z.&nbsp;B. DE123456789 – oder diesen Abschnitt streichen, falls keine vorhanden]</p>
+
+    <h2>Registereintrag</h2>
+    <p>[Nur bei GmbH/UG/e.&nbsp;K. – sonst diesen Abschnitt streichen]<br>
+      Eintragung im Handelsregister.<br>
+      Registergericht: [Amtsgericht]<br>
+      Registernummer: [HRB/HRA …]</p>
+
+    <h2>Erlaubnis nach § 34c GewO</h2>
+    <p>[Falls zutreffend – bei gewerblichem Kfz-Handel häufig relevant]<br>
+      Zuständige Aufsichtsbehörde: [z.&nbsp;B. Ordnungsamt / Gewerbeamt der zuständigen Gemeinde]</p>
+
+    <h2>Verbraucherstreitbeilegung / Universalschlichtungsstelle</h2>
+    <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen. [Bei Bedarf anpassen.]</p>
+  </div>
+</section>

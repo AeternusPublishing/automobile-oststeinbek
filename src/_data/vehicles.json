@@ -1,0 +1,20 @@
+[
+  {
+    "badge": "Beispiel",
+    "title": "Youngtimer Coupé",
+    "text": "Platzhalter – hier stehen die echten Eckdaten Ihres Fahrzeugs: Baujahr, Laufleistung, Zustand.",
+    "price": "Preis auf Anfrage"
+  },
+  {
+    "badge": "Beispiel",
+    "title": "Klassische Limousine",
+    "text": "Platzhalter – ersetzen wir durch ein reales Fahrzeug aus Ihrem Bestand samt Foto und Preis in Euro.",
+    "price": "Preis auf Anfrage"
+  },
+  {
+    "badge": "Beispiel",
+    "title": "Sportliches Cabrio",
+    "text": "Platzhalter – sobald Sie mir die Fahrzeugdaten geben, erscheint hier das echte Angebot.",
+    "price": "Preis auf Anfrage"
+  }
+]

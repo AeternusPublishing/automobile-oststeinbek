@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if title %}{{ title }} | {{ site.name }}{% else %}{{ site.name }} – {{ site.tagline }}{% endif %}</title>
+  <meta name="description" content="{{ description or site.description }}">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{% if title %}{{ title }} | {{ site.name }}{% else %}{{ site.name }}{% endif %}">
+  <meta property="og:description" content="{{ description or site.description }}">
+  <meta property="og:locale" content="de_DE">
+  <link rel="preconnect" href="{{ site.url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}">
+</head>
+<body>
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="{{ '/' | url }}">
+        <span class="brand-mark">AO</span>
+        <span class="brand-name">Automobile<br><strong>Oststeinbek</strong></span>
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Menü öffnen">
+        <span></span><span></span><span></span>
+      </label>
+      <nav class="site-nav" aria-label="Hauptnavigation">
+        <ul>
+          {% for item in site.nav %}
+          <li>
+            <a href="{{ item.url | url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.text }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+        <a class="btn btn-sm nav-cta" href="tel:{{ site.contact.phoneHref }}">Anrufen</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    {{ content | safe }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-brand">Automobile Oststeinbek</div>
+        <p class="muted">{{ site.tagline }} – seit {{ site.since }} im Osten Hamburgs.</p>
+      </div>
+      <div>
+        <h3>Kontakt</h3>
+        <p class="muted">
+          {{ site.contact.street }}<br>
+          {{ site.contact.zip }} {{ site.contact.city }}<br>
+          <a href="tel:{{ site.contact.phoneHref }}">{{ site.contact.phone }}</a><br>
+          <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a>
+        </p>
+      </div>
+      <div>
+        <h3>Rechtliches</h3>
+        <ul class="footer-links">
+          <li><a href="{{ '/impressum/' | url }}">Impressum</a></li>
+          <li><a href="{{ '/datenschutz/' | url }}">Datenschutz</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span class="muted">© {% year %} Automobile Oststeinbek</span>
+    </div>
+  </footer>
+</body>
+</html>

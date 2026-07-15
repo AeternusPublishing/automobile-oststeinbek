@@ -1,0 +1,75 @@
+---
+layout: base.njk
+title: null
+description: "Automobile Oststeinbek – hochwertige Gebrauchtwagen und junge Klassiker im Osten Hamburgs. Verkauf, Meisterwerkstatt, Garantie und europaweite Auslieferung."
+---
+<section class="hero">
+  <div class="container">
+    <p class="eyebrow">Gebrauchtwagen &amp; Klassiker · seit {{ site.since }}</p>
+    <h1>Außergewöhnliche Fahrzeuge mit Charakter</h1>
+    <p class="lead">Mechanisch ehrlich, technisch durchdacht, oft selten – stets besonders. Hochwertige Gebrauchtwagen und junge Klassiker im Osten Hamburgs.</p>
+    <div class="btn-row">
+      <a class="btn" href="{{ '/fahrzeugangebote/' | url }}">Zum Fahrzeugangebot</a>
+      <a class="btn btn-outline" href="{{ '/kontakt/' | url }}">Termin vereinbaren</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container split">
+    <div>
+      <p class="eyebrow">Willkommen</p>
+      <h2>Substanz, Technik und Seele</h2>
+      <p>Unsere Leidenschaft gilt bestens erhaltenen Gebrauchtwagen und jungen Klassikern aus Japan, den USA, Deutschland und anderen automobilen Kulturräumen. Ob sportliches Coupé, souveräne Reiselimousine oder robuster Alltagsheld – wir wählen jedes Fahrzeug mit dem Blick fürs Detail.</p>
+      <p>Unser Standort liegt ruhig und gut erreichbar am östlichen Stadtrand von Hamburg – fernab der Hektik, aber nah genug für eine spontane Probefahrt.</p>
+    </div>
+    <div class="panel">
+      <h3>Warum Automobile Oststeinbek</h3>
+      <ul class="info-list">
+        <li><strong>Geprüfte Qualität</strong>Jedes Fahrzeug wird in unserer Meisterwerkstatt kontrolliert.</li>
+        <li><strong>Persönliche Beratung</strong>Ehrlich, hanseatisch, ohne Verkaufsdruck.</li>
+        <li><strong>Europaweite Lieferung</strong>Wir bringen Ihr Fahrzeug sicher zu Ihnen.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="container">
+    <div class="center">
+      <p class="eyebrow">Aktuelle Auswahl</p>
+      <h2>Unsere Empfehlungen</h2>
+      <p class="lead">Ein Blick in unseren Bestand. Das vollständige, tagesaktuelle Angebot finden Sie auf mobile.de.</p>
+    </div>
+    <div class="notice center" style="margin:1.5rem auto 2rem; max-width:70ch;">
+      Platzhalter – hier erscheinen Ihre echten Fahrzeuge mit Foto, Eckdaten und Preis in Euro. Schicken Sie mir die Angaben (oder wir binden den mobile.de-Bestand ein).
+    </div>
+    <div class="grid grid-3">
+      {% for v in vehicles %}
+      <article class="card vehicle">
+        <div class="thumb">Fahrzeugfoto folgt</div>
+        <div class="body">
+          <span class="badge">{{ v.badge }}</span>
+          <h3>{{ v.title }}</h3>
+          <p class="muted">{{ v.text }}</p>
+          <p class="price">{{ v.price }}</p>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+    <div class="center" style="margin-top:2rem;">
+      <a class="btn btn-outline" href="{{ '/fahrzeugangebote/' | url }}">Alle Fahrzeuge ansehen</a>
+    </div>
+  </div>
+</section>
+
+<section class="section cta-band">
+  <div class="container center">
+    <h2>Bereit für Ihr nächstes Fahrzeug?</h2>
+    <p class="lead">Vereinbaren Sie einen Besichtigungstermin oder rufen Sie uns direkt an – wir freuen uns auf Ihren Besuch.</p>
+    <div class="btn-row">
+      <a class="btn" href="tel:{{ site.contact.phoneHref }}">{{ site.contact.phone }}</a>
+      <a class="btn btn-outline" href="{{ '/kontakt/' | url }}">Kontakt &amp; Anfahrt</a>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,24 @@
+{
+  "name": "Automobile Oststeinbek",
+  "tagline": "Außergewöhnliche Fahrzeuge mit Charakter",
+  "description": "Automobile Oststeinbek – hochwertige Gebrauchtwagen und junge Klassiker im Osten Hamburgs. Verkauf, Meisterwerkstatt, Garantie und europaweite Auslieferung.",
+  "url": "https://www.automobile-oststeinbek.de",
+  "since": 2020,
+  "contact": {
+    "street": "Gewerbering 8",
+    "zip": "22113",
+    "city": "Oststeinbek",
+    "phone": "+49 40 60003260",
+    "phoneHref": "+494060003260",
+    "email": "info@automobile-oststeinbek.de",
+    "whatsapp": "",
+    "mobileDe": ""
+  },
+  "nav": [
+    { "text": "Start", "url": "/" },
+    { "text": "Über uns", "url": "/ueber-uns/" },
+    { "text": "Fahrzeuge", "url": "/fahrzeugangebote/" },
+    { "text": "Leistungen", "url": "/dienstleistungen/" },
+    { "text": "Kontakt", "url": "/kontakt/" }
+  ]
+}

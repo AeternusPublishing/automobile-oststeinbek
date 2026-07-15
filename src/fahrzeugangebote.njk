@@ -1,0 +1,51 @@
+---
+layout: base.njk
+title: Fahrzeugangebote
+description: "Aktuelle Gebrauchtwagen und Klassiker bei Automobile Oststeinbek. Den tagesaktuellen Bestand finden Sie auch auf mobile.de."
+---
+<section class="section">
+  <div class="container">
+    <p class="eyebrow">Fahrzeuge</p>
+    <h1>Unser Angebot</h1>
+    <p class="lead">Geprüft, gepflegt und ausgewählt mit dem Blick fürs Detail. Der vollständige, tagesaktuelle Bestand steht auf mobile.de – hier zeigen wir eine Auswahl.</p>
+    {% if site.contact.mobileDe %}
+    <div class="btn-row">
+      <a class="btn" href="{{ site.contact.mobileDe }}" target="_blank" rel="noopener">Bestand auf mobile.de ansehen</a>
+    </div>
+    {% else %}
+    <div class="notice" style="max-width:70ch;">Platzhalter – sobald Sie mir Ihren mobile.de-Händlerlink geben, erscheint hier der Button zum vollständigen Bestand.</div>
+    {% endif %}
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="container">
+    <div class="notice center" style="margin:0 auto 2rem; max-width:70ch;">
+      Platzhalter-Fahrzeuge – wir ersetzen sie durch Ihre echten Angebote mit Fotos, Eckdaten (Baujahr, km, Zustand) und Preis in Euro.
+    </div>
+    <div class="grid grid-3">
+      {% for v in vehicles %}
+      <article class="card vehicle">
+        <div class="thumb">Fahrzeugfoto folgt</div>
+        <div class="body">
+          <span class="badge">{{ v.badge }}</span>
+          <h3>{{ v.title }}</h3>
+          <p class="muted">{{ v.text }}</p>
+          <p class="price">{{ v.price }}</p>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section cta-band">
+  <div class="container center">
+    <h2>Interesse an einem Fahrzeug?</h2>
+    <p class="lead">Vereinbaren Sie eine Besichtigung oder Probefahrt – wir beraten Sie gern persönlich.</p>
+    <div class="btn-row">
+      <a class="btn" href="tel:{{ site.contact.phoneHref }}">{{ site.contact.phone }}</a>
+      <a class="btn btn-outline" href="mailto:{{ site.contact.email }}">E-Mail schreiben</a>
+    </div>
+  </div>
+</section>
