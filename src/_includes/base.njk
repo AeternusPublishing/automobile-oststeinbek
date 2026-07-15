@@ -10,8 +10,26 @@
   <meta property="og:title" content="{% if title %}{{ title }} | {{ site.name }}{% else %}{{ site.name }}{% endif %}">
   <meta property="og:description" content="{{ description or site.description }}">
   <meta property="og:locale" content="de_DE">
-  <link rel="preconnect" href="{{ site.url }}">
+  <link rel="icon" href="{{ '/assets/favicon.svg' | url }}" type="image/svg+xml">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoDealer",
+    "name": "{{ site.name }}",
+    "url": "{{ site.url }}",
+    "telephone": "{{ site.contact.phone }}",
+    "email": "{{ site.contact.email }}",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "{{ site.contact.street }}",
+      "postalCode": "{{ site.contact.zip }}",
+      "addressLocality": "{{ site.contact.city }}",
+      "addressCountry": "DE"
+    },
+    "sameAs": ["{{ site.contact.mobileDe }}"]
+  }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Zum Inhalt springen</a>

@@ -1,0 +1,18 @@
+---
+layout: base.njk
+title: Seite nicht gefunden
+permalink: /404.html
+eleventyExcludeFromCollections: true
+---
+<section class="section">
+  <div class="container center">
+    <p class="eyebrow">Fehler 404</p>
+    <h1>Diese Seite gibt es nicht (mehr)</h1>
+    <p class="lead">Kein Problem – vielleicht finden Sie hier, was Sie suchen:</p>
+    <div class="btn-row" style="justify-content:center;">
+      <a class="btn" href="{{ '/' | url }}">Zur Startseite</a>
+      <a class="btn btn-outline" href="{{ '/fahrzeugangebote/' | url }}">Fahrzeugangebote</a>
+      <a class="btn btn-outline" href="{{ '/kontakt/' | url }}">Kontakt</a>
+    </div>
+  </div>
+</section>
