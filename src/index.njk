@@ -41,13 +41,10 @@ description: "Automobile Oststeinbek – hochwertige Gebrauchtwagen und junge Kl
       <h2>Unsere Empfehlungen</h2>
       <p class="lead">Ein Blick in unseren Bestand. Das vollständige, tagesaktuelle Angebot finden Sie auf mobile.de.</p>
     </div>
-    <div class="notice center" style="margin:1.5rem auto 2rem; max-width:70ch;">
-      Platzhalter – hier erscheinen Ihre echten Fahrzeuge mit Foto, Eckdaten und Preis in Euro. Schicken Sie mir die Angaben (oder wir binden den mobile.de-Bestand ein).
-    </div>
-    <div class="grid grid-3">
-      {% for v in vehicles %}
+    <div class="grid grid-3" style="margin-top:2.5rem;">
+      {% for v in vehicles %}{% if v.featured %}
       <article class="card vehicle">
-        <div class="thumb">Fahrzeugfoto folgt</div>
+        <div class="thumb">Fotos im mobile.de-Inserat</div>
         <div class="body">
           <span class="badge">{{ v.badge }}</span>
           <h3>{{ v.title }}</h3>
@@ -55,10 +52,14 @@ description: "Automobile Oststeinbek – hochwertige Gebrauchtwagen und junge Kl
           <p class="price">{{ v.price }}</p>
         </div>
       </article>
-      {% endfor %}
+      {% endif %}{% endfor %}
     </div>
-    <div class="center" style="margin-top:2rem;">
-      <a class="btn btn-outline" href="{{ '/fahrzeugangebote/' | url }}">Alle Fahrzeuge ansehen</a>
+    <p class="muted center" style="font-size:.85rem; margin-top:1rem;">¹ MwSt. ausweisbar. Alle Angaben ohne Gewähr – verbindliche Details im jeweiligen Inserat.</p>
+    <div class="center" style="margin-top:1.5rem;">
+      <div class="btn-row" style="justify-content:center;">
+        <a class="btn btn-outline" href="{{ '/fahrzeugangebote/' | url }}">Alle Fahrzeuge ansehen</a>
+        <a class="btn" href="{{ site.contact.mobileDe }}" target="_blank" rel="noopener">Bestand auf mobile.de</a>
+      </div>
     </div>
   </div>
 </section>

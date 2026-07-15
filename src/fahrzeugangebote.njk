@@ -8,25 +8,18 @@ description: "Aktuelle Gebrauchtwagen und Klassiker bei Automobile Oststeinbek. 
     <p class="eyebrow">Fahrzeuge</p>
     <h1>Unser Angebot</h1>
     <p class="lead">Geprüft, gepflegt und ausgewählt mit dem Blick fürs Detail. Der vollständige, tagesaktuelle Bestand steht auf mobile.de – hier zeigen wir eine Auswahl.</p>
-    {% if site.contact.mobileDe %}
     <div class="btn-row">
       <a class="btn" href="{{ site.contact.mobileDe }}" target="_blank" rel="noopener">Bestand auf mobile.de ansehen</a>
     </div>
-    {% else %}
-    <div class="notice" style="max-width:70ch;">Platzhalter – sobald Sie mir Ihren mobile.de-Händlerlink geben, erscheint hier der Button zum vollständigen Bestand.</div>
-    {% endif %}
   </div>
 </section>
 
 <section class="section-tight">
   <div class="container">
-    <div class="notice center" style="margin:0 auto 2rem; max-width:70ch;">
-      Platzhalter-Fahrzeuge – wir ersetzen sie durch Ihre echten Angebote mit Fotos, Eckdaten (Baujahr, km, Zustand) und Preis in Euro.
-    </div>
     <div class="grid grid-3">
       {% for v in vehicles %}
       <article class="card vehicle">
-        <div class="thumb">Fahrzeugfoto folgt</div>
+        <div class="thumb">Fotos im mobile.de-Inserat</div>
         <div class="body">
           <span class="badge">{{ v.badge }}</span>
           <h3>{{ v.title }}</h3>
@@ -36,6 +29,7 @@ description: "Aktuelle Gebrauchtwagen und Klassiker bei Automobile Oststeinbek. 
       </article>
       {% endfor %}
     </div>
+    <p class="muted" style="font-size:.85rem; margin-top:1.5rem;">¹ MwSt. ausweisbar. Alle Angaben ohne Gewähr – verbindliche Daten und Fotos finden Sie im jeweiligen mobile.de-Inserat. Stand: Juli 2026.</p>
   </div>
 </section>
 
