@@ -126,6 +126,7 @@ const cleanDesc = (s) => String(s ?? "")
   .replace(/&#39;|&apos;/g, "'").replace(/&lt;/g, "<").replace(/&gt;/g, ">")
   .replace(/\\+\s*\*/g, "\n• ")   // "\\* Punkt" → Aufzählung
   .replace(/\\+/g, "\n")           // restliche Backslash-Marker → Umbruch
+  .replace(/\*{2,}/g, "")          // Markdown-Fett-Reste entfernen
   .replace(/[ \t]*[-–—=_*]{4,}[ \t]*/g, "\n\n") // Trennlinien → Absatz
   .replace(/\n{3,}/g, "\n\n").replace(/[ \t]{2,}/g, " ").trim();
 const slugify = (s) => s.toLowerCase()
