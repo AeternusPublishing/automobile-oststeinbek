@@ -261,7 +261,9 @@ await Promise.all(vehicles.map(async (v) => {
       }
       if (d) v.description = d
         .replace(/<br\s*\/?>/gi, "\n").replace(/<\/p>/gi, "\n\n").replace(/<[^>]+>/g, "")
-        .replace(/&amp;/g, "&").replace(/&nbsp;/g, " ").replace(/\n{3,}/g, "\n\n").trim();
+        .replace(/&amp;/g, "&").replace(/&nbsp;/g, " ")
+        .replace(/[-–—=_*]{4,}/g, "\n\n") // Trennlinien aus Inseratstexten → Absatz
+        .replace(/\n{3,}/g, "\n\n").trim();
     }
   } catch (e) {
     console.log(`  Detail ${v.id}: ${e.message} – nutze Titelbild`);

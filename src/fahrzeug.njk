@@ -37,7 +37,7 @@ eleventyComputed:
         {% if v.description %}
         <div class="detail-desc">
           <h2>Beschreibung</h2>
-          {% for para in v.description.split("\n\n") %}<p class="muted">{{ para | replace("\n", " · ") }}</p>{% endfor %}
+          {% for para in v.description.split("\n\n") %}<p class="muted">{{ para | escape | replace("\n", "<br>") | safe }}</p>{% endfor %}
         </div>
         {% endif %}
       </div>
