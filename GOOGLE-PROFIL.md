@@ -21,7 +21,7 @@ Kopierfertig für den Moment, in dem das Profil beansprucht ist
 - Adresse: Gewerbering 8, 22113 Oststeinbek
 - Telefon: 040 60003260
 - Website: https://www.automobile-oststeinbek.de (nach Domain-Umzug)
-- Öffnungszeiten: **VON PATRICK** – fehlen noch überall!
+- Öffnungszeiten: Mo–Sa 09:00–17:00 Uhr (So geschlossen); Hinweis „Termine nach Absprache" in die Beschreibung aufnehmen, da Google kein „nach Absprache"-Feld hat
 
 ## Leistungen (als „Services" anlegen)
 

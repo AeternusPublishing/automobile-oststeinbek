@@ -28,6 +28,12 @@
       "addressLocality": "{{ site.contact.city }}",
       "addressCountry": "DE"
     },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "09:00",
+      "closes": "17:00"
+    },
     "sameAs": ["{{ site.contact.mobileDe }}"],
     "aggregateRating": {
       "@type": "AggregateRating",
@@ -84,7 +90,8 @@
           {{ site.contact.zip }} {{ site.contact.city }}<br>
           <a href="tel:{{ site.contact.phoneHref }}">{{ site.contact.phone }}</a><br>
           <a href="tel:{{ site.contact.mobileHref }}">{{ site.contact.mobile }}</a> · <a href="{{ site.contact.whatsapp }}" target="_blank" rel="noopener">WhatsApp</a><br>
-          <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a>
+          <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a><br>
+          Mo–Sa 9–17 Uhr &amp; nach Absprache
         </p>
       </div>
       <div>
