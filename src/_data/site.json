@@ -11,7 +11,9 @@
     "phone": "+49 40 60003260",
     "phoneHref": "+494060003260",
     "email": "info@automobile-oststeinbek.de",
-    "whatsapp": "",
+    "mobile": "0177 5061767",
+    "mobileHref": "+491775061767",
+    "whatsapp": "https://wa.me/491775061767",
     "mobileDe": "https://home.mobile.de/AUTOMOBILEOSTSTEINBEK"
   },
   "nav": [

@@ -56,6 +56,8 @@ p { margin: 0 0 1em; }
 .btn-outline { background: transparent; color: var(--text); border: 1px solid var(--border); }
 .btn-outline:hover { background: var(--surface-2); color: var(--text); border-color: var(--accent); }
 .btn-sm { padding: .5rem 1rem; font-size: .9rem; }
+.btn-whatsapp { background: #1faa54; color: #fff; }
+.btn-whatsapp:hover { background: #178f46; color: #fff; transform: translateY(-1px); }
 .btn-row { display: flex; flex-wrap: wrap; gap: .8rem; }
 .center .btn-row { justify-content: center; }
 

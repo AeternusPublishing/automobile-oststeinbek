@@ -18,6 +18,7 @@ description: "Automobile Oststeinbek – Adresse, Telefon, E-Mail und Anfahrt. G
       <ul class="info-list">
         <li><strong>Adresse</strong>{{ site.contact.street }}, {{ site.contact.zip }} {{ site.contact.city }}</li>
         <li><strong>Telefon</strong><a href="tel:{{ site.contact.phoneHref }}">{{ site.contact.phone }}</a></li>
+        <li><strong>Mobil / WhatsApp</strong><a href="tel:{{ site.contact.mobileHref }}">{{ site.contact.mobile }}</a></li>
         <li><strong>E-Mail</strong><a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></li>
         <li>
           <strong>Öffnungszeiten</strong>
@@ -26,6 +27,7 @@ description: "Automobile Oststeinbek – Adresse, Telefon, E-Mail und Anfahrt. G
       </ul>
       <div class="btn-row" style="margin-top:1.5rem;">
         <a class="btn" href="tel:{{ site.contact.phoneHref }}">Jetzt anrufen</a>
+        <a class="btn btn-whatsapp" href="{{ site.contact.whatsapp }}" target="_blank" rel="noopener">WhatsApp schreiben</a>
         <a class="btn btn-outline" href="mailto:{{ site.contact.email }}">E-Mail schreiben</a>
       </div>
     </div>
