@@ -128,6 +128,15 @@ const cleanDesc = (s) => String(s ?? "")
   .replace(/\\+/g, "\n")           // restliche Backslash-Marker → Umbruch
   .replace(/\*{2,}/g, "")          // Markdown-Fett-Reste entfernen
   .replace(/[ \t]*[-–—=_*]{4,}[ \t]*/g, "\n\n") // Trennlinien → Absatz
+  // Die Search-API entfernt <p>-Umbrüche ersatzlos ("kmDer", "Summum.TECHNIK").
+  // Rekonstruktion der Absätze aus bekannten Mustern unserer Inseratstexte:
+  .replace(/(?<=[a-zäöüß0-9»)"])\.(?=[A-ZÄÖÜ])/g, ".\n\n")          // Satzende.GROSS → Absatz
+  .replace(/(?<=[a-zäöüß0-9])(?=[A-ZÄÖÜ][a-zäöüß])/g, "\n\n")        // kleinGroß-Klebestelle → Absatz
+  .replace(/Flex\n+Fix/g, "FlexFix")                                   // bekannte Markennamen reparieren
+  .replace(/\b(TECHNIK UND ZUSTAND|ZUSTAND UND INSTANDSETZUNG|ZUSTAND UND WARTUNG|INNENRAUM UND AUSSTATTUNG|EXTERIEUR UND INTERIEUR|AUSSTATTUNG UND ZUSTAND|AUSSTATTUNG \(AUSZUG\)|DURCHGEFÜHRTE ARBEITEN|FAHRZEUGDATEN|BESONDERHEITEN|TECHNIK|INNENRAUM|AUSSTATTUNG|ZUSTAND|HINWEIS)(?=[„"A-ZÄÖÜ0-9•*])/g, "$1\n") // Überschrift von Folgetext lösen
+  .replace(/(?<=[a-zäöüß0-9.)"])\*[ \t]/g, "\n• ")                    // verklebter erster Listenpunkt
+  .replace(/^\*[ \t]?/gm, "• ")
+  .replace(/\n(?=(TECHNIK|ZUSTAND|AUSSTATTUNG|INNENRAUM|EXTERIEUR|BESONDERHEITEN|FAHRZEUGDATEN|DURCHGEFÜHRTE|HINWEIS)\b)/g, "\n\n") // Leerzeile vor Überschriften
   .replace(/\n{3,}/g, "\n\n").replace(/[ \t]{2,}/g, " ").trim();
 const slugify = (s) => s.toLowerCase()
   .replace(/ä/g, "ae").replace(/ö/g, "oe").replace(/ü/g, "ue").replace(/ß/g, "ss")

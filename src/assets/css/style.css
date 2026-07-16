@@ -191,6 +191,7 @@ a.trust-item:hover .trust-label { color: var(--accent-hover); }
 .gallery-thumb img { width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block; }
 .gallery-thumb:hover, .gallery-thumb.active { border-color: var(--accent); opacity: 1; }
 .detail-desc { margin-top: 2.2rem; max-width: 72ch; }
+.desc-h { font-family: var(--sans); font-size: .82rem; font-weight: 700; text-transform: uppercase; letter-spacing: .18em; color: var(--accent); margin: 1.8rem 0 .5rem; }
 .spec-table { width: 100%; border-collapse: collapse; font-size: .92rem; }
 .spec-table th, .spec-table td { text-align: left; padding: .5rem 0; border-bottom: 1px solid var(--border); vertical-align: top; }
 .spec-table th { color: var(--dim); font-weight: 600; width: 45%; }

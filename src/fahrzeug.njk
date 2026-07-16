@@ -37,7 +37,7 @@ eleventyComputed:
         {% if v.description %}
         <div class="detail-desc">
           <h2>Beschreibung</h2>
-          {% for para in v.description.split("\n\n") %}<p class="muted">{{ para | escape | replace("\n", "<br>") | safe }}</p>{% endfor %}
+          {% for para in v.description.split("\n\n") %}{% if para.length < 42 and para == (para | upper) and (para | lower) != para %}<h3 class="desc-h">{{ para }}</h3>{% else %}<p class="muted">{{ para | escape | replace("\n", "<br>") | safe }}</p>{% endif %}{% endfor %}
         </div>
         {% endif %}
       </div>
