@@ -119,6 +119,15 @@ const FEATURES = {
 const HEADLIGHTS = { BI_XENON_HEADLIGHTS: "Bi-Xenon-Scheinwerfer", XENON_HEADLIGHTS: "Xenon-Scheinwerfer", LED_HEADLIGHTS: "LED-Scheinwerfer", LASER_HEADLIGHTS: "Laserlicht" };
 const PARKING = { REAR_VIEW_CAM: "Rückfahrkamera", REAR_SENSORS: "Einparkhilfe hinten", FRONT_SENSORS: "Einparkhilfe vorn", AUTOMATIC_PARKING: "Parkassistent", CAM_360_DEGREES: "360°-Kamera" };
 const titleCase = (s) => !s ? "" : s.length <= 3 ? s.toUpperCase() : s.charAt(0).toUpperCase() + s.slice(1).toLowerCase();
+// Inseratstext säubern: HTML raus, Entities decodieren, Trenner/Backslash-Marker zu Absätzen
+const cleanDesc = (s) => String(s ?? "")
+  .replace(/<br\s*\/?>/gi, "\n").replace(/<\/p>/gi, "\n\n").replace(/<[^>]+>/g, "")
+  .replace(/&amp;/g, "&").replace(/&nbsp;/g, " ").replace(/&quot;/g, '"')
+  .replace(/&#39;|&apos;/g, "'").replace(/&lt;/g, "<").replace(/&gt;/g, ">")
+  .replace(/\\+\s*\*/g, "\n• ")   // "\\* Punkt" → Aufzählung
+  .replace(/\\+/g, "\n")           // restliche Backslash-Marker → Umbruch
+  .replace(/[ \t]*[-–—=_*]{4,}[ \t]*/g, "\n\n") // Trennlinien → Absatz
+  .replace(/\n{3,}/g, "\n\n").replace(/[ \t]{2,}/g, " ").trim();
 const slugify = (s) => s.toLowerCase()
   .replace(/ä/g, "ae").replace(/ö/g, "oe").replace(/ü/g, "ue").replace(/ß/g, "ss")
   .replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
@@ -187,11 +196,8 @@ const vehicles = ads.map((ad) => {
   for (const p of park) if (PARKING[unwrap(p)]) features.push(PARKING[unwrap(p)]);
   features.sort((a, b) => a.localeCompare(b, "de"));
 
-  // Beschreibungstext des Inserats (falls vorhanden), HTML grob entfernen
-  const rawDesc = pick(ad, "description", "enrichedDescription", "plainDescription");
-  const description = rawDesc
-    .replace(/<br\s*\/?>/gi, "\n").replace(/<\/p>/gi, "\n\n").replace(/<[^>]+>/g, "")
-    .replace(/&amp;/g, "&").replace(/&nbsp;/g, " ").replace(/\n{3,}/g, "\n\n").trim();
+  // Beschreibungstext des Inserats (falls vorhanden)
+  const description = cleanDesc(pick(ad, "description", "enrichedDescription", "plainDescription"));
 
   const adId = pick(ad, "mobileAdId", "mobile-ad-id", "id");
   const kept = keepFor(title);
@@ -259,11 +265,7 @@ await Promise.all(vehicles.map(async (v) => {
         })(detail, 0);
         console.log("Detail-Felder (Diagnose):", [...new Set(keys)].join(", ").slice(0, 900));
       }
-      if (d) v.description = d
-        .replace(/<br\s*\/?>/gi, "\n").replace(/<\/p>/gi, "\n\n").replace(/<[^>]+>/g, "")
-        .replace(/&amp;/g, "&").replace(/&nbsp;/g, " ")
-        .replace(/[-–—=_*]{4,}/g, "\n\n") // Trennlinien aus Inseratstexten → Absatz
-        .replace(/\n{3,}/g, "\n\n").trim();
+      if (d) v.description = cleanDesc(d);
     }
   } catch (e) {
     console.log(`  Detail ${v.id}: ${e.message} – nutze Titelbild`);
