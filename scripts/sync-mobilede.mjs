@@ -100,7 +100,8 @@ const FUEL = {
   PETROL: "Benzin", DIESEL: "Diesel", ELECTRICITY: "Elektro",
   HYBRID: "Hybrid", HYBRID_DIESEL: "Hybrid (Diesel)", LPG: "Autogas", CNG: "Erdgas",
 };
-const titleCase = (s) => s ? s.charAt(0).toUpperCase() + s.slice(1).toLowerCase() : "";
+// Kurze Markenkürzel (VW, BMW …) bleiben groß, lange Namen werden Title-Case.
+const titleCase = (s) => !s ? "" : s.length <= 3 ? s.toUpperCase() : s.charAt(0).toUpperCase() + s.slice(1).toLowerCase();
 
 // Kuratierte Badges/Featured aus der bestehenden Datei übernehmen (Match über Titel).
 let existing = [];
@@ -131,7 +132,10 @@ const vehicles = ads.map((ad) => {
     ? `${Math.round(amount).toLocaleString("de-DE")} €${vatRate === 19 ? "¹" : ""}`
     : "";
 
-  const image = deepUrls(ad.images ?? ad.image ?? null)[0] ?? "";
+  // Größte verfügbare Bildvariante wählen (URLs enden auf ?rule=mo-<breite>.jpg).
+  const urls = deepUrls(ad.images ?? ad.image ?? null);
+  const width = (u) => parseInt(u.match(/rule=mo-(\d+)/)?.[1] ?? "0", 10);
+  const image = urls.sort((a, b) => width(b) - width(a))[0] ?? "";
   const adId = pick(ad, "mobileAdId", "mobile-ad-id", "id");
   const url = adId ? `https://suchen.mobile.de/fahrzeuge/details.html?id=${adId}` : "";
 
