@@ -1,7 +1,7 @@
 // Holt den Fahrzeugbestand über die mobile.de Search-API (Inserats-Einbindung,
 // Dealer-Account: eigener Bestand) und schreibt src/_data/vehicles.json.
 // Zugangsdaten kommen aus GitHub-Secrets: MOBILEDE_USERNAME / MOBILEDE_PASSWORD.
-// Bei 0 Treffern oder Fehlern bleibt die bestehende vehicles.json unangetastet.
+// Bei Fehlern oder unplausiblen Daten bleibt die bestehende vehicles.json unangetastet.
 
 import { readFileSync, writeFileSync } from "node:fs";
 import { XMLParser } from "fast-xml-parser";
@@ -54,19 +54,53 @@ if (ads.length === 0) {
   console.error(body.slice(0, 3000));
   process.exit(1);
 }
+console.log(`${ads.length} Inserate empfangen.`);
+console.log("Preis-Struktur:", JSON.stringify(ads[0].price ?? null).slice(0, 800));
+console.log("Bild-Struktur:", JSON.stringify(ads[0].images ?? ads[0].image ?? null).slice(0, 800));
 
-const attr = (node, name) => {
-  if (node == null) return "";
-  const v = node[`@_${name}`];
-  return v == null ? "" : String(v);
+// Wert auspacken: primitive direkt, sonst @_value/@_key/#text.
+const unwrap = (x) => {
+  if (x == null) return "";
+  if (typeof x !== "object") return String(x);
+  return String(x["@_value"] ?? x["@_key"] ?? x["#text"] ?? "");
 };
-const val = (node) => attr(node, "value") || attr(node, "key");
-const first = (x) => (Array.isArray(x) ? x[0] : x);
+// Ersten Wert zu einem der Schlüssel finden (direkt am Objekt).
+const pick = (obj, ...keys) => {
+  for (const k of keys) if (obj?.[k] != null) return unwrap(obj[k]);
+  return "";
+};
+// Tiefensuche: erste Zahl unter Schlüsseln, die auf ein Muster passen.
+const deepNumber = (node, pattern) => {
+  if (node == null) return NaN;
+  if (typeof node !== "object") return NaN;
+  for (const [k, v] of Object.entries(node)) {
+    if (pattern.test(k)) {
+      const n = parseFloat(unwrap(v));
+      if (Number.isFinite(n)) return n;
+    }
+  }
+  for (const v of Object.values(node)) {
+    const n = deepNumber(v, pattern);
+    if (Number.isFinite(n)) return n;
+  }
+  return NaN;
+};
+// Tiefensuche: alle URL-Strings einsammeln.
+const deepUrls = (node, out = []) => {
+  if (node == null) return out;
+  if (typeof node === "string") {
+    if (/^(https?:)?\/\//.test(node)) out.push(node.startsWith("//") ? "https:" + node : node);
+    return out;
+  }
+  if (typeof node === "object") for (const v of Object.values(node)) deepUrls(v, out);
+  return out;
+};
 
 const FUEL = {
   PETROL: "Benzin", DIESEL: "Diesel", ELECTRICITY: "Elektro",
   HYBRID: "Hybrid", HYBRID_DIESEL: "Hybrid (Diesel)", LPG: "Autogas", CNG: "Erdgas",
 };
+const titleCase = (s) => s ? s.charAt(0).toUpperCase() + s.slice(1).toLowerCase() : "";
 
 // Kuratierte Badges/Featured aus der bestehenden Datei übernehmen (Match über Titel).
 let existing = [];
@@ -75,47 +109,33 @@ const keepFor = (title) =>
   existing.find((e) => e.title && title && (title.includes(e.title) || e.title.includes(title)));
 
 const vehicles = ads.map((ad) => {
-  const vehicle = ad.vehicle ?? {};
-  const specifics = vehicle.specifics ?? vehicle;
-
-  const make = val(vehicle.make) || val(specifics.make);
-  const modelDesc = val(vehicle["model-description"]) || val(specifics["model-description"]);
-  let title = modelDesc || [make, val(vehicle.model)].filter(Boolean).join(" ");
+  const make = pick(ad, "make");
+  const modelDesc = pick(ad, "modelDescription", "model-description");
+  let title = modelDesc || [titleCase(make), pick(ad, "model")].filter(Boolean).join(" ");
   if (make && title && !title.toUpperCase().includes(make.toUpperCase())) {
-    title = `${make.charAt(0) + make.slice(1).toLowerCase()} ${title}`;
+    title = `${titleCase(make)} ${title}`;
   }
 
-  const firstReg = val(specifics["first-registration"]).replace(/^(\d{4})(\d{2}).*$/, "$2/$1");
-  const km = val(specifics.mileage) && Number(val(specifics.mileage)).toLocaleString("de-DE") + " km";
-  const kw = Number(val(specifics.power));
-  const ps = kw ? `${Math.round(kw * 1.35962)} PS` : "";
-  const fuel = FUEL[val(specifics.fuel)] ?? "";
-  const accidentFree = val(specifics["damage-unrepaired"]) === "false" ? "Unfallfrei" : "";
+  const reg = pick(ad, "firstRegistration", "first-registration");
+  const firstReg = /^\d{6}/.test(reg) ? `${reg.slice(4, 6)}/${reg.slice(0, 4)}` : "";
+  const kmNum = parseFloat(pick(ad, "mileage"));
+  const km = Number.isFinite(kmNum) ? kmNum.toLocaleString("de-DE") + " km" : "";
+  const kw = parseFloat(pick(ad, "power"));
+  const ps = Number.isFinite(kw) && kw > 0 ? `${Math.round(kw * 1.35962)} PS` : "";
+  const fuel = FUEL[pick(ad, "fuel")] ?? "";
+  const accidentFree = pick(ad, "damageUnrepaired", "damage-unrepaired") === "false" ? "Unfallfrei" : "";
 
-  const price = first(ad.price) ?? {};
-  const amount = Number(val(price["consumer-price-amount"]) || attr(price, "consumer-price-amount"));
-  const vatDeductible = /19/.test(attr(price, "vat-rate") + val(price.vat ?? {}));
-  const priceStr = amount ? `${amount.toLocaleString("de-DE")} €${vatDeductible ? "¹" : ""}` : "";
+  const amount = deepNumber(ad.price ?? {}, /amount|gross|consumer/i);
+  const vatRate = deepNumber(ad.price ?? {}, /vat/i);
+  const priceStr = Number.isFinite(amount) && amount > 0
+    ? `${Math.round(amount).toLocaleString("de-DE")} €${vatRate === 19 ? "¹" : ""}`
+    : "";
 
-  const images = [];
-  (function collectImages(node) {
-    if (node == null || typeof node !== "object") return;
-    for (const [key, v] of Object.entries(node)) {
-      if (key === "representation") {
-        for (const rep of Array.isArray(v) ? v : [v]) {
-          images.push({ size: attr(rep, "size"), url: attr(rep, "url") });
-        }
-      } else if (key === "images" || key === "image") collectImages(v);
-    }
-  })(ad);
-  const pref = ["XL", "L", "M", "ICON", "S"];
-  images.sort((a, b) => pref.indexOf(a.size) - pref.indexOf(b.size));
-  let image = images[0]?.url ?? "";
-  if (image.startsWith("//")) image = "https:" + image;
+  const image = deepUrls(ad.images ?? ad.image ?? null)[0] ?? "";
+  const adId = pick(ad, "mobileAdId", "mobile-ad-id", "id");
+  const url = adId ? `https://suchen.mobile.de/fahrzeuge/details.html?id=${adId}` : "";
 
-  const detailUrl = attr(ad["detail-page"] ?? {}, "url") || val(ad["detail-page"] ?? {});
   const kept = keepFor(title);
-
   return {
     featured: kept?.featured ?? false,
     badge: kept?.badge ?? "",
@@ -123,14 +143,21 @@ const vehicles = ads.map((ad) => {
     text: [accidentFree, firstReg && `EZ ${firstReg}`, km, ps, fuel].filter(Boolean).join(" · "),
     price: priceStr,
     image,
-    url: detailUrl,
+    url,
   };
 }).filter((v) => v.title);
 
+for (const v of vehicles) {
+  console.log(`- ${v.title} | ${v.price || "OHNE PREIS"} | Foto: ${v.image ? "ja" : "nein"}`);
+}
+
 if (vehicles.length === 0) {
-  console.error(`${ads.length} Inserate empfangen, aber 0 verwertbar – Mapping passt nicht.`);
-  console.error("Struktur des ersten Inserats:");
+  console.error("0 verwertbare Inserate – Mapping passt nicht. Struktur des ersten Inserats:");
   console.error(JSON.stringify(ads[0], null, 1).slice(0, 4000));
+  process.exit(1);
+}
+if (vehicles.filter((v) => v.price).length < vehicles.length / 2) {
+  console.error("Mehrheit der Inserate ohne Preis – schreibe nichts. Preis-Struktur oben prüfen.");
   process.exit(1);
 }
 
