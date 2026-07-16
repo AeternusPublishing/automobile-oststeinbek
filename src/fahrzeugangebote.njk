@@ -24,7 +24,7 @@ description: "Aktuelle Gebrauchtwagen und Klassiker bei Automobile Oststeinbek. 
           {% if v.badge %}<span class="badge">{{ v.badge }}</span>{% endif %}
           <h3><a href="{{ ('/fahrzeuge/' + ((v.slug or v.title) | slugify) + '/') | url }}">{{ v.title }}</a></h3>
           <p class="muted">{{ v.text }}</p>
-          <div class="foot"><p class="price">{{ v.price }}</p>{% if v.url %}<span class="go">Ansehen →</span>{% endif %}</div>
+          <div class="foot"><p class="price">{{ v.price }}</p><a class="go" href="{{ ('/fahrzeuge/' + ((v.slug or v.title) | slugify) + '/') | url }}">Ansehen →</a></div>
         </div>
       </article>
       {% endfor %}
