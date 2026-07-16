@@ -1,0 +1,36 @@
+---
+layout: base.njk
+title: Verkaufte Fahrzeuge
+description: "Referenzen von Automobile Oststeinbek – bereits verkaufte Klassiker, JDM-Importe und Youngtimer."
+---
+<section class="section">
+  <div class="container">
+    <p class="eyebrow">Referenzen</p>
+    <h1>Verkaufte Fahrzeuge</h1>
+    <p class="lead">Ein Blick zurück: Fahrzeuge, die über uns ein neues Zuhause gefunden haben – von JDM-Raritäten bis zu gepflegten Youngtimern.</p>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="container">
+    {% if sold.length %}
+    <div class="grid grid-3">
+      {% for v in sold %}
+      <article class="card vehicle sold">
+        <div class="thumb">{% if v.image %}<img src="{{ v.image }}" alt="{{ v.title }}" loading="lazy">{% else %}Verkauft{% endif %}<span class="sold-tag">Verkauft</span></div>
+        <div class="body">
+          <h3>{{ v.title }}</h3>
+          <p class="muted">{{ v.text }}</p>
+          {% if v.soldDate %}<p class="muted" style="font-size:.82rem;">Verkauft {{ v.soldDate }}</p>{% endif %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+    {% else %}
+    <p class="lead">Das Archiv füllt sich automatisch, sobald Fahrzeuge aus dem Bestand verkauft werden.</p>
+    {% endif %}
+    <div class="btn-row" style="margin-top:2.5rem;">
+      <a class="btn" href="{{ '/fahrzeugangebote/' | url }}">Aktuelle Fahrzeuge ansehen</a>
+    </div>
+  </div>
+</section>

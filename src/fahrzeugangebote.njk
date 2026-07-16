@@ -22,14 +22,17 @@ description: "Aktuelle Gebrauchtwagen und Klassiker bei Automobile Oststeinbek. 
         <div class="thumb">{% if v.image %}<img src="{{ v.image }}" alt="{{ v.title }}" loading="lazy">{% else %}Fotos im mobile.de-Inserat{% endif %}</div>
         <div class="body">
           {% if v.badge %}<span class="badge">{{ v.badge }}</span>{% endif %}
-          <h3>{% if v.url %}<a href="{{ v.url }}" target="_blank" rel="noopener">{{ v.title }}</a>{% else %}{{ v.title }}{% endif %}</h3>
+          <h3><a href="{{ ('/fahrzeuge/' + ((v.slug or v.title) | slugify) + '/') | url }}">{{ v.title }}</a></h3>
           <p class="muted">{{ v.text }}</p>
           <div class="foot"><p class="price">{{ v.price }}</p>{% if v.url %}<span class="go">Ansehen →</span>{% endif %}</div>
         </div>
       </article>
       {% endfor %}
     </div>
-    <p class="muted" style="font-size:.85rem; margin-top:1.5rem;">¹ MwSt. ausweisbar. Alle Angaben ohne Gewähr – verbindliche Daten und Fotos finden Sie im jeweiligen mobile.de-Inserat. Stand: Juli 2026.</p>
+    <p class="muted" style="font-size:.85rem; margin-top:1.5rem;">¹ MwSt. ausweisbar. Alle Angaben ohne Gewähr – verbindliche Daten im jeweiligen Inserat. Der Bestand aktualisiert sich täglich automatisch.</p>
+    <div class="btn-row" style="margin-top:1.5rem;">
+      <a class="btn btn-outline" href="{{ '/verkauft/' | url }}">Bereits verkaufte Fahrzeuge ansehen →</a>
+    </div>
   </div>
 </section>
 

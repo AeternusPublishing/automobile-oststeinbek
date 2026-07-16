@@ -11,6 +11,11 @@
   <meta property="og:title" content="{% if title %}{{ title }} | {{ site.name }}{% else %}{{ site.name }}{% endif %}">
   <meta property="og:description" content="{{ description or site.description }}">
   <meta property="og:locale" content="de_DE">
+  {%- set ogImg = ogImage or vehicles[0].image %}
+  {%- if ogImg %}
+  <meta property="og:image" content="{{ ogImg }}">
+  <meta name="twitter:card" content="summary_large_image">
+  {%- endif %}
   <link rel="icon" href="{{ '/assets/favicon.svg' | url }}" type="image/svg+xml">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}">
   <script type="application/ld+json">

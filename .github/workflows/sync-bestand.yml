@@ -32,13 +32,13 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          if git diff --quiet src/_data/vehicles.json; then
+          if git diff --quiet src/_data/vehicles.json src/_data/sold.json; then
             echo "Bestand unverändert – kein Deploy nötig."
             exit 0
           fi
           git config user.name "bestand-sync[bot]"
           git config user.email "actions@github.com"
-          git add src/_data/vehicles.json
+          git add src/_data/vehicles.json src/_data/sold.json
           git commit -m "Bestand automatisch von mobile.de aktualisiert"
           git push
           gh workflow run deploy.yml --ref main

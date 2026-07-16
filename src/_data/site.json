@@ -28,6 +28,7 @@
     { "text": "Start", "url": "/" },
     { "text": "Über uns", "url": "/ueber-uns/" },
     { "text": "Fahrzeuge", "url": "/fahrzeugangebote/" },
+    { "text": "JDM-Import", "url": "/jdm-import/" },
     { "text": "Leistungen", "url": "/dienstleistungen/" },
     { "text": "Kontakt", "url": "/kontakt/" }
   ]

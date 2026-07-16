@@ -1,0 +1,100 @@
+---
+layout: base.njk
+pagination:
+  data: vehicles
+  size: 1
+  alias: v
+permalink: "/fahrzeuge/{{ (v.slug or v.title) | slugify }}/"
+eleventyComputed:
+  title: "{{ v.title }}"
+  description: "{{ v.title }} bei Automobile Oststeinbek – {{ v.text }}. Jetzt Probefahrt vereinbaren."
+  ogImage: "{{ v.image }}"
+---
+<section class="section-tight">
+  <div class="container">
+    <p class="crumbs"><a href="{{ '/fahrzeugangebote/' | url }}">← Alle Fahrzeuge</a></p>
+    <div class="detail-grid">
+      <div>
+        <div class="gallery">
+          <div class="gallery-main">
+            {% if v.images and v.images.length %}
+            <img id="gallery-main-img" src="{{ v.images[0] }}" alt="{{ v.title }}">
+            {% else %}
+            <div class="thumb" style="aspect-ratio:3/2; display:grid; place-items:center;">Fotos im mobile.de-Inserat</div>
+            {% endif %}
+          </div>
+          {% if v.images and v.images.length > 1 %}
+          <div class="gallery-thumbs">
+            {% for img in v.images %}
+            <button type="button" class="gallery-thumb{% if loop.first %} active{% endif %}" data-src="{{ img }}">
+              <img src="{{ img }}" alt="{{ v.title }} – Bild {{ loop.index }}" loading="lazy">
+            </button>
+            {% endfor %}
+          </div>
+          {% endif %}
+        </div>
+        {% if v.description %}
+        <div class="detail-desc">
+          <h2>Beschreibung</h2>
+          {% for para in v.description.split("\n\n") %}<p class="muted">{{ para | replace("\n", " · ") }}</p>{% endfor %}
+        </div>
+        {% endif %}
+      </div>
+
+      <aside class="detail-side">
+        {% if v.badge %}<span class="badge">{{ v.badge }}</span>{% endif %}
+        <h1 class="detail-title">{{ v.title }}</h1>
+        <p class="detail-price">{{ v.price }}</p>
+        <p class="muted" style="font-size:.85rem;">{% if "¹" in v.price %}¹ MwSt. ausweisbar. {% endif %}Angaben ohne Gewähr.</p>
+
+        <div class="btn-row" style="margin:1.2rem 0 1.8rem; flex-direction:column; align-items:stretch;">
+          <a class="btn" href="tel:{{ site.contact.phoneHref }}">Anrufen: {{ site.contact.phone }}</a>
+          <a class="btn btn-whatsapp" href="{{ site.contact.whatsapp }}?text={{ ("Guten Tag, ich interessiere mich für den " + v.title + " (" + v.url + ")") | urlencode }}" target="_blank" rel="noopener">Per WhatsApp anfragen</a>
+          <a class="btn btn-outline" href="{{ v.url }}" target="_blank" rel="noopener">Inserat auf mobile.de</a>
+        </div>
+
+        {% if v.specs and v.specs.length %}
+        <h2 style="font-size:1.15rem;">Fahrzeugdaten</h2>
+        <table class="spec-table">
+          {% for s in v.specs %}
+          <tr><th>{{ s.label }}</th><td>{{ s.value }}</td></tr>
+          {% endfor %}
+        </table>
+        {% endif %}
+
+        {% if v.features and v.features.length %}
+        <h2 style="font-size:1.15rem; margin-top:1.6rem;">Ausstattung</h2>
+        <ul class="feature-list">
+          {% for f in v.features %}<li>{{ f }}</li>{% endfor %}
+        </ul>
+        {% endif %}
+      </aside>
+    </div>
+  </div>
+</section>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Car",
+  "name": {{ v.title | dump | safe }},
+  "image": {{ (v.images or []) | dump | safe }},
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "EUR",
+    "price": "{{ v.price | replace('.', '') | replace(' €¹', '') | replace(' €', '') }}",
+    "availability": "https://schema.org/InStock",
+    "seller": { "@type": "AutoDealer", "name": "{{ site.name }}" }
+  }
+}
+</script>
+
+<script>
+document.querySelectorAll(".gallery-thumb").forEach(function (btn) {
+  btn.addEventListener("click", function () {
+    document.getElementById("gallery-main-img").src = btn.dataset.src;
+    document.querySelectorAll(".gallery-thumb").forEach(function (b) { b.classList.remove("active"); });
+    btn.classList.add("active");
+  });
+});
+</script>
