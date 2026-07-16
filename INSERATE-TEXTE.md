@@ -3,6 +3,19 @@
 Einheitlicher Aufbau, Schwerpunkt Technik, ohne Markdown-Artefakte.
 Quelle der Wahrheit: diese Texte gehören in die mobile.de-Inserate.
 
+## ⚠️ FORMAT-REGEL (Grundursache des Klebe-Problems)
+
+mobile.de speichert Beschreibungen intern in CREOLE-Markup
+(services.mobile.de/manual/formatting-syntax.html). Der Editor im
+Händlerbereich übersetzt HTML dorthin – dabei gehen `<p>`-Absätze
+ERSATZLOS verloren und Fettung wird zu sichtbarem `**`.
+
+**Deshalb gilt für jeden Inseratstext:**
+- Nur Zeilenumbrüche (Shift-Enter bzw. `<br>`), keine Absätze/Enter
+- Aufzählungen als literales „• " am Zeilenanfang, keine Listen-Funktion
+- Überschriften als GROSSBUCHSTABEN-Zeile, keine Fettung
+- Niemals fett/kursiv formatieren
+
 ---
 
 ## 434193890 · Nissan Fuga 3,7 GT Type S
