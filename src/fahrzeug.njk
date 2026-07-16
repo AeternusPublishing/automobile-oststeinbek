@@ -18,7 +18,8 @@ eleventyComputed:
         <div class="gallery">
           <div class="gallery-main">
             {% if v.images and v.images.length %}
-            <img id="gallery-main-img" src="{{ v.images[0] }}" alt="{{ v.title }}">
+            <img id="gallery-main-img" src="{{ v.images[0] }}" alt="{{ v.title }}" title="Zum Vergrößern klicken">
+            <span class="gallery-hint">🔍 Vollbild</span>
             {% else %}
             <div class="thumb" style="aspect-ratio:3/2; display:grid; place-items:center;">Fotos im mobile.de-Inserat</div>
             {% endif %}
@@ -89,12 +90,51 @@ eleventyComputed:
 }
 </script>
 
+<div class="lightbox" id="lightbox" hidden>
+  <button type="button" class="lb-close" aria-label="Schließen">✕</button>
+  <button type="button" class="lb-prev" aria-label="Vorheriges Bild">‹</button>
+  <img id="lb-img" src="" alt="{{ v.title }}">
+  <button type="button" class="lb-next" aria-label="Nächstes Bild">›</button>
+  <span class="lb-count" id="lb-count"></span>
+</div>
+
 <script>
-document.querySelectorAll(".gallery-thumb").forEach(function (btn) {
-  btn.addEventListener("click", function () {
-    document.getElementById("gallery-main-img").src = btn.dataset.src;
-    document.querySelectorAll(".gallery-thumb").forEach(function (b) { b.classList.remove("active"); });
-    btn.classList.add("active");
+(function () {
+  var imgs = {{ (v.images or []) | dump | safe }};
+  var idx = 0;
+  var main = document.getElementById("gallery-main-img");
+  var lb = document.getElementById("lightbox");
+  var lbImg = document.getElementById("lb-img");
+  var lbCount = document.getElementById("lb-count");
+
+  document.querySelectorAll(".gallery-thumb").forEach(function (btn, i) {
+    btn.addEventListener("click", function () {
+      idx = i;
+      main.src = btn.dataset.src;
+      document.querySelectorAll(".gallery-thumb").forEach(function (b) { b.classList.remove("active"); });
+      btn.classList.add("active");
+    });
   });
-});
+
+  function show(i) {
+    if (!imgs.length) return;
+    idx = (i + imgs.length) % imgs.length;
+    lbImg.src = imgs[idx];
+    lbCount.textContent = (idx + 1) + " / " + imgs.length;
+  }
+  function open() { if (!imgs.length) return; lb.hidden = false; document.body.style.overflow = "hidden"; show(idx); }
+  function close() { lb.hidden = true; document.body.style.overflow = ""; }
+
+  if (main) main.addEventListener("click", open);
+  lb.querySelector(".lb-close").addEventListener("click", close);
+  lb.querySelector(".lb-prev").addEventListener("click", function (e) { e.stopPropagation(); show(idx - 1); });
+  lb.querySelector(".lb-next").addEventListener("click", function (e) { e.stopPropagation(); show(idx + 1); });
+  lb.addEventListener("click", function (e) { if (e.target === lb) close(); });
+  document.addEventListener("keydown", function (e) {
+    if (lb.hidden) return;
+    if (e.key === "Escape") close();
+    if (e.key === "ArrowLeft") show(idx - 1);
+    if (e.key === "ArrowRight") show(idx + 1);
+  });
+})();
 </script>

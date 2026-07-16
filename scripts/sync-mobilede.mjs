@@ -237,16 +237,29 @@ await Promise.all(vehicles.map(async (v) => {
     })(detail);
     const gallery = nodes.map((n) => biggest(deepUrls(n))).filter(Boolean);
     if (gallery.length > v.images.length) { v.images = [...new Set(gallery)]; v.image = v.images[0]; }
-    if (!v.description) {
+    if (!v.description || v.description.length < 30) {
       let d = "";
       (function findDesc(node) {
         if (d || node == null || typeof node !== "object") return;
         for (const [key, val] of Object.entries(node)) {
-          if (/description/i.test(key) && typeof (val?.["#text"] ?? val) === "string") { d = String(val?.["#text"] ?? val); return; }
-          findDesc(val);
+          // exakt "description"/"enrichedDescription" etc. – NICHT modelDescription
+          if (/^(description|enriched-?description|plain-?description|html-?description)$/i.test(key)) {
+            const s = typeof val === "string" ? val : String(val?.["#text"] ?? "");
+            if (s.trim().length > 20) { d = s; return; }
+          }
         }
+        for (const val of Object.values(node)) findDesc(val);
       })(detail);
-      v.description = d
+      if (!d && v.id === vehicles[0].id) {
+        // Diagnose: welche Felder liefert der Detail-Endpunkt überhaupt?
+        const keys = [];
+        (function collectKeys(n, depth) {
+          if (depth > 2 || n == null || typeof n !== "object") return;
+          for (const [k, val] of Object.entries(n)) { keys.push(k); collectKeys(val, depth + 1); }
+        })(detail, 0);
+        console.log("Detail-Felder (Diagnose):", [...new Set(keys)].join(", ").slice(0, 900));
+      }
+      if (d) v.description = d
         .replace(/<br\s*\/?>/gi, "\n").replace(/<\/p>/gi, "\n\n").replace(/<[^>]+>/g, "")
         .replace(/&amp;/g, "&").replace(/&nbsp;/g, " ").replace(/\n{3,}/g, "\n\n").trim();
     }
