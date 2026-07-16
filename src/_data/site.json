@@ -16,6 +16,14 @@
     "whatsapp": "https://wa.me/491775061767",
     "mobileDe": "https://home.mobile.de/AUTOMOBILEOSTSTEINBEK"
   },
+  "reviews": {
+    "score": "4,7",
+    "scoreDot": "4.7",
+    "count": 83,
+    "recommend": "100 %",
+    "asDescribed": "100 %",
+    "url": "https://www.mobile.de/bewertungen/AutomobileOststeinbek"
+  },
   "nav": [
     { "text": "Start", "url": "/" },
     { "text": "Über uns", "url": "/ueber-uns/" },

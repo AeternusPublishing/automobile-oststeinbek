@@ -3,14 +3,35 @@ layout: base.njk
 title: null
 description: "Automobile Oststeinbek – hochwertige Gebrauchtwagen und junge Klassiker im Osten Hamburgs. Verkauf, Meisterwerkstatt, Garantie und europaweite Auslieferung."
 ---
-<section class="hero">
+<section class="hero{% if vehicles[0].image %} hero-photo{% endif %}"{% if vehicles[0].image %} style="--hero-img: url('{{ vehicles[0].image }}')"{% endif %}>
   <div class="container">
     <p class="eyebrow">Gebrauchtwagen &amp; Klassiker · seit {{ site.since }}</p>
     <h1>Außergewöhnliche Fahrzeuge mit Charakter</h1>
-    <p class="lead">Mechanisch ehrlich, technisch durchdacht, oft selten – stets besonders. Hochwertige Gebrauchtwagen und junge Klassiker im Osten Hamburgs.</p>
+    <p class="lead">Mechanisch ehrlich, technisch durchdacht, oft selten – stets besonders. Hochwertige Importe und junge Klassiker im Osten Hamburgs.</p>
     <div class="btn-row">
       <a class="btn" href="{{ '/fahrzeugangebote/' | url }}">Zum Fahrzeugangebot</a>
       <a class="btn btn-outline" href="{{ '/kontakt/' | url }}">Termin vereinbaren</a>
+    </div>
+  </div>
+</section>
+
+<section class="trust-band">
+  <div class="container trust-grid">
+    <a class="trust-item" href="{{ site.reviews.url }}" target="_blank" rel="noopener">
+      <span class="trust-value"><span class="stars" aria-hidden="true">★</span> {{ site.reviews.score }} / 5</span>
+      <span class="trust-label">{{ site.reviews.count }} Bewertungen auf mobile.de</span>
+    </a>
+    <div class="trust-item">
+      <span class="trust-value">{{ site.reviews.recommend }}</span>
+      <span class="trust-label">Weiterempfehlung</span>
+    </div>
+    <div class="trust-item">
+      <span class="trust-value">{{ site.reviews.asDescribed }}</span>
+      <span class="trust-label">„Fahrzeug wie beschrieben"</span>
+    </div>
+    <div class="trust-item">
+      <span class="trust-value">Seit {{ site.since }}</span>
+      <span class="trust-label">Import &amp; Meisterwerkstatt</span>
     </div>
   </div>
 </section>

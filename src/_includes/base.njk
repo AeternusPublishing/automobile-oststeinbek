@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
   <title>{% if title %}{{ title }} | {{ site.name }}{% else %}{{ site.name }} – {{ site.tagline }}{% endif %}</title>
   <meta name="description" content="{{ description or site.description }}">
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
@@ -27,7 +28,13 @@
       "addressLocality": "{{ site.contact.city }}",
       "addressCountry": "DE"
     },
-    "sameAs": ["{{ site.contact.mobileDe }}"]
+    "sameAs": ["{{ site.contact.mobileDe }}"],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "{{ site.reviews.scoreDot }}",
+      "bestRating": "5",
+      "reviewCount": {{ site.reviews.count }}
+    }
   }
   </script>
 </head>
@@ -36,7 +43,7 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="{{ '/' | url }}">
-        <span class="brand-mark">AO</span>
+        <img class="brand-logo" src="{{ '/assets/logo.svg' | url }}" alt="" width="46" height="46">
         <span class="brand-name">Automobile<br><strong>Oststeinbek</strong></span>
       </a>
       <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
@@ -65,6 +72,10 @@
       <div>
         <div class="footer-brand">Automobile Oststeinbek</div>
         <p class="muted">{{ site.tagline }} – seit {{ site.since }} im Osten Hamburgs.</p>
+        <a class="rating-line" href="{{ site.reviews.url }}" target="_blank" rel="noopener">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <span>{{ site.reviews.score }} / 5 · {{ site.reviews.count }} Bewertungen auf mobile.de</span>
+        </a>
       </div>
       <div>
         <h3>Kontakt</h3>
