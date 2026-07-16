@@ -137,6 +137,7 @@ const cleanDesc = (s) => String(s ?? "")
   .replace(/(?<=[a-zäöüß0-9.)"])\*[ \t]/g, "\n• ")                    // verklebter erster Listenpunkt
   .replace(/^\*[ \t]?/gm, "• ")
   .replace(/\n(?=(TECHNIK|ZUSTAND|AUSSTATTUNG|INNENRAUM|EXTERIEUR|BESONDERHEITEN|FAHRZEUGDATEN|DURCHGEFÜHRTE|HINWEIS)\b)/g, "\n\n") // Leerzeile vor Überschriften
+  .replace(/^([A-ZÄÖÜ][A-ZÄÖÜ ()&]{3,40})\n(?=\S)/gm, "$1\n\n")      // Überschrift als eigener Absatz
   .replace(/\n{3,}/g, "\n\n").replace(/[ \t]{2,}/g, " ").trim();
 const slugify = (s) => s.toLowerCase()
   .replace(/ä/g, "ae").replace(/ö/g, "oe").replace(/ü/g, "ue").replace(/ß/g, "ss")
