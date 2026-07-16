@@ -178,6 +178,7 @@ a.trust-item:hover .trust-label { color: var(--accent-hover); }
 
 /* Lightbox (Vollbild-Galerie) */
 .lightbox { position: fixed; inset: 0; z-index: 200; background: rgba(8,9,11,.96); display: flex; align-items: center; justify-content: center; }
+.lightbox[hidden] { display: none; }
 .lightbox img { max-width: 92vw; max-height: 90vh; object-fit: contain; }
 .lb-close, .lb-prev, .lb-next { position: absolute; background: rgba(20,23,28,.8); border: 1px solid var(--border-2); color: var(--text); font-size: 1.6rem; line-height: 1; width: 52px; height: 52px; border-radius: 50%; cursor: pointer; display: grid; place-items: center; transition: border-color .2s, color .2s; }
 .lb-close:hover, .lb-prev:hover, .lb-next:hover { border-color: var(--accent); color: var(--accent-hover); }
