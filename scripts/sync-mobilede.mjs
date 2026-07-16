@@ -213,6 +213,48 @@ const vehicles = ads.map((ad) => {
   };
 }).filter((v) => v.title);
 
+// Volle Fotogalerie + Beschreibung je Inserat über den Detail-Endpunkt nachladen
+// (die Listen-Suche liefert nur das Titelbild)
+await Promise.all(vehicles.map(async (v) => {
+  if (!v.id) return;
+  try {
+    const r = await fetch(`https://services.mobile.de/search-api/ad/${v.id}`, {
+      headers: {
+        Authorization: "Basic " + Buffer.from(`${USER}:${PASS}`).toString("base64"),
+        Accept: "application/vnd.de.mobile.api+xml",
+      },
+    });
+    if (!r.ok) { console.log(`  Detail ${v.id}: HTTP ${r.status} – nutze Titelbild`); return; }
+    const detail = parser.parse(await r.text());
+    // Alle image-Knoten einsammeln, pro Knoten die größte Variante
+    const nodes = [];
+    (function findImages(node) {
+      if (node == null || typeof node !== "object") return;
+      for (const [key, val] of Object.entries(node)) {
+        if (key === "image") nodes.push(...(Array.isArray(val) ? val : [val]));
+        else findImages(val);
+      }
+    })(detail);
+    const gallery = nodes.map((n) => biggest(deepUrls(n))).filter(Boolean);
+    if (gallery.length > v.images.length) { v.images = [...new Set(gallery)]; v.image = v.images[0]; }
+    if (!v.description) {
+      let d = "";
+      (function findDesc(node) {
+        if (d || node == null || typeof node !== "object") return;
+        for (const [key, val] of Object.entries(node)) {
+          if (/description/i.test(key) && typeof (val?.["#text"] ?? val) === "string") { d = String(val?.["#text"] ?? val); return; }
+          findDesc(val);
+        }
+      })(detail);
+      v.description = d
+        .replace(/<br\s*\/?>/gi, "\n").replace(/<\/p>/gi, "\n\n").replace(/<[^>]+>/g, "")
+        .replace(/&amp;/g, "&").replace(/&nbsp;/g, " ").replace(/\n{3,}/g, "\n\n").trim();
+    }
+  } catch (e) {
+    console.log(`  Detail ${v.id}: ${e.message} – nutze Titelbild`);
+  }
+}));
+
 // Slug-Kollisionen auflösen (zwei gleiche Modelle im Bestand)
 const seenSlugs = new Set();
 for (const v of vehicles) {
