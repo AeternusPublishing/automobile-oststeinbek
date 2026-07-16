@@ -127,6 +127,13 @@ const vehicles = ads.map((ad) => {
   };
 }).filter((v) => v.title);
 
+if (vehicles.length === 0) {
+  console.error(`${ads.length} Inserate empfangen, aber 0 verwertbar – Mapping passt nicht.`);
+  console.error("Struktur des ersten Inserats:");
+  console.error(JSON.stringify(ads[0], null, 1).slice(0, 4000));
+  process.exit(1);
+}
+
 // Mindestens 3 Highlights für die Startseite sicherstellen.
 if (vehicles.filter((v) => v.featured).length < 3) {
   vehicles.slice(0, 3).forEach((v) => (v.featured = true));
