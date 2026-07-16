@@ -19,10 +19,10 @@ description: "Aktuelle Gebrauchtwagen und Klassiker bei Automobile Oststeinbek. 
     <div class="grid grid-3">
       {% for v in vehicles %}
       <article class="card vehicle">
-        <div class="thumb">Fotos im mobile.de-Inserat</div>
+        <div class="thumb">{% if v.image %}<img src="{{ v.image }}" alt="{{ v.title }}" loading="lazy">{% else %}Fotos im mobile.de-Inserat{% endif %}</div>
         <div class="body">
-          <span class="badge">{{ v.badge }}</span>
-          <h3>{{ v.title }}</h3>
+          {% if v.badge %}<span class="badge">{{ v.badge }}</span>{% endif %}
+          <h3>{% if v.url %}<a href="{{ v.url }}" target="_blank" rel="noopener">{{ v.title }}</a>{% else %}{{ v.title }}{% endif %}</h3>
           <p class="muted">{{ v.text }}</p>
           <p class="price">{{ v.price }}</p>
         </div>

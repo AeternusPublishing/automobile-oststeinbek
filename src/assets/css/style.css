@@ -91,7 +91,10 @@ p { margin: 0 0 1em; }
 
 /* Vehicle cards */
 .vehicle { overflow: hidden; padding: 0; display: flex; flex-direction: column; }
-.vehicle .thumb { aspect-ratio: 3/2; background: linear-gradient(135deg, var(--surface-2), #171310); display: grid; place-items: center; color: var(--muted); font-size: .85rem; border-bottom: 1px solid var(--border); }
+.vehicle .thumb { aspect-ratio: 3/2; background: linear-gradient(135deg, var(--surface-2), #171310); display: grid; place-items: center; color: var(--muted); font-size: .85rem; border-bottom: 1px solid var(--border); overflow: hidden; }
+.vehicle .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.vehicle h3 a { color: inherit; }
+.vehicle h3 a:hover { color: var(--accent); }
 .vehicle .body { padding: 1.3rem 1.4rem 1.5rem; }
 .vehicle .price { color: var(--accent); font-weight: 700; font-size: 1.15rem; }
 .badge { display: inline-block; background: var(--surface-2); border: 1px solid var(--border); color: var(--muted); font-size: .72rem; text-transform: uppercase; letter-spacing: .1em; padding: .2rem .6rem; border-radius: 999px; margin-bottom: .8rem; }

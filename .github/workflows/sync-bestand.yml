@@ -1,0 +1,44 @@
+name: Bestand von mobile.de synchronisieren
+
+on:
+  schedule:
+    - cron: "23 3 * * *" # täglich ~04:23 dt. Zeit
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: sync-bestand
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install
+        run: npm ci
+      - name: Bestand abholen
+        env:
+          MOBILEDE_USERNAME: ${{ secrets.MOBILEDE_USERNAME }}
+          MOBILEDE_PASSWORD: ${{ secrets.MOBILEDE_PASSWORD }}
+        run: node scripts/sync-mobilede.mjs
+      - name: Änderungen committen und Deploy anstoßen
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet src/_data/vehicles.json; then
+            echo "Bestand unverändert – kein Deploy nötig."
+            exit 0
+          fi
+          git config user.name "bestand-sync[bot]"
+          git config user.email "actions@github.com"
+          git add src/_data/vehicles.json
+          git commit -m "Bestand automatisch von mobile.de aktualisiert"
+          git push
+          gh workflow run deploy.yml --ref main
