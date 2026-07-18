@@ -16,7 +16,6 @@ eleventyComputed:
   <div class="container">
     <p class="crumbs"><a href="{{ '/fahrzeugangebote/' | url }}">← Alle Fahrzeuge</a></p>
     <div class="detail-grid">
-      <div>
         <div class="gallery">
           <div class="gallery-main">
             {% if v.images and v.images.length %}
@@ -42,7 +41,6 @@ eleventyComputed:
           {% for para in v.description.split("\n\n") %}{% if para.length < 42 and para == (para | upper) and (para | lower) != para %}<h3 class="desc-h">{{ para }}</h3>{% else %}<p class="muted">{{ para | escape | replace("\n", "<br>") | safe }}</p>{% endif %}{% endfor %}
         </div>
         {% endif %}
-      </div>
 
       <aside class="detail-side">
         {% if v.badge %}<span class="badge">{{ v.badge }}</span>{% endif %}
@@ -72,6 +70,14 @@ eleventyComputed:
           {% for f in v.features %}<li>{{ f }}</li>{% endfor %}
         </ul>
         {% endif %}
+
+        <div class="side-trust">
+          <a class="rating-line" href="{{ site.reviews.url }}" target="_blank" rel="noopener">
+            <span class="stars" aria-hidden="true">★★★★★</span>
+            <span>{{ site.reviews.score }} / 5 · {{ site.reviews.count }} Bewertungen auf mobile.de</span>
+          </a>
+          <p class="muted">Dieses Fahrzeug wird in unserer eigenen Meisterwerkstatt geprüft und für die Übergabe vorbereitet.</p>
+        </div>
       </aside>
     </div>
     <div class="detail-back">
@@ -127,8 +133,8 @@ eleventyComputed:
     lbImg.src = imgs[idx];
     lbCount.textContent = (idx + 1) + " / " + imgs.length;
   }
-  function open() { if (!imgs.length) return; lb.hidden = false; document.body.style.overflow = "hidden"; show(idx); }
-  function close() { lb.hidden = true; document.body.style.overflow = ""; }
+  function open() { if (!imgs.length) return; lb.hidden = false; document.body.style.overflow = "hidden"; document.body.classList.add("lb-open"); show(idx); }
+  function close() { lb.hidden = true; document.body.style.overflow = ""; document.body.classList.remove("lb-open"); }
 
   if (main) main.addEventListener("click", open);
   lb.querySelector(".lb-close").addEventListener("click", close);
