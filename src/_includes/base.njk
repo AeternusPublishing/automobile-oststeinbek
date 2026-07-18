@@ -8,6 +8,8 @@
   <meta name="description" content="{{ description or site.description }}">
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:site_name" content="{{ site.name }}">
   <meta property="og:title" content="{% if title %}{{ title }} | {{ site.name }}{% else %}{{ site.name }}{% endif %}">
   <meta property="og:description" content="{{ description or site.description }}">
   <meta property="og:locale" content="de_DE">
@@ -17,6 +19,14 @@
   <meta name="twitter:card" content="summary_large_image">
   {%- endif %}
   <link rel="icon" href="{{ '/assets/favicon.svg' | url }}" type="image/svg+xml">
+  <link rel="preconnect" href="https://img.classistatic.de">
+  <link rel="preload" as="font" type="font/woff2" href="{{ '/assets/fonts/bricolage-grotesque.woff2' | url }}" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="{{ '/assets/fonts/manrope.woff2' | url }}" crossorigin>
+  {%- if page.url == "/" and vehicles[0].image %}
+  <link rel="preload" as="image" href="{{ vehicles[0].image }}" fetchpriority="high">
+  {%- elif "/fahrzeuge/" in page.url and ogImage %}
+  <link rel="preload" as="image" href="{{ ogImage }}" fetchpriority="high">
+  {%- endif %}
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}">
   <script type="application/ld+json">
   {
@@ -111,5 +121,20 @@
       <span class="muted">© {% year %} Automobile Oststeinbek</span>
     </div>
   </footer>
+
+  <nav class="contact-bar" aria-label="Schnellkontakt">
+    <a href="tel:{{ site.contact.phoneHref }}">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg>
+      <span>Anrufen</span>
+    </a>
+    <a href="{{ site.contact.whatsapp }}" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.3 7.6L3 21l1.9-5.7A8.5 8.5 0 1 1 21 11.5z"/></svg>
+      <span>WhatsApp</span>
+    </a>
+    <a href="mailto:{{ site.contact.email }}">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+      <span>E-Mail</span>
+    </a>
+  </nav>
 </body>
 </html>

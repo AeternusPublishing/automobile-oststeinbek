@@ -270,3 +270,24 @@ a.trust-item:hover .trust-label { color: var(--accent-hover); }
   .nav-toggle:checked ~ .nav-toggle-label span:nth-child(2) { opacity: 0; }
   .nav-toggle:checked ~ .nav-toggle-label span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 }
+
+/* ===== Sticky-Kontaktleiste (nur mobil) ===== */
+.contact-bar { display: none; }
+@media (max-width: 860px) {
+  body { padding-bottom: 64px; }
+  .contact-bar {
+    display: grid; grid-template-columns: 1fr 1fr 1fr;
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 60;
+    background: rgba(13,15,18,.88); backdrop-filter: blur(12px);
+    border-top: 1px solid var(--border);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  .contact-bar a {
+    display: flex; flex-direction: column; align-items: center; gap: .2rem;
+    padding: .55rem 0 .5rem; color: var(--accent); text-decoration: none;
+    font-size: .72rem; letter-spacing: .02em;
+  }
+  .contact-bar a + a { border-left: 1px solid var(--border); }
+  .contact-bar svg { width: 21px; height: 21px; }
+  .contact-bar a:active { background: var(--bg-3); }
+}

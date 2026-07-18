@@ -17,7 +17,7 @@ description: "Referenzen von Automobile Oststeinbek – bereits verkaufte Klassi
     <div class="grid grid-3">
       {% for v in sold %}
       <article class="card vehicle sold">
-        <div class="thumb">{% if v.image %}<img src="{{ v.image }}" alt="{{ v.title }}" loading="lazy">{% else %}Verkauft{% endif %}<span class="sold-tag">Verkauft</span></div>
+        <div class="thumb">{% if v.image %}<img src="{{ v.image | imgRule(640) }}" alt="{{ v.title }}" loading="lazy" decoding="async">{% else %}Verkauft{% endif %}<span class="sold-tag">Verkauft</span></div>
         <div class="body">
           <h3>{{ v.title }}</h3>
           <p class="muted">{{ v.text }}</p>

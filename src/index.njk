@@ -72,7 +72,7 @@ description: "Automobile Oststeinbek – hochwertige Gebrauchtwagen und junge Kl
     <div class="grid grid-3" style="margin-top:2.5rem;">
       {% for v in vehicles %}{% if v.featured %}
       <article class="card vehicle">
-        <div class="thumb">{% if v.image %}<img src="{{ v.image }}" alt="{{ v.title }}" loading="lazy">{% else %}Fotos im mobile.de-Inserat{% endif %}</div>
+        <div class="thumb">{% if v.image %}<img src="{{ v.image | imgRule(640) }}" srcset="{{ v.image | imgRule(640) }} 640w, {{ v.image | imgRule(1024) }} 1024w" sizes="(max-width: 700px) 92vw, 420px" alt="{{ v.title }}" loading="lazy" decoding="async">{% else %}Fotos im mobile.de-Inserat{% endif %}</div>
         <div class="body">
           {% if v.badge %}<span class="badge">{{ v.badge }}</span>{% endif %}
           <h3><a href="{{ ('/fahrzeuge/' + ((v.slug or v.title) | slugify) + '/') | url }}">{{ v.title }}</a></h3>

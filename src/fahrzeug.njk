@@ -18,7 +18,7 @@ eleventyComputed:
         <div class="gallery">
           <div class="gallery-main">
             {% if v.images and v.images.length %}
-            <img id="gallery-main-img" src="{{ v.images[0] }}" alt="{{ v.title }}" title="Zum Vergrößern klicken">
+            <img id="gallery-main-img" src="{{ v.images[0] }}" alt="{{ v.title }}" title="Zum Vergrößern klicken" fetchpriority="high" decoding="async">
             <span class="gallery-hint">🔍 Vollbild</span>
             {% else %}
             <div class="thumb" style="aspect-ratio:3/2; display:grid; place-items:center;">Fotos im mobile.de-Inserat</div>
@@ -28,7 +28,7 @@ eleventyComputed:
           <div class="gallery-thumbs">
             {% for img in v.images %}
             <button type="button" class="gallery-thumb{% if loop.first %} active{% endif %}" data-src="{{ img }}">
-              <img src="{{ img }}" alt="{{ v.title }} – Bild {{ loop.index }}" loading="lazy">
+              <img src="{{ img | imgRule(360) }}" alt="{{ v.title }} – Bild {{ loop.index }}" loading="lazy" decoding="async">
             </button>
             {% endfor %}
           </div>
@@ -75,18 +75,17 @@ eleventyComputed:
 </section>
 
 <script type="application/ld+json">
+{{ v | vehicleSchema(site, site.url + page.url) | dump | safe }}
+</script>
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Car",
-  "name": {{ v.title | dump | safe }},
-  "image": {{ (v.images or []) | dump | safe }},
-  "offers": {
-    "@type": "Offer",
-    "priceCurrency": "EUR",
-    "price": "{{ v.price | replace('.', '') | replace(' €¹', '') | replace(' €', '') }}",
-    "availability": "https://schema.org/InStock",
-    "seller": { "@type": "AutoDealer", "name": "{{ site.name }}" }
-  }
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Start", "item": "{{ site.url }}/" },
+    { "@type": "ListItem", "position": 2, "name": "Fahrzeugangebote", "item": "{{ site.url }}/fahrzeugangebote/" },
+    { "@type": "ListItem", "position": 3, "name": {{ v.title | dump | safe }}, "item": "{{ site.url }}{{ page.url }}" }
+  ]
 }
 </script>
 
