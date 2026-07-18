@@ -16,6 +16,11 @@
   {%- set ogImg = ogImage or vehicles[0].image %}
   {%- if ogImg %}
   <meta property="og:image" content="{{ ogImg }}">
+  {%- if ogImageCard %}
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/jpeg">
+  {%- endif %}
   <meta name="twitter:card" content="summary_large_image">
   {%- endif %}
   <link rel="icon" href="{{ '/assets/favicon.svg' | url }}" type="image/svg+xml">
@@ -24,8 +29,8 @@
   <link rel="preload" as="font" type="font/woff2" href="{{ '/assets/fonts/manrope.woff2' | url }}" crossorigin>
   {%- if page.url == "/" and vehicles[0].image %}
   <link rel="preload" as="image" href="{{ vehicles[0].image }}" fetchpriority="high">
-  {%- elif "/fahrzeuge/" in page.url and ogImage %}
-  <link rel="preload" as="image" href="{{ ogImage }}" fetchpriority="high">
+  {%- elif "/fahrzeuge/" in page.url and lcpImage %}
+  <link rel="preload" as="image" href="{{ lcpImage }}" fetchpriority="high">
   {%- endif %}
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}">
   <script type="application/ld+json">

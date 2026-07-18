@@ -291,3 +291,9 @@ a.trust-item:hover .trust-label { color: var(--accent-hover); }
   .contact-bar svg { width: 21px; height: 21px; }
   .contact-bar a:active { background: var(--bg-3); }
 }
+
+/* ===== Detailseiten-Politur ===== */
+.detail-price { font-size: 2.6rem; letter-spacing: .01em; }
+.avail { display: inline-flex; align-items: center; gap: .5rem; font-size: .85rem; color: var(--muted); margin: .1rem 0 0; }
+.avail .dot { width: 9px; height: 9px; border-radius: 50%; background: #4ade80; box-shadow: 0 0 8px rgba(74,222,128,.55); }
+.detail-back { margin-top: 2.5rem; }

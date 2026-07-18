@@ -8,7 +8,9 @@ permalink: "/fahrzeuge/{{ (v.slug or v.title) | slugify }}/"
 eleventyComputed:
   title: "{{ v.title }}"
   description: "{{ v.title }} bei Automobile Oststeinbek – {{ v.text }}. Jetzt Probefahrt vereinbaren."
-  ogImage: "{{ v.image }}"
+  ogImage: "{% if ogImages[v.slug] %}{{ site.url }}{{ ogImages[v.slug] }}{% else %}{{ v.image }}{% endif %}"
+  ogImageCard: "{% if ogImages[v.slug] %}1{% endif %}"
+  lcpImage: "{{ v.image }}"
 ---
 <section class="section-tight">
   <div class="container">
@@ -46,6 +48,7 @@ eleventyComputed:
         {% if v.badge %}<span class="badge">{{ v.badge }}</span>{% endif %}
         <h1 class="detail-title">{{ v.title }}</h1>
         <p class="detail-price">{{ v.price }}</p>
+        <p class="avail"><span class="dot" aria-hidden="true"></span> Sofort verfügbar · Probefahrt nach Termin</p>
         <p class="muted" style="font-size:.85rem;">{% if "¹" in v.price %}¹ MwSt. ausweisbar. {% endif %}Angaben ohne Gewähr.</p>
 
         <div class="btn-row" style="margin:1.2rem 0 1.8rem; flex-direction:column; align-items:stretch;">
@@ -70,6 +73,9 @@ eleventyComputed:
         </ul>
         {% endif %}
       </aside>
+    </div>
+    <div class="detail-back">
+      <a class="btn btn-outline" href="{{ '/fahrzeugangebote/' | url }}">← Zurück zur Fahrzeugübersicht</a>
     </div>
   </div>
 </section>

@@ -27,6 +27,8 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Install
         run: npm ci
+      - name: OG-Share-Karten generieren
+        run: node scripts/build-og.mjs
       - name: Build (Eleventy)
         run: npx @11ty/eleventy
         env:
