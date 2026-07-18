@@ -16,20 +16,23 @@ const esc = (s) =>
   String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
 function overlaySvg(title, price) {
-  // Schriftgröße an Titellänge anpassen, damit nichts abgeschnitten wird
-  const size = title.length > 34 ? 44 : title.length > 26 ? 52 : 60;
+  // Titelgröße konservativ aus der Zeichenzahl (breiteste Font-Metrik angenommen),
+  // Preis auf eigener Zeile darunter — so kann unabhängig von der Render-Font
+  // (lokal vs. CI) nichts kollidieren oder abgeschnitten werden.
+  const maxWidth = W - 128;
+  const size = Math.min(56, Math.floor(maxWidth / (title.length * 0.68)));
   return `<svg width="${W}" height="${H}" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0.45" stop-color="#0d0f12" stop-opacity="0"/>
-      <stop offset="0.78" stop-color="#0d0f12" stop-opacity="0.82"/>
-      <stop offset="1" stop-color="#0d0f12" stop-opacity="0.96"/>
+      <stop offset="0.38" stop-color="#0d0f12" stop-opacity="0"/>
+      <stop offset="0.72" stop-color="#0d0f12" stop-opacity="0.84"/>
+      <stop offset="1" stop-color="#0d0f12" stop-opacity="0.97"/>
     </linearGradient>
   </defs>
   <rect width="${W}" height="${H}" fill="url(#g)"/>
-  <text x="64" y="${H - 138}" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" letter-spacing="6" fill="#c9a24b">AUTOMOBILE OSTSTEINBEK</text>
-  <text x="64" y="${H - 76}" font-family="DejaVu Sans, Arial, sans-serif" font-size="${size}" font-weight="700" fill="#eef0f3">${esc(title)}</text>
-  <text x="${W - 64}" y="${H - 76}" text-anchor="end" font-family="DejaVu Sans, Arial, sans-serif" font-size="54" font-weight="700" fill="#e0bd6c">${esc(price)}</text>
+  <text x="64" y="${H - 176}" font-family="DejaVu Sans, Arial, sans-serif" font-size="24" font-weight="600" letter-spacing="6" fill="#c9a24b">AUTOMOBILE OSTSTEINBEK</text>
+  <text x="64" y="${H - 114}" font-family="DejaVu Sans, Arial, sans-serif" font-size="${size}" font-weight="700" fill="#eef0f3">${esc(title)}</text>
+  <text x="64" y="${H - 44}" font-family="DejaVu Sans, Arial, sans-serif" font-size="52" font-weight="700" fill="#e0bd6c">${esc(price)}</text>
 </svg>`;
 }
 
