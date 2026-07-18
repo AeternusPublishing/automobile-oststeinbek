@@ -256,7 +256,7 @@ a.trust-item:hover .trust-label { color: var(--accent-hover); }
   .trust-item:nth-child(n+3) { border-top: 1px solid var(--border); }
   .hero-photo { min-height: 74vh; background:
     linear-gradient(180deg, rgba(13,15,18,.65), rgba(13,15,18,.35) 45%, rgba(13,15,18,.88) 85%, var(--bg)),
-    var(--hero-img) center / cover no-repeat, var(--bg); }
+    var(--hero-img-sm, var(--hero-img)) center / cover no-repeat, var(--bg); }
   .hero-tag { display: none; }
   .nav-toggle-label { display: flex; flex-direction: column; justify-content: center; gap: 5px; width: 42px; height: 42px; cursor: pointer; }
   .nav-toggle-label span { display: block; height: 2px; width: 24px; background: var(--text); transition: .2s; }

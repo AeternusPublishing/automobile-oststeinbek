@@ -28,9 +28,10 @@
   <link rel="preload" as="font" type="font/woff2" href="{{ '/assets/fonts/bricolage-grotesque.woff2' | url }}" crossorigin>
   <link rel="preload" as="font" type="font/woff2" href="{{ '/assets/fonts/manrope.woff2' | url }}" crossorigin>
   {%- if page.url == "/" and vehicles[0].image %}
-  <link rel="preload" as="image" href="{{ vehicles[0].image }}" fetchpriority="high">
+  <link rel="preload" as="image" href="{{ vehicles[0].image | imgRule(1024) }}" media="(max-width: 860px)" fetchpriority="high">
+  <link rel="preload" as="image" href="{{ vehicles[0].image }}" media="(min-width: 861px)" fetchpriority="high">
   {%- elif "/fahrzeuge/" in page.url and lcpImage %}
-  <link rel="preload" as="image" href="{{ lcpImage }}" fetchpriority="high">
+  <link rel="preload" as="image" href="{{ lcpImage }}" imagesrcset="{{ lcpImage | imgRule(1024) }} 1024w, {{ lcpImage }} 1600w" imagesizes="(max-width: 980px) 94vw, 58vw" fetchpriority="high">
   {%- endif %}
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}">
   <script type="application/ld+json">

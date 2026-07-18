@@ -3,7 +3,7 @@ layout: base.njk
 title: null
 description: "Automobile Oststeinbek – hochwertige Gebrauchtwagen und junge Klassiker im Osten Hamburgs. Verkauf, Meisterwerkstatt, Garantie und europaweite Auslieferung."
 ---
-<section class="hero{% if vehicles[0].image %} hero-photo{% endif %}"{% if vehicles[0].image %} style="--hero-img: url('{{ vehicles[0].image }}')"{% endif %}>
+<section class="hero{% if vehicles[0].image %} hero-photo{% endif %}"{% if vehicles[0].image %} style="--hero-img: url('{{ vehicles[0].image }}'); --hero-img-sm: url('{{ vehicles[0].image | imgRule(1024) }}')"{% endif %}>
   <span class="hero-tag">JDM · Import · Klassiker</span>
   <div class="container">
     <p class="eyebrow">Gebrauchtwagen &amp; Klassiker · seit {{ site.since }}</p>

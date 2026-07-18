@@ -20,7 +20,7 @@ eleventyComputed:
         <div class="gallery">
           <div class="gallery-main">
             {% if v.images and v.images.length %}
-            <img id="gallery-main-img" src="{{ v.images[0] }}" alt="{{ v.title }}" title="Zum Vergrößern klicken" fetchpriority="high" decoding="async">
+            <img id="gallery-main-img" src="{{ v.images[0] }}" srcset="{{ v.images[0] | imgRule(1024) }} 1024w, {{ v.images[0] }} 1600w" sizes="(max-width: 980px) 94vw, 58vw" alt="{{ v.title }}" title="Zum Vergrößern klicken" fetchpriority="high" decoding="async">
             <span class="gallery-hint">🔍 Vollbild</span>
             {% else %}
             <div class="thumb" style="aspect-ratio:3/2; display:grid; place-items:center;">Fotos im mobile.de-Inserat</div>
