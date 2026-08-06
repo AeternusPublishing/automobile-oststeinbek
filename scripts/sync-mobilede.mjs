@@ -1,7 +1,10 @@
 // Holt den Fahrzeugbestand über die mobile.de Search-API (Inserats-Einbindung,
 // Dealer-Account: eigener Bestand) und schreibt src/_data/vehicles.json
 // (inkl. aller Fotos, Ausstattung, Slug für Detailseiten).
-// Verschwundene Fahrzeuge wandern automatisch nach src/_data/sold.json.
+// Verschwundene Fahrzeuge wandern automatisch nach src/_data/sold.json –
+// außer sie sind in vehicles.json mit "pinned": true markiert (z.B. Autos,
+// die bewusst von mobile.de genommen wurden, aber auf der Seite bleiben
+// sollen). Die bleiben unverändert stehen, bis die Markierung entfernt wird.
 // Zugangsdaten: GitHub-Secrets MOBILEDE_USERNAME / MOBILEDE_PASSWORD.
 // Bei Fehlern oder unplausiblen Daten bleibt der alte Stand unangetastet.
 
@@ -283,8 +286,14 @@ await Promise.all(vehicles.map(async (v) => {
   }
 }));
 
-// Slug-Kollisionen auflösen (zwei gleiche Modelle im Bestand)
-const seenSlugs = new Set();
+// Verkauft-Archiv: Fahrzeuge, die vorher da waren und jetzt fehlen
+// (außer sie sind "pinned" – die bleiben unabhängig vom mobile.de-Status stehen)
+const activeIds = new Set(vehicles.map((v) => v.id));
+const pinned = existing.filter((e) => e.pinned && e.id && !activeIds.has(e.id));
+const gone = existing.filter((e) => e.id && !activeIds.has(e.id) && !e.pinned && !sold.some((s) => s.id === e.id));
+
+// Slug-Kollisionen auflösen (zwei gleiche Modelle im Bestand, auch gegen gepinnte Autos)
+const seenSlugs = new Set(pinned.map((p) => p.slug));
 for (const v of vehicles) {
   if (seenSlugs.has(v.slug)) v.slug = `${v.slug}-${String(v.id).slice(-4)}`;
   seenSlugs.add(v.slug);
@@ -304,9 +313,6 @@ if (vehicles.filter((v) => v.price).length < vehicles.length / 2) {
   process.exit(1);
 }
 
-// Verkauft-Archiv: Fahrzeuge, die vorher da waren und jetzt fehlen
-const activeIds = new Set(vehicles.map((v) => v.id));
-const gone = existing.filter((e) => e.id && !activeIds.has(e.id) && !sold.some((s) => s.id === e.id));
 if (gone.length > 0) {
   const today = new Date().toLocaleDateString("de-DE", { month: "long", year: "numeric" });
   for (const g of gone) {
@@ -315,10 +321,14 @@ if (gone.length > 0) {
   }
   writeFileSync(SOLD, JSON.stringify(sold, null, 2) + "\n");
 }
+if (pinned.length > 0) {
+  console.log(`→ Gepinnt, bleibt trotz Fehlen bei mobile.de sichtbar: ${pinned.map((p) => p.title).join(", ")}`);
+}
 
 if (vehicles.filter((v) => v.featured).length < 3) {
   vehicles.slice(0, 3).forEach((v) => (v.featured = true));
 }
 
-writeFileSync(OUT, JSON.stringify(vehicles, null, 2) + "\n");
-console.log(`${vehicles.length} Fahrzeuge geschrieben, ${sold.length} im Verkauft-Archiv.`);
+const finalVehicles = [...vehicles, ...pinned];
+writeFileSync(OUT, JSON.stringify(finalVehicles, null, 2) + "\n");
+console.log(`${finalVehicles.length} Fahrzeuge geschrieben (${vehicles.length} von mobile.de, ${pinned.length} gepinnt), ${sold.length} im Verkauft-Archiv.`);
