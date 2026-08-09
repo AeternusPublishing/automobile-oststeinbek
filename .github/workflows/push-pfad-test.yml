@@ -1,0 +1,23 @@
+name: TEMP Push-Pfad pruefen (checkout v7)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Push auf Wegwerf-Branch und wieder loeschen
+        run: |
+          git config user.name "push-pfad-test[bot]"
+          git config user.email "actions@github.com"
+          git checkout -b ci/push-pfad-test
+          git commit --allow-empty -m "Push-Pfad-Test (wird sofort geloescht)"
+          git push origin ci/push-pfad-test
+          echo "PUSH OK"
+          git push origin --delete ci/push-pfad-test
+          echo "CLEANUP OK"
