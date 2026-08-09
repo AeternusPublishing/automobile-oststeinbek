@@ -8,7 +8,7 @@ description: "Automobile Oststeinbek – hochwertige Gebrauchtwagen und junge Kl
   <div class="container">
     <p class="eyebrow">Gebrauchtwagen &amp; Klassiker · seit {{ site.since }}</p>
     <h1>Außergewöhnliche Fahrzeuge mit <span class="accent">Charakter</span></h1>
-    <p class="lead">Mechanisch ehrlich, technisch durchdacht, oft selten – stets besonders. Hochwertige Importe und junge Klassiker im Osten Hamburgs.</p>
+    <p class="lead">Mechanisch ehrlich, technisch durchdacht, oft selten – und immer mit einer Geschichte. Japanische Originale in einem Erhaltungszustand, den es hier kaum noch gibt, junge Klassiker mit gewachsener Substanz und Alltagswagen, denen man ihre Pflege ansieht. Ausgesucht, geprüft und in eigener Meisterwerkstatt vorbereitet – im Osten Hamburgs.</p>
     <div class="btn-row">
       <a class="btn" href="{{ '/fahrzeugangebote/' | url }}">Zum Fahrzeugangebot</a>
       <a class="btn btn-outline" href="{{ '/kontakt/' | url }}">Termin vereinbaren</a>
@@ -72,7 +72,7 @@ description: "Automobile Oststeinbek – hochwertige Gebrauchtwagen und junge Kl
     <div class="grid grid-3" style="margin-top:2.5rem;">
       {% for v in vehicles %}{% if v.featured %}
       <article class="card vehicle">
-        <div class="thumb">{% if v.image %}<img src="{{ v.image | imgRule(640) }}" srcset="{{ v.image | imgRule(640) }} 640w, {{ v.image | imgRule(1024) }} 1024w" sizes="(max-width: 700px) 92vw, 420px" alt="{{ v.title }}" loading="lazy" decoding="async">{% else %}Fotos im mobile.de-Inserat{% endif %}</div>
+        <div class="thumb">{% if v.image %}<a href="{{ ('/fahrzeuge/' + ((v.slug or v.title) | slugify) + '/') | url }}" aria-label="{{ v.title }} ansehen"><img src="{{ v.image | imgRule(640) }}" srcset="{{ v.image | imgRule(640) }} 640w, {{ v.image | imgRule(1024) }} 1024w" sizes="(max-width: 700px) 92vw, 420px" alt="{{ v.title }}" loading="lazy" decoding="async"></a>{% else %}Fotos im mobile.de-Inserat{% endif %}</div>
         <div class="body">
           {% if v.badge %}<span class="badge">{{ v.badge }}</span>{% endif %}
           <h3><a href="{{ ('/fahrzeuge/' + ((v.slug or v.title) | slugify) + '/') | url }}">{{ v.title }}</a></h3>

@@ -7,7 +7,7 @@ description: "Aktuelle Gebrauchtwagen und Klassiker bei Automobile Oststeinbek. 
   <div class="container">
     <p class="eyebrow">Fahrzeuge</p>
     <h1>Unser Angebot</h1>
-    <p class="lead">Geprüft, gepflegt und ausgewählt mit dem Blick fürs Detail. Der vollständige, tagesaktuelle Bestand steht auf mobile.de – hier zeigen wir eine Auswahl.</p>
+    <p class="lead">Jedes Fahrzeug hier haben wir selbst ausgesucht, auf die Bühne genommen und für die Übergabe vorbereitet – vom seltenen Japan-Import über den gepflegten Youngtimer bis zum unkomplizierten Alltagswagen. Was an Arbeiten erledigt wurde, steht in der jeweiligen Beschreibung: Wir versprechen nichts, was nicht schon gemacht ist. Der vollständige, tagesaktuelle Bestand läuft parallel auf mobile.de.</p>
     <div class="btn-row">
       <a class="btn" href="{{ site.contact.mobileDe }}" target="_blank" rel="noopener">Bestand auf mobile.de ansehen</a>
     </div>
@@ -19,7 +19,7 @@ description: "Aktuelle Gebrauchtwagen und Klassiker bei Automobile Oststeinbek. 
     <div class="grid grid-3">
       {% for v in vehicles %}
       <article class="card vehicle">
-        <div class="thumb">{% if v.image %}<img src="{{ v.image | imgRule(640) }}" srcset="{{ v.image | imgRule(640) }} 640w, {{ v.image | imgRule(1024) }} 1024w" sizes="(max-width: 700px) 92vw, 420px" alt="{{ v.title }}" loading="lazy" decoding="async">{% else %}Fotos im mobile.de-Inserat{% endif %}</div>
+        <div class="thumb">{% if v.image %}<a href="{{ ('/fahrzeuge/' + ((v.slug or v.title) | slugify) + '/') | url }}" aria-label="{{ v.title }} ansehen"><img src="{{ v.image | imgRule(640) }}" srcset="{{ v.image | imgRule(640) }} 640w, {{ v.image | imgRule(1024) }} 1024w" sizes="(max-width: 700px) 92vw, 420px" alt="{{ v.title }}" loading="lazy" decoding="async"></a>{% else %}Fotos im mobile.de-Inserat{% endif %}</div>
         <div class="body">
           {% if v.badge %}<span class="badge">{{ v.badge }}</span>{% endif %}
           <h3><a href="{{ ('/fahrzeuge/' + ((v.slug or v.title) | slugify) + '/') | url }}">{{ v.title }}</a></h3>

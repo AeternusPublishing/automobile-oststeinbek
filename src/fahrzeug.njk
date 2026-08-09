@@ -28,7 +28,7 @@ eleventyComputed:
           {% if v.images and v.images.length > 1 %}
           <div class="gallery-thumbs">
             {% for img in v.images %}
-            <button type="button" class="gallery-thumb{% if loop.first %} active{% endif %}" data-src="{{ img }}">
+            <button type="button" class="gallery-thumb{% if loop.first %} active{% endif %}" data-index="{{ loop.index0 }}" aria-label="Bild {{ loop.index }} von {{ v.images.length }} groß anzeigen">
               <img src="{{ img | imgRule(360) }}" alt="{{ v.title }} – Bild {{ loop.index }}" loading="lazy" decoding="async">
             </button>
             {% endfor %}
@@ -117,13 +117,24 @@ eleventyComputed:
   var lb = document.getElementById("lightbox");
   var lbImg = document.getElementById("lb-img");
   var lbCount = document.getElementById("lb-count");
+  var thumbs = Array.prototype.slice.call(document.querySelectorAll(".gallery-thumb"));
 
-  document.querySelectorAll(".gallery-thumb").forEach(function (btn, i) {
+  // Das Hauptbild trägt ein srcset. Wird nur .src gesetzt, gewinnt das srcset und
+  // das Bild bleibt sichtbar unverändert – der Klick sah wirkungslos aus.
+  function md(url) { return url.replace(/rule=mo-\d+\.jpg/, "rule=mo-1024.jpg"); }
+
+  function setMain(i) {
+    if (!main || !imgs.length) return;
+    idx = (i + imgs.length) % imgs.length;
+    main.srcset = md(imgs[idx]) + " 1024w, " + imgs[idx] + " 1600w";
+    main.src = imgs[idx];
+    thumbs.forEach(function (b, n) { b.classList.toggle("active", n === idx); });
+  }
+
+  thumbs.forEach(function (btn, i) {
     btn.addEventListener("click", function () {
-      idx = i;
-      main.src = btn.dataset.src;
-      document.querySelectorAll(".gallery-thumb").forEach(function (b) { b.classList.remove("active"); });
-      btn.classList.add("active");
+      setMain(i);
+      open();
     });
   });
 
@@ -132,9 +143,10 @@ eleventyComputed:
     idx = (i + imgs.length) % imgs.length;
     lbImg.src = imgs[idx];
     lbCount.textContent = (idx + 1) + " / " + imgs.length;
+    thumbs.forEach(function (b, n) { b.classList.toggle("active", n === idx); });
   }
   function open() { if (!imgs.length) return; lb.hidden = false; document.body.style.overflow = "hidden"; document.body.classList.add("lb-open"); show(idx); }
-  function close() { lb.hidden = true; document.body.style.overflow = ""; document.body.classList.remove("lb-open"); }
+  function close() { lb.hidden = true; document.body.style.overflow = ""; document.body.classList.remove("lb-open"); setMain(idx); }
 
   if (main) main.addEventListener("click", open);
   lb.querySelector(".lb-close").addEventListener("click", close);
