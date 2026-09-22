@@ -129,7 +129,7 @@
     "badge": "JDM · Sammlerzustand",
     "title": "Nissan Fuga 3,7 GT Type S",
     "text": "Unfallfrei · EZ 03/2010 · 6.400 km · 333 PS · Benzin",
-    "price": "16.990 €¹",
+    "price": "15.990 €¹",
     "image": "https://img.classistatic.de/api/v1/mo-prod/images/e9/e93638dd-8281-4e38-89ea-1c88d7e21df8?rule=mo-1600.jpg",
     "images": [
       "https://img.classistatic.de/api/v1/mo-prod/images/e9/e93638dd-8281-4e38-89ea-1c88d7e21df8?rule=mo-1600.jpg",
@@ -267,7 +267,7 @@
     "badge": "JDM · Neuwertig",
     "title": "Nissan President (PGF50)",
     "text": "Unfallfrei · EZ 08/2005 · 27.500 km · 280 PS · Benzin",
-    "price": "11.990 €¹",
+    "price": "10.490 €¹",
     "image": "https://img.classistatic.de/api/v1/mo-prod/images/97/975e04d7-1436-414c-a566-7780e51291a8?rule=mo-1600.jpg",
     "images": [
       "https://img.classistatic.de/api/v1/mo-prod/images/97/975e04d7-1436-414c-a566-7780e51291a8?rule=mo-1600.jpg",
@@ -499,7 +499,7 @@
     "badge": "JDM · RHD · Neuwertig",
     "title": "Lexus GS 350 *RHD*",
     "text": "Unfallfrei · EZ 06/2006 · 22.000 km · 315 PS · Benzin",
-    "price": "15.990 €¹",
+    "price": "14.990 €¹",
     "image": "https://img.classistatic.de/api/v1/mo-prod/images/c9/c9784e6b-1d21-4817-ad78-77ef753b48c9?rule=mo-1600.jpg",
     "images": [
       "https://img.classistatic.de/api/v1/mo-prod/images/c9/c9784e6b-1d21-4817-ad78-77ef753b48c9?rule=mo-1600.jpg",
@@ -631,129 +631,13 @@
     "url": "https://suchen.mobile.de/fahrzeuge/details.html?id=459276693"
   },
   {
-    "id": "459279317",
-    "slug": "opel-mokka-edition-1-hand",
-    "featured": false,
-    "badge": "1. Hand",
-    "title": "Opel Mokka Edition *1.Hand*",
-    "text": "Unfallfrei · EZ 06/2016 · 84.200 km · 140 PS · Benzin",
-    "price": "9.900 €",
-    "image": "https://img.classistatic.de/api/v1/mo-prod/images/26/264e9078-b714-4b98-b49c-baae9c709494?rule=mo-1600.jpg",
-    "images": [
-      "https://img.classistatic.de/api/v1/mo-prod/images/26/264e9078-b714-4b98-b49c-baae9c709494?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/f9/f9986d12-93c9-4790-a10e-2a35a9bd0bd9?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/62/6241a55e-ffc3-466e-98e6-03eefecec808?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/19/191372af-b14a-4b72-ac13-226d58f8729d?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/58/584cc048-d5ad-4076-8a5d-0a7421b4fa77?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/8a/8addec2e-0f6d-4347-b8a5-475c31bd016f?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/d0/d07edde8-abce-437b-b37d-116f261f5723?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/6c/6c618e32-4124-4f28-87b7-73f6cdcb5cac?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/98/98ec1fda-9f82-41ed-827b-582bc189084e?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/a6/a6143e18-5467-44c8-bc68-ac912fc24da3?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/f2/f2afff4a-2d92-4fc4-8ba1-ace9e1b7f894?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/b3/b3fc3a6f-d61a-4b0d-837d-6014f309ee42?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/a5/a5bc445b-6d5c-4d92-9dc5-b40a17e7a4bb?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/72/729c6be8-80e4-4e95-8e9a-99bdea860429?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/0b/0b109a2c-8d27-4d1c-b437-582931f60f2d?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/5f/5f1f6d22-adf1-47f6-8716-8f8b0ec1ee40?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/50/5020fbee-5668-4b8b-b57d-afd92af91dd0?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/69/696da0ad-db3d-4824-b0d4-0f54a810d74a?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/22/22103fba-2dd3-4f1e-9ae7-a7cf1614ec5d?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/57/576ca4c1-b4e1-4a6f-8c15-02f53494c773?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/76/7666bfde-ca3e-4f1c-828e-b9e994226474?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/dc/dcb95932-7e13-4d3d-b68c-13974b235ae0?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/79/7945eaf5-707b-4dff-ba86-5042513fa1fc?rule=mo-1600.jpg"
-    ],
-    "specs": [
-      {
-        "label": "Erstzulassung",
-        "value": "06/2016"
-      },
-      {
-        "label": "Kilometerstand",
-        "value": "84.200 km"
-      },
-      {
-        "label": "Leistung",
-        "value": "103 kW (140 PS)"
-      },
-      {
-        "label": "Hubraum",
-        "value": "1.364 cm³"
-      },
-      {
-        "label": "Getriebe",
-        "value": "Schaltgetriebe"
-      },
-      {
-        "label": "Kraftstoff",
-        "value": "Benzin"
-      },
-      {
-        "label": "Farbe",
-        "value": "Braun"
-      },
-      {
-        "label": "Innenausstattung",
-        "value": "Stoff, Schwarz"
-      },
-      {
-        "label": "Sitze",
-        "value": "5"
-      },
-      {
-        "label": "Vorbesitzer",
-        "value": "1"
-      },
-      {
-        "label": "Schadstoffklasse",
-        "value": "Euro 6"
-      },
-      {
-        "label": "HU",
-        "value": "Neu bei Übergabe"
-      },
-      {
-        "label": "Scheckheftgepflegt",
-        "value": "Ja"
-      },
-      {
-        "label": "Unfallfrei",
-        "value": "Ja"
-      }
-    ],
-    "features": [
-      "Abblendender Innenspiegel",
-      "ABS",
-      "Armlehne",
-      "Einparkhilfe hinten",
-      "Einparkhilfe vorn",
-      "Elektr. Außenspiegel",
-      "Elektr. Fensterheber",
-      "Elektr. Sitzverstellung",
-      "ESP",
-      "Isofix",
-      "Lederlenkrad",
-      "Leichtmetallfelgen",
-      "Nebelscheinwerfer",
-      "Rückfahrkamera",
-      "Schiebedach",
-      "Servolenkung",
-      "Sitzheizung",
-      "Wegfahrsperre",
-      "Zentralverriegelung"
-    ],
-    "description": "Opel Mokka 1.4 Turbo ecoFLEX Edition | 1. Hand | Scheckheft | zwei Radsätze | FlexFix-Fahrradträger\nGepflegter Mokka aus erster deutscher Hand, lückenlos scheckheftgepflegt, in Braunmetallic. Erhöhter Einstieg, kompakte Außenmaße, sparsamer Turbomotor – ein unkomplizierter Begleiter für Alltag und Urlaub. Laufleistung rund 84.000 km.\n\nTECHNIK\n\n1,4-Liter-16V-Turbobenziner mit 103 kW / 140 PS, ecoFLEX mit Start/Stopp-System, Euro 6 – freie Fahrt in allen Umweltzonen. Kultivierter Lauf, ordentlicher Durchzug, moderater Verbrauch. Reifendruckkontrolle, Bremsassistent, Traktionskontrolle.\n\nBESONDERHEITEN\n\n• Ausfahrbarer Original-Fahrradträger (Opel-FlexFix) – Fahrradtransport ohne Dach- oder Heckträger\n• Zwei komplette Radsätze: Original-Leichtmetallfelgen mit Sommerreifen, Stahlfelgen mit guten Winterreifen\n\nZUSTAND\n\n• Erste Hand, Wartungen regelmäßig durchgeführt (Scheckheft)\n• Karosserie und Innenraum sehr gepflegt, Nichtraucherfahrzeug\n• Technisch und optisch überdurchschnittlich für das Baujahr\nBesichtigung und Probefahrt nach Absprache.",
-    "url": "https://suchen.mobile.de/fahrzeuge/details.html?id=459279317"
-  },
-  {
     "id": "459279612",
     "slug": "volvo-v70-2-4-classic-rhd",
     "featured": false,
     "badge": "RHD · Top Zustand",
     "title": "Volvo V70 2.4 Classic * RHD*",
     "text": "Unfallfrei · EZ 07/2005 · 32.000 km · 170 PS · Benzin",
-    "price": "14.490 €¹",
+    "price": "13.700 €¹",
     "image": "https://img.classistatic.de/api/v1/mo-prod/images/08/0823496c-c047-4ed7-9d92-9bc9958952ea?rule=mo-1600.jpg",
     "images": [
       "https://img.classistatic.de/api/v1/mo-prod/images/08/0823496c-c047-4ed7-9d92-9bc9958952ea?rule=mo-1600.jpg",
@@ -865,7 +749,7 @@
     "badge": "US-Import · Top Zustand",
     "title": "Ford Explorer V8 Eddie Bauer/ 2 vorhanden",
     "text": "Unfallfrei · EZ 12/2006 · 108.500 km · 296 PS · Benzin",
-    "price": "21.800 €¹",
+    "price": "20.800 €¹",
     "image": "https://img.classistatic.de/api/v1/mo-prod/images/82/82174f1e-48a6-4a80-a428-0dc9be22806c?rule=mo-1600.jpg",
     "images": [
       "https://img.classistatic.de/api/v1/mo-prod/images/82/82174f1e-48a6-4a80-a428-0dc9be22806c?rule=mo-1600.jpg",
