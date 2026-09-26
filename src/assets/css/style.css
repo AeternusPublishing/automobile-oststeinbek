@@ -53,7 +53,7 @@ a:hover { color: var(--accent); }
 a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 ::selection { background: rgba(201, 162, 75, .28); }
 
-h1, h2, h3 { font-family: var(--disp); line-height: 1.05; font-weight: 700; letter-spacing: -.02em; }
+h1, h2, h3 { font-family: var(--disp); line-height: 1.05; font-weight: 700; letter-spacing: -.02em; hyphens: auto; overflow-wrap: anywhere; }
 h1 { font-size: clamp(2.3rem, 5.5vw, 4rem); margin: 0 0 .4em; }
 h2 { font-size: clamp(1.7rem, 4vw, 2.8rem); margin: 0 0 .6em; }
 h3 { font-size: 1.25rem; margin: 0 0 .4em; }
@@ -102,7 +102,7 @@ p { margin: 0 0 1em; }
 .site-nav a:hover, .site-nav a[aria-current="page"] { color: var(--text); }
 .site-nav a[aria-current="page"] { color: var(--accent-hover); }
 .nav-toggle, .nav-toggle-label { display: none; }
-.nav-cta { color: #161009; }
+.site-nav .nav-cta, .site-nav .nav-cta:hover { color: #161009; }
 
 /* Hero */
 .hero { position: relative; padding: clamp(4rem, 12vw, 8rem) 0;
@@ -169,7 +169,8 @@ a.trust-item:hover .trust-label { color: var(--accent-hover); }
 .crumbs { font-size: .88rem; margin-bottom: 1.4rem; }
 .crumbs a { color: var(--muted); }
 .crumbs a:hover { color: var(--accent-hover); }
-.detail-grid { display: grid; grid-template-columns: 1.5fr 1fr; grid-template-areas: "media side" "desc side"; gap: clamp(1.5rem, 4vw, 3rem); align-items: start; }
+.detail-grid { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); grid-template-areas: "media side" "desc side"; gap: clamp(1.5rem, 4vw, 3rem); align-items: start; }
+.detail-grid > * { min-width: 0; }
 .detail-grid > .gallery { grid-area: media; }
 .detail-grid > .detail-desc { grid-area: desc; }
 .detail-grid > .detail-side { grid-area: side; }
@@ -254,7 +255,7 @@ a.trust-item:hover .trust-label { color: var(--accent-hover); }
 
 /* Responsive */
 @media (max-width: 860px) {
-  .grid-3, .grid-2, .split, .contact-grid, .footer-grid, .detail-grid { grid-template-columns: 1fr; }
+  .grid-3, .grid-2, .split, .contact-grid, .footer-grid, .detail-grid { grid-template-columns: minmax(0, 1fr); }
   .detail-grid { grid-template-areas: "media" "side" "desc"; }
   .detail-side { position: static; }
   .feature-list { columns: 1; }
@@ -276,6 +277,9 @@ a.trust-item:hover .trust-label { color: var(--accent-hover); }
   .nav-toggle:checked ~ .nav-toggle-label span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
   .nav-toggle:checked ~ .nav-toggle-label span:nth-child(2) { opacity: 0; }
   .nav-toggle:checked ~ .nav-toggle-label span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+}
+@media (max-width: 400px) {
+  h1, .hero h1 { font-size: clamp(1.95rem, 9vw, 2.25rem); }
 }
 
 /* ===== Sticky-Kontaktleiste (nur mobil) ===== */
@@ -310,7 +314,7 @@ body.lb-open .contact-bar { display: none; }
 @media (max-width: 860px) {
   .contact-bar a { padding: .42rem 0 .38rem; font-size: .68rem; gap: .15rem; }
   .contact-bar svg { width: 18px; height: 18px; }
-  body { padding-bottom: 56px; }
+  body { padding-bottom: calc(56px + env(safe-area-inset-bottom)); }
 }
 .side-trust { margin-top: 1.6rem; padding-top: 1.2rem; border-top: 1px solid var(--border); }
 .side-trust .rating-line { display: inline-flex; align-items: center; gap: .5rem; font-size: .85rem; }
