@@ -213,14 +213,8 @@ const vehicles = ads.map((ad) => {
 
   // Beschreibungstext des Inserats (falls vorhanden)
   const adId = pick(ad, "mobileAdId", "mobile-ad-id", "id");
-  const incomingDescription = cleanDesc(pick(ad, "description", "enrichedDescription", "plainDescription"));
+  const description = cleanDesc(pick(ad, "description", "enrichedDescription", "plainDescription"));
   const previous = existing.find((e) => e.id === adId);
-  const previousDescription = previous?.description ?? "";
-  // mobile.de liefert Absatzgrenzen teils nur als einfache Zeilenumbrüche.
-  // Bei gleichem Wortlaut die bereits kuratierte Absatzstruktur behalten.
-  const sameWords = (s) => s.replace(/\s+/g, " ").trim();
-  const description = previousDescription && sameWords(previousDescription) === sameWords(incomingDescription)
-    ? previousDescription : incomingDescription;
   const kept = keepFor(title);
 
   return {
@@ -292,6 +286,17 @@ await Promise.all(vehicles.map(async (v) => {
     console.log(`  Detail ${v.id}: ${e.message} – nutze Titelbild`);
   }
 }));
+
+// Die Suchliste enthält häufig keinen Beschreibungstext. Erst nach dem
+// Detailabruf lässt sich der Wortlaut vergleichen und die Absatzstruktur
+// der bestehenden Website-Fassung zuverlässig bewahren.
+for (const v of vehicles) {
+  const previousDescription = existing.find((e) => e.id === v.id)?.description;
+  if (previousDescription && v.description &&
+      previousDescription.replace(/\s+/g, "") === v.description.replace(/\s+/g, "")) {
+    v.description = previousDescription;
+  }
+}
 
 // Verkauft-Archiv: Fahrzeuge, die vorher da waren und jetzt fehlen
 // (außer sie sind "pinned" – die bleiben unabhängig vom mobile.de-Status stehen)
