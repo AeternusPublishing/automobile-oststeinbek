@@ -1,13 +1,13 @@
 ---
 layout: base.njk
 title: Kontakt
-description: "Automobile Oststeinbek – Adresse, Telefon, E-Mail und Anfahrt. Gewerbering 8, 22113 Oststeinbek bei Hamburg."
+description: "Automobile Oststeinbek – Telefon, WhatsApp und E-Mail. Besichtigungen nach Terminvereinbarung. Firmensitz in Oststeinbek."
 ---
 <section class="section">
   <div class="container">
     <p class="eyebrow">Kontakt</p>
     <h1>So erreichen Sie uns</h1>
-    <p class="lead">Rufen Sie an, schreiben Sie uns per WhatsApp oder E-Mail – oder kommen Sie einfach vorbei. Am besten mit einer kurzen Terminabsprache: Dann steht Ihr Wunschfahrzeug gewaschen, warmgefahren und startklar bereit, und wir haben Zeit für Ihre Fragen, statt zwischen Werkstatt und Hof zu pendeln.</p>
+    <p class="lead">Rufen Sie an oder schreiben Sie uns per WhatsApp oder E-Mail. Besichtigungen und Probefahrten vereinbaren wir persönlich; den jeweiligen Fahrzeugstandort teilen wir Ihnen bei der Terminabsprache mit.</p>
   </div>
 </section>
 
@@ -16,14 +16,13 @@ description: "Automobile Oststeinbek – Adresse, Telefon, E-Mail und Anfahrt. G
     <div>
       <h2>Kontaktdaten</h2>
       <ul class="info-list">
-        <li><strong>Adresse</strong>{{ site.contact.street }}, {{ site.contact.zip }} {{ site.contact.city }}</li>
-        <li><strong>Telefon</strong><a href="tel:{{ site.contact.phoneHref }}">{{ site.contact.phone }}</a></li>
-        <li><strong>Mobil / WhatsApp</strong><a href="tel:{{ site.contact.mobileHref }}">{{ site.contact.mobile }}</a></li>
+        <li><strong>Firmensitz</strong>{{ site.contact.street }}, {{ site.contact.zip }} {{ site.contact.city }}</li>
+        <li><strong>Mobil / WhatsApp</strong><a href="tel:{{ site.contact.phoneHref }}">{{ site.contact.phone }}</a></li>
         <li><strong>E-Mail</strong><a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></li>
         <li>
           <strong>Öffnungszeiten</strong>
           Mo–Sa 9:00–17:00 Uhr sowie nach Absprache<br>
-          <span class="muted">Sonntags geschlossen. Für Besichtigungen empfehlen wir eine kurze Terminabsprache.</span>
+          <span class="muted">Sonntags geschlossen. Besichtigungen ausschließlich nach Terminvereinbarung.</span>
         </li>
       </ul>
       <div class="btn-row" style="margin-top:1.5rem;">
@@ -33,13 +32,13 @@ description: "Automobile Oststeinbek – Adresse, Telefon, E-Mail und Anfahrt. G
       </div>
     </div>
     <div>
-      <h2>Anfahrt</h2>
-      <p class="muted">Sie finden uns im Gewerbegebiet Oststeinbek am östlichen Stadtrand von Hamburg – ruhig gelegen und gut erreichbar.</p>
+      <h2>Besichtigung</h2>
+      <p class="muted">Unser Firmensitz bleibt in Oststeinbek. Die Fahrzeuge können an unterschiedlichen Standorten stehen. Bitte vereinbaren Sie Ihren Besuch vorab; wir nennen Ihnen dann den passenden Treffpunkt.</p>
       <div class="panel">
         <p style="margin:0 0 .8rem;"><strong>{{ site.name }}</strong><br>
         {{ site.contact.street }}<br>
         {{ site.contact.zip }} {{ site.contact.city }}</p>
-        <a class="btn btn-sm btn-outline" href="https://www.google.com/maps/search/?api=1&query={{ site.contact.street | urlencode }}+{{ site.contact.zip | urlencode }}+{{ site.contact.city | urlencode }}" target="_blank" rel="noopener">In Google Maps öffnen</a>
+        <a class="btn btn-sm btn-outline" href="{{ site.contact.mobileDe }}" target="_blank" rel="noopener">Unsere Fahrzeuge auf mobile.de</a>
       </div>
     </div>
   </div>
