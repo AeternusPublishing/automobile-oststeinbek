@@ -136,6 +136,7 @@ const cleanDesc = (s) => String(s ?? "")
   .replace(/(?<=[a-zäöüß0-9»)"])\.(?=[A-ZÄÖÜ])/g, ".\n\n")          // Satzende.GROSS → Absatz
   .replace(/(?<=[a-zäöüß0-9])(?=[A-ZÄÖÜ][a-zäöüß])/g, "\n\n")        // kleinGroß-Klebestelle → Absatz
   .replace(/Flex\n+Fix/g, "FlexFix")                                   // bekannte Markennamen reparieren
+  .replace(/Advance\n+Trac/g, "AdvanceTrac")                         // Ford-Systemname zusammenhalten
   .replace(/\b(TECHNIK UND ZUSTAND|ZUSTAND UND INSTANDSETZUNG|ZUSTAND UND WARTUNG|INNENRAUM UND AUSSTATTUNG|EXTERIEUR UND INTERIEUR|AUSSTATTUNG UND ZUSTAND|AUSSTATTUNG \(AUSZUG\)|DURCHGEFÜHRTE ARBEITEN|FAHRZEUGDATEN|BESONDERHEITEN|TECHNIK|INNENRAUM|AUSSTATTUNG|ZUSTAND|HINWEIS)(?=[„"A-ZÄÖÜ0-9•*])/g, "$1\n") // Überschrift von Folgetext lösen
   .replace(/(?<=[a-zäöüß0-9.)"])\*[ \t]/g, "\n• ")                    // verklebter erster Listenpunkt
   .replace(/^\*[ \t]?/gm, "• ")
@@ -211,14 +212,20 @@ const vehicles = ads.map((ad) => {
   features.sort((a, b) => a.localeCompare(b, "de"));
 
   // Beschreibungstext des Inserats (falls vorhanden)
-  const description = cleanDesc(pick(ad, "description", "enrichedDescription", "plainDescription"));
-
   const adId = pick(ad, "mobileAdId", "mobile-ad-id", "id");
+  const incomingDescription = cleanDesc(pick(ad, "description", "enrichedDescription", "plainDescription"));
+  const previous = existing.find((e) => e.id === adId);
+  const previousDescription = previous?.description ?? "";
+  // mobile.de liefert Absatzgrenzen teils nur als einfache Zeilenumbrüche.
+  // Bei gleichem Wortlaut die bereits kuratierte Absatzstruktur behalten.
+  const sameWords = (s) => s.replace(/\s+/g, " ").trim();
+  const description = previousDescription && sameWords(previousDescription) === sameWords(incomingDescription)
+    ? previousDescription : incomingDescription;
   const kept = keepFor(title);
 
   return {
     id: adId,
-    slug: slugify(title),
+    slug: previous?.slug || slugify(title),
     featured: kept?.featured ?? false,
     badge: kept?.badge ?? "",
     title,
