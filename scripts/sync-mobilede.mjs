@@ -15,6 +15,7 @@ const USER = process.env.MOBILEDE_USERNAME;
 const PASS = process.env.MOBILEDE_PASSWORD;
 const OUT = new URL("../src/_data/vehicles.json", import.meta.url);
 const SOLD = new URL("../src/_data/sold.json", import.meta.url);
+const OVERRIDES = new URL("../src/_data/vehicle-overrides.json", import.meta.url);
 
 if (!USER || !PASS) {
   console.log("MOBILEDE_USERNAME/MOBILEDE_PASSWORD nicht gesetzt – Sync übersprungen.");
@@ -149,6 +150,7 @@ const slugify = (s) => s.toLowerCase()
 
 let existing = [];
 try { existing = JSON.parse(readFileSync(OUT, "utf8")); } catch {}
+const overrides = JSON.parse(readFileSync(OVERRIDES, "utf8"));
 let sold = [];
 try { sold = JSON.parse(readFileSync(SOLD, "utf8")); } catch {}
 const keepFor = (title) =>
@@ -295,6 +297,24 @@ for (const v of vehicles) {
   if (previousDescription && v.description &&
       previousDescription.replace(/\s+/g, "") === v.description.replace(/\s+/g, "")) {
     v.description = previousDescription;
+  }
+}
+
+// Redaktionelle Homepage-Galerien und bestätigte Sonderausstattung bleiben
+// erhalten, auch wenn mobile.de beim täglichen Abruf andere Bilder liefert.
+for (const v of vehicles) {
+  const override = overrides[v.id];
+  if (!override) continue;
+  if (override.images?.length) {
+    v.images = override.images;
+    v.image = override.images[0];
+  }
+  if (override.features?.length) {
+    v.features = [...new Set([...v.features, ...override.features])]
+      .sort((a, b) => a.localeCompare(b, "de"));
+  }
+  if (override.preserveDescription) {
+    v.description = existing.find((e) => e.id === v.id)?.description || v.description;
   }
 }
 

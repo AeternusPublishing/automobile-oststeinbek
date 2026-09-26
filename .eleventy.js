@@ -9,9 +9,12 @@ module.exports = function (eleventyConfig) {
 
   // mobile.de-CDN-Bilder in passender Größe laden (rule=mo-360/640/1024/1600).
   // Unbekannte URLs bleiben unverändert.
-  eleventyConfig.addFilter("imgRule", (url, size) =>
-    typeof url === "string" ? url.replace(/rule=mo-\d+\.jpg/, `rule=mo-${size}.jpg`) : url
-  );
+  eleventyConfig.addFilter("imgRule", (url, size) => {
+    if (typeof url !== "string") return url;
+    return url
+      .replace(/rule=mo-\d+\.jpg/, `rule=mo-${size}.jpg`)
+      .replace(/-(?:360|640|1024|1600)\.webp$/, `-${size}.webp`);
+  });
 
   // Angereichertes schema.org-Car-Objekt aus den Fahrzeugdaten (Specs stammen aus dem
   // mobile.de-Sync; fehlende Werte werden weggelassen, nie erfunden).
