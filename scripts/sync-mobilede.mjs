@@ -289,7 +289,13 @@ await Promise.all(vehicles.map(async (v) => {
 // Verkauft-Archiv: Fahrzeuge, die vorher da waren und jetzt fehlen
 // (außer sie sind "pinned" – die bleiben unabhängig vom mobile.de-Status stehen)
 const activeIds = new Set(vehicles.map((v) => v.id));
-const pinned = existing.filter((e) => e.pinned && e.id && !activeIds.has(e.id));
+// A relisted car gets a new mobile.de ID. Do not keep its old pinned card beside it.
+const sameVehicle = (a, b) => a.title === b.title
+  && a.specs?.find((s) => s.label === "Erstzulassung")?.value === b.specs?.find((s) => s.label === "Erstzulassung")?.value
+  && a.specs?.find((s) => s.label === "Kilometerstand")?.value === b.specs?.find((s) => s.label === "Kilometerstand")?.value;
+const pinned = existing
+  .filter((e) => e.pinned && e.id && !activeIds.has(e.id) && !vehicles.some((v) => sameVehicle(e, v)))
+  .map((e) => ({ ...e, url: "" })); // Website-only cars have no active mobile.de link.
 const gone = existing.filter((e) => e.id && !activeIds.has(e.id) && !e.pinned && !sold.some((s) => s.id === e.id));
 
 // Slug-Kollisionen auflösen (zwei gleiche Modelle im Bestand, auch gegen gepinnte Autos)
