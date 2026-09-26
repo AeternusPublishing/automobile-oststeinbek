@@ -1,5 +1,99 @@
 [
   {
+    "id": "wdb2201751a180842",
+    "slug": "mercedes-benz-s-500-l-w220-gewerbe",
+    "featured": true,
+    "badge": "Gewerbe · Export · 24.599 km",
+    "title": "Mercedes-Benz S 500 L (W220)",
+    "text": "EZ 02/2001 · 24.599 km · 306 PS · Benzin · Langversion",
+    "price": "8.500 € netto",
+    "image": "/assets/vehicles/mercedes-s500l-w220/s500_web_01_front_3q-1600.webp",
+    "images": [
+      "/assets/vehicles/mercedes-s500l-w220/s500_web_01_front_3q-1600.webp",
+      "/assets/vehicles/mercedes-s500l-w220/s500_web_02_front-1600.webp",
+      "/assets/vehicles/mercedes-s500l-w220/s500_web_03_profile-1600.webp",
+      "/assets/vehicles/mercedes-s500l-w220/s500_web_04_rear_3q-1600.webp",
+      "/assets/vehicles/mercedes-s500l-w220/s500_web_05_rear_wide-1600.webp",
+      "/assets/vehicles/mercedes-s500l-w220/s500_06-1600.webp",
+      "/assets/vehicles/mercedes-s500l-w220/s500_07-1600.webp",
+      "/assets/vehicles/mercedes-s500l-w220/s500_08-1600.webp",
+      "/assets/vehicles/mercedes-s500l-w220/s500_09-1600.webp",
+      "/assets/vehicles/mercedes-s500l-w220/s500_10-1600.webp",
+      "/assets/vehicles/mercedes-s500l-w220/s500_11-1600.webp",
+      "/assets/vehicles/mercedes-s500l-w220/s500_12-1600.webp",
+      "/assets/vehicles/mercedes-s500l-w220/s500_13-1600.webp",
+      "/assets/vehicles/mercedes-s500l-w220/s500_14-1600.webp",
+      "/assets/vehicles/mercedes-s500l-w220/s500_15-1600.webp",
+      "/assets/vehicles/mercedes-s500l-w220/s500_17-1600.webp",
+      "/assets/vehicles/mercedes-s500l-w220/s500_18-1600.webp",
+      "/assets/vehicles/mercedes-s500l-w220/s500_19-1600.webp",
+      "/assets/vehicles/mercedes-s500l-w220/s500_20-1600.webp",
+      "/assets/vehicles/mercedes-s500l-w220/s500_21-1600.webp",
+      "/assets/vehicles/mercedes-s500l-w220/s500_22-1600.webp"
+    ],
+    "specs": [
+      {
+        "label": "Erstzulassung",
+        "value": "02/2001"
+      },
+      {
+        "label": "Kilometerstand",
+        "value": "24.599 km"
+      },
+      {
+        "label": "Leistung",
+        "value": "225 kW (306 PS)"
+      },
+      {
+        "label": "Hubraum",
+        "value": "4.966 cm³"
+      },
+      {
+        "label": "Getriebe",
+        "value": "5-Gang-Automatik"
+      },
+      {
+        "label": "Kraftstoff",
+        "value": "Benzin"
+      },
+      {
+        "label": "Karosserie",
+        "value": "Langversion"
+      },
+      {
+        "label": "Farbe",
+        "value": "Obsidianschwarz metallic"
+      },
+      {
+        "label": "Innenausstattung",
+        "value": "Nappaleder, Schwarz"
+      },
+      {
+        "label": "Fahrgestellnummer",
+        "value": "WDB2201751A180842"
+      },
+      {
+        "label": "Verkauf",
+        "value": "Ausschließlich an Gewerbe"
+      }
+    ],
+    "features": [
+      "AIRMATIC-Luftfederung",
+      "Automatikgetriebe",
+      "Elektrische Sitzverstellung",
+      "Klimaautomatik",
+      "Lederlenkrad",
+      "Leichtmetallfelgen",
+      "Nappaleder",
+      "Sitzheizung",
+      "Servolenkung",
+      "Zentralverriegelung"
+    ],
+    "description": "MERCEDES-BENZ S 500 L (W220) | 24.599 KM | GEWERBEANGEBOT\n\nEin außergewöhnlich niedrig gelaufener S 500 L der Baureihe W220 in klassischer Konfiguration: Langversion, 5,0-Liter-V8, Obsidianschwarz metallic und schwarzes Nappaleder. Das Fahrzeug stammt aus einer russischen Erstbestellung.\n\nDer M113-V8 mit 4.966 cm³ leistet 225 kW (306 PS) und arbeitet mit einer Fünfgang-Wandlerautomatik zusammen. Die Langversion bietet den für diese Baureihe charakteristischen großzügigen Fond und verbindet ruhigen Reisekomfort mit dem souveränen Antritt des großvolumigen Achtzylinders.\n\nDer Wagen wurde trocken in einer Halle gelagert und präsentiert sich mit sehr gepflegter, nach vorliegenden Angaben rostfreier Substanz. Die Luftfederbeine wurden erneuert; außerdem wurde ein allgemeiner Service durchgeführt. Die Scheinwerfer entsprechen dem Rechtsverkehr.\n\nFAHRZEUGDATEN\n\n- Erstzulassung 02/2001\n- 24.599 km\n- 4.966 cm³ V8-Benzinmotor\n- 225 kW / 306 PS\n- 5-Gang-Automatik\n- Langversion\n- Obsidianschwarz metallic\n- schwarzes Nappaleder\n- russische Erstbestellung\n\nVERKAUF AUSSCHLIESSLICH AN GEWERBETREIBENDE\n\nDer Angebotspreis beträgt 8.500 € netto. Besichtigung nach Terminvereinbarung in Oststeinbek. Zwischenverkauf und Irrtum vorbehalten.",
+    "url": "",
+    "pinned": true
+  },
+  {
     "id": "43147496598656",
     "slug": "volvo-v70-t5-summum-rhd-8656",
     "featured": false,
