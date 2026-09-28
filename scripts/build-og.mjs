@@ -44,9 +44,15 @@ async function main() {
   for (const v of vehicles) {
     if (!v.image || !v.slug) continue;
     try {
-      const res = await fetch(v.image);
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const buf = Buffer.from(await res.arrayBuffer());
+      let buf;
+      if (v.image.startsWith("/assets/")) {
+        const localImage = path.join(ROOT, "src", v.image.slice(1));
+        buf = fs.readFileSync(localImage);
+      } else {
+        const res = await fetch(v.image);
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        buf = Buffer.from(await res.arrayBuffer());
+      }
       // Preis ohne Fußnoten-Zeichen aufs Bild
       const price = (v.price || "").replace("¹", "").trim();
       await sharp(buf)
