@@ -40,6 +40,12 @@ eleventyComputed:
         <div class="detail-desc">
           <h2>Beschreibung</h2>
           {% for para in v.description.split("\n\n") %}{% if para.length < 42 and para == (para | upper) and (para | lower) != para %}<h3 class="desc-h">{{ para }}</h3>{% else %}<p class="muted">{{ para | escape | replace("\n", "<br>") | safe }}</p>{% endif %}{% endfor %}
+          {% if v.sources and v.sources.length %}
+          <h3 class="desc-h">Quellen zur Modellgeschichte</h3>
+          <ul class="feature-list">
+            {% for source in v.sources %}<li><a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">{{ source.label }}</a></li>{% endfor %}
+          </ul>
+          {% endif %}
         </div>
         {% endif %}
 

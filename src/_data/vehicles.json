@@ -5,7 +5,7 @@
     "featured": true,
     "pinned": true,
     "badge": "HU bis 09/2028 · Cabriolet",
-    "title": "Opel Astra Cabriolet 2.2 16V (2002)",
+    "title": "Opel Astra Cabriolet 2.2 16V – Bertone",
     "text": "EZ 10/2002 · 85.803 km laut HU vom 28.09.2026 · 147 PS · Handschaltung",
     "price": "5.500 € · differenzbesteuert",
     "priceMain": "5.500 €",
@@ -41,7 +41,8 @@
       { "label": "Hubraum", "value": "2.198 cm³" },
       { "label": "Kraftstoff", "value": "Benzin" },
       { "label": "Motor", "value": "2,2-l-Saugmotor (Z22SE)" },
-      { "label": "Getriebe", "value": "Schaltgetriebe" },
+      { "label": "Getriebe", "value": "5-Gang-Schaltgetriebe" },
+      { "label": "Karosserie", "value": "Cabriolet by Bertone" },
       { "label": "Farbe", "value": "Silber" },
       { "label": "HU", "value": "09/2028; Prüfung ohne festgestellte Mängel" },
       { "label": "Abgasnorm", "value": "Euro 4" }
@@ -51,9 +52,15 @@
       "Klimaanlage",
       "Handschaltgetriebe",
       "Leichtmetallräder",
-      "Cabrio-Stoffverdeck"
+      "Elektrisch betätigtes Stoffverdeck",
+      "Vier Sitzplätze"
     ],
-    "description": "OPEL ASTRA CABRIOLET 2.2 16V\n\nSilbernes Astra Cabriolet mit schwarzer Lederausstattung, Klimaanlage und dem bekannten 2,2-Liter-GM-Saugmotor mit 147 PS und Handschaltung. Ein gepflegter Wagen, der noch viele Sommer ein angenehmer Begleiter sein kann. Nach unserer Einschätzung befindet er sich in einem sehr guten Allgemeinzustand und ist rostfrei.\n\nDie Hauptuntersuchung vom 28.09.2026 wurde ohne festgestellte Mängel abgeschlossen; die nächste HU ist im September 2028 fällig. Der dabei dokumentierte Kilometerstand beträgt 85.803 km. Die Prüfplakette wird laut HU-Bericht bei der Zulassung zugeteilt.\n\nAm Verdeck wurden zwei Nähte geflickt. Diese Reparaturen benennen wir ausdrücklich, damit der Zustand nachvollziehbar bleibt.\n\nPreis: 5.500 €. Differenzbesteuerung nach § 25a UStG; Umsatzsteuer nicht gesondert ausweisbar. Besichtigung nach Vereinbarung. Bitte prüfen Sie Fahrzeug und Ausstattung bei der Besichtigung."
+    "sources": [
+      { "label": "Opel/Stellantis: Astra-G-Cabriolet und Bertone", "url": "https://www.media.stellantis.com/it-it/opel/press/una-opel-astra-cabrio-per-tutte-le-stagioni" },
+      { "label": "Opel: Astra-Cabrio-Prospekt 2001", "url": "https://www.opel-team-niedersachsen.de/media/files/Astra-G-2001-02_01079-0101-Cabrio.pdf" },
+      { "label": "Opel/Stellantis: 2,2-Liter-Ecotec im Speedster", "url": "https://www.media.stellantis.com/at-de/opel/press/einer-fur-alle-sinne" }
+    ],
+    "description": "OPEL ASTRA CABRIOLET 2.2 16V – BERTONE\n\nDieses Astra Cabriolet stammt aus einer Zeit, in der Opel seine offenen Modelle gemeinsam mit Bertone entwickelte und im italienischen Grugliasco fertigen ließ. „Erdacht bei Opel. Erschaffen bei Bertone.“ – der damalige Werbesatz bringt den Charakter dieser eigenständigen Cabrio-Karosserie treffend auf den Punkt. Stoffverdeck, niedrige Gürtellinie und die ausgewogenen Proportionen verleihen dem Wagen eine klassische Offenfahrer-Silhouette.\n\nUnter der Haube arbeitet der vom Händler bestätigte Z22SE: ein 2.198 cm³ großer, vollständig aus Aluminium gefertigter 16-Ventil-Saugmotor mit 108 kW (147 PS). Derselbe 2,2-Liter-Ecotec kam seinerzeit auch im Opel Speedster zum Einsatz. Im Astra ist er mit einer Fünfgang-Handschaltung kombiniert – hier als Antrieb eines entspannten, viersitzigen Cabriolets, nicht als Sportwagen-Versprechen.\n\nDas elektrisch betätigte schwarze Stoffverdeck verschwindet in einem eigenen Verdeckkasten hinter den Rücksitzen. Zur Ausstattung dieses Wagens gehören schwarze Ledersitze, Klimaanlage und Leichtmetallräder. Silberne Karosserie und schwarzer Innenraum ergeben eine zurückhaltende, zeitlose Kombination.\n\nBei der Hauptuntersuchung am 28.09.2026 wurden 85.803 km dokumentiert; sie wurde ohne festgestellte Mängel abgeschlossen. Die nächste HU ist im September 2028 fällig. Die Prüfplakette wird laut Prüfbericht bei der Zulassung zugeteilt. Nach Händlerangabe präsentiert sich das Fahrzeug in sehr gutem Allgemeinzustand und rostfrei.\n\nTRANSPARENZ ZUM VERDECK\n\nAn zwei Stellen des Stoffverdecks wurden Nähte instandgesetzt. Diese Reparaturen benennen wir ausdrücklich; Zustand und Funktion können bei der Besichtigung geprüft werden. Die Außenbilder mit neutralem Hintergrund sind entsprechend gekennzeichnet, und Originalansichten finden sich ebenfalls in der Galerie.\n\nMit seinen dokumentierten 85.803 km, dem 147-PS-Saugmotor, Leder und Handschaltung ist dieses Bertone-Cabriolet ein angenehmer Begleiter für kommende Sommer – ein eigenständiges offenes Auto aus einer interessanten Opel-Epoche.\n\nPreis: 5.500 €. Differenzbesteuerung nach § 25a UStG; Umsatzsteuer nicht gesondert ausweisbar. Besichtigung nach Vereinbarung. Bitte prüfen Sie Fahrzeug und Ausstattung vor dem Kauf."
   },
   {
     "id": "43147496598656",
