@@ -1,68 +1,5 @@
 [
   {
-    "id": "local-opel-astra-cabriolet-2002-w0l0tgf673b000132",
-    "slug": "opel-astra-cabriolet-2002-silber",
-    "featured": true,
-    "pinned": true,
-    "badge": "HU bis 09/2028 · Cabriolet",
-    "title": "Opel Astra Cabriolet 2.2 16V – Bertone",
-    "text": "EZ 10/2002 · 85.803 km laut HU vom 28.09.2026 · 147 PS · Handschaltung",
-    "price": "5.500 € · differenzbesteuert",
-    "priceMain": "5.500 €",
-    "priceSuffix": "Differenzbesteuerung nach § 25a UStG · Umsatzsteuer nicht gesondert ausweisbar",
-    "image": "/assets/vehicles/opel-astra-cabriolet-2002/01_front_links_neutral-1600.webp",
-    "imageNote": "Bei den ersten sechs Außenaufnahmen wurde der Hintergrund digital neutralisiert. Unbearbeitete Originalansichten und Detailfotos sind ebenfalls in der Galerie enthalten.",
-    "images": [
-      "/assets/vehicles/opel-astra-cabriolet-2002/01_front_links_neutral-1600.webp",
-      "/assets/vehicles/opel-astra-cabriolet-2002/02_seite_links_neutral-1600.webp",
-      "/assets/vehicles/opel-astra-cabriolet-2002/05_front_rechts_neutral-1600.webp",
-      "/assets/vehicles/opel-astra-cabriolet-2002/04_seite_rechts_neutral-1600.webp",
-      "/assets/vehicles/opel-astra-cabriolet-2002/03_heck_links_neutral-1600.webp",
-      "/assets/vehicles/opel-astra-cabriolet-2002/06_heck_rechts_neutral-1600.webp",
-      "/assets/vehicles/opel-astra-cabriolet-2002/pxl_20260928_105458621-1600.webp",
-      "/assets/vehicles/opel-astra-cabriolet-2002/pxl_20260928_105509241_mp-1600.webp",
-      "/assets/vehicles/opel-astra-cabriolet-2002/pxl_20260928_105535135-1600.webp",
-      "/assets/vehicles/opel-astra-cabriolet-2002/pxl_20260928_105550155_mp-1600.webp",
-      "/assets/vehicles/opel-astra-cabriolet-2002/pxl_20260928_105552866_mp-1600.webp",
-      "/assets/vehicles/opel-astra-cabriolet-2002/pxl_20260928_105556812_mp-1600.webp",
-      "/assets/vehicles/opel-astra-cabriolet-2002/pxl_20260928_105600160-1600.webp",
-      "/assets/vehicles/opel-astra-cabriolet-2002/pxl_20260928_105655617-1600.webp",
-      "/assets/vehicles/opel-astra-cabriolet-2002/pxl_20260928_105704863_mp-1600.webp",
-      "/assets/vehicles/opel-astra-cabriolet-2002/pxl_20260928_105709187-1600.webp",
-      "/assets/vehicles/opel-astra-cabriolet-2002/pxl_20260928_111118510_mp-1600.webp",
-      "/assets/vehicles/opel-astra-cabriolet-2002/pxl_20260928_111025290-1600.webp",
-      "/assets/vehicles/opel-astra-cabriolet-2002/pxl_20260928_111029426-1600.webp",
-      "/assets/vehicles/opel-astra-cabriolet-2002/pxl_20260928_111039422-1600.webp"
-    ],
-    "specs": [
-      { "label": "Erstzulassung", "value": "10/2002" },
-      { "label": "Kilometerstand", "value": "85.803 km" },
-      { "label": "Leistung", "value": "108 kW (147 PS)" },
-      { "label": "Hubraum", "value": "2.198 cm³" },
-      { "label": "Kraftstoff", "value": "Benzin" },
-      { "label": "Motor", "value": "2,2-l-Saugmotor (Z22SE)" },
-      { "label": "Getriebe", "value": "5-Gang-Schaltgetriebe" },
-      { "label": "Karosserie", "value": "Cabriolet by Bertone" },
-      { "label": "Farbe", "value": "Silber" },
-      { "label": "HU", "value": "09/2028; Prüfung ohne festgestellte Mängel" },
-      { "label": "Abgasnorm", "value": "Euro 4" }
-    ],
-    "features": [
-      "Schwarze Lederausstattung",
-      "Klimaanlage",
-      "Handschaltgetriebe",
-      "Leichtmetallräder",
-      "Elektrisch betätigtes Stoffverdeck",
-      "Vier Sitzplätze"
-    ],
-    "sources": [
-      { "label": "Opel/Stellantis: Astra-G-Cabriolet und Bertone", "url": "https://www.media.stellantis.com/it-it/opel/press/una-opel-astra-cabrio-per-tutte-le-stagioni" },
-      { "label": "Opel: Astra-Cabrio-Prospekt 2001", "url": "https://www.opel-team-niedersachsen.de/media/files/Astra-G-2001-02_01079-0101-Cabrio.pdf" },
-      { "label": "Opel/Stellantis: 2,2-Liter-Ecotec im Speedster", "url": "https://www.media.stellantis.com/at-de/opel/press/einer-fur-alle-sinne" }
-    ],
-    "description": "OPEL ASTRA CABRIOLET 2.2 16V – BERTONE\n\nDieses Astra Cabriolet stammt aus einer Zeit, in der Opel seine offenen Modelle gemeinsam mit Bertone entwickelte und im italienischen Grugliasco fertigen ließ. „Erdacht bei Opel. Erschaffen bei Bertone.“ – der damalige Werbesatz bringt den Charakter dieser eigenständigen Cabrio-Karosserie treffend auf den Punkt. Stoffverdeck, niedrige Gürtellinie und die ausgewogenen Proportionen verleihen dem Wagen eine klassische Offenfahrer-Silhouette.\n\nUnter der Haube arbeitet der vom Händler bestätigte Z22SE: ein 2.198 cm³ großer, vollständig aus Aluminium gefertigter 16-Ventil-Saugmotor mit 108 kW (147 PS). Derselbe 2,2-Liter-Ecotec kam seinerzeit auch im Opel Speedster zum Einsatz. Im Astra ist er mit einer Fünfgang-Handschaltung kombiniert – hier als Antrieb eines entspannten, viersitzigen Cabriolets, nicht als Sportwagen-Versprechen.\n\nDas elektrisch betätigte schwarze Stoffverdeck verschwindet in einem eigenen Verdeckkasten hinter den Rücksitzen. Zur Ausstattung dieses Wagens gehören schwarze Ledersitze, Klimaanlage und Leichtmetallräder. Silberne Karosserie und schwarzer Innenraum ergeben eine zurückhaltende, zeitlose Kombination.\n\nBei der Hauptuntersuchung am 28.09.2026 wurden 85.803 km dokumentiert; sie wurde ohne festgestellte Mängel abgeschlossen. Die nächste HU ist im September 2028 fällig. Die Prüfplakette wird laut Prüfbericht bei der Zulassung zugeteilt. Nach Händlerangabe präsentiert sich das Fahrzeug in sehr gutem Allgemeinzustand und rostfrei.\n\nTRANSPARENZ ZUM VERDECK\n\nAn zwei Stellen des Stoffverdecks wurden Nähte instandgesetzt. Diese Reparaturen benennen wir ausdrücklich; Zustand und Funktion können bei der Besichtigung geprüft werden. Die Außenbilder mit neutralem Hintergrund sind entsprechend gekennzeichnet, und Originalansichten finden sich ebenfalls in der Galerie.\n\nMit seinen dokumentierten 85.803 km, dem 147-PS-Saugmotor, Leder und Handschaltung ist dieses Bertone-Cabriolet ein angenehmer Begleiter für kommende Sommer – ein eigenständiges offenes Auto aus einer interessanten Opel-Epoche.\n\nPreis: 5.500 €. Differenzbesteuerung nach § 25a UStG; Umsatzsteuer nicht gesondert ausweisbar. Besichtigung nach Vereinbarung. Bitte prüfen Sie Fahrzeug und Ausstattung vor dem Kauf."
-  },
-  {
     "id": "43147496598656",
     "slug": "volvo-v70-t5-summum-rhd-8656",
     "featured": false,
@@ -1026,6 +963,112 @@
     ],
     "description": "FORD EXPLORER 4.6 V8 EDDIE BAUER 4WD | MODELLJAHR 2010\n\nSchwarz über Pueblo Gold, beiges Leder, acht Zylinder: Dieser Explorer stammt aus dem letzten Baujahr der klassischen Generation mit Leiterrahmen. Erstzulassung 10/2010, 89.000 km. Ein großer amerikanischer Reisewagen mit echter Geländetechnik – und der seltenen Ruhe eines gründlich gewarteten Exemplars.\n\nUnter der Haube arbeitet der 4,6-Liter-Modular-V8 mit drei Ventilen pro Zylinder und variabler Nockenwellensteuerung. 292 SAE-hp entsprechen rund 296 PS. Die sechsstufige 6R80-Wandlerautomatik überträgt die Kraft an den Control-Trac-Allradantrieb mit Geländeuntersetzung. Dazu kommen Einzelradaufhängung, 8,8-Zoll-Hinterachsdifferenzial und AdvanceTrac mit RSC-Wankstabilisierung. Gegenüber den frühen Baujahren ist die spätere 6R80 bereits eine wichtige technische Weiterentwicklung; auch Achs- und Innenraumdetails wurden im Lauf der Baureihe gepflegt.\n\nDie Eddie-Bauer-Ausführung verbindet das robuste Chassis mit einer hellen, großzügigen Kabine: beheizbare Ledersitze, elektrische Sitzverstellung, Holzdekor, Tempomat, Trittbretter, Dachreling und Chromräder. Die schwarze Lackierung mit goldfarbenen Kontrasten gibt diesem Explorer seine unverwechselbare Präsenz.\n\nTECHNISCH FRISCH GEMACHT\n\n• neue Ganzjahresreifen\n• Bremsen erneuert\n• Zündkerzen erneuert\n• umfassender Service einschließlich Automatikgetriebe\n• HU neu bei Verkauf\n\nEin V8-Explorer muss nicht klein oder sparsam wirken. Er überzeugt mit souveränem Drehmoment, Platz und Substanz – hier als spätes Eddie-Bauer-Modell mit nur 89.000 km und einem Wartungsstand, der zum Fahrzeug passt.",
     "url": "https://suchen.mobile.de/fahrzeuge/details.html?id=47516079290464"
+  },
+  {
+    "id": "local-opel-astra-cabriolet-2002-w0l0tgf673b000132",
+    "slug": "opel-astra-cabriolet-2002-silber",
+    "featured": true,
+    "pinned": true,
+    "badge": "HU bis 09/2028 · Cabriolet",
+    "title": "Opel Astra Cabriolet 2.2 16V – Bertone",
+    "text": "EZ 10/2002 · 85.803 km laut HU vom 28.09.2026 · 147 PS · Handschaltung",
+    "price": "5.500 € · differenzbesteuert",
+    "priceMain": "5.500 €",
+    "priceSuffix": "Differenzbesteuerung nach § 25a UStG · Umsatzsteuer nicht gesondert ausweisbar",
+    "image": "/assets/vehicles/opel-astra-cabriolet-2002/01_front_links_neutral-1600.webp",
+    "imageNote": "Bei den ersten sechs Außenaufnahmen wurde der Hintergrund digital neutralisiert. Unbearbeitete Originalansichten und Detailfotos sind ebenfalls in der Galerie enthalten.",
+    "images": [
+      "/assets/vehicles/opel-astra-cabriolet-2002/01_front_links_neutral-1600.webp",
+      "/assets/vehicles/opel-astra-cabriolet-2002/02_seite_links_neutral-1600.webp",
+      "/assets/vehicles/opel-astra-cabriolet-2002/05_front_rechts_neutral-1600.webp",
+      "/assets/vehicles/opel-astra-cabriolet-2002/04_seite_rechts_neutral-1600.webp",
+      "/assets/vehicles/opel-astra-cabriolet-2002/03_heck_links_neutral-1600.webp",
+      "/assets/vehicles/opel-astra-cabriolet-2002/06_heck_rechts_neutral-1600.webp",
+      "/assets/vehicles/opel-astra-cabriolet-2002/pxl_20260928_105458621-1600.webp",
+      "/assets/vehicles/opel-astra-cabriolet-2002/pxl_20260928_105509241_mp-1600.webp",
+      "/assets/vehicles/opel-astra-cabriolet-2002/pxl_20260928_105535135-1600.webp",
+      "/assets/vehicles/opel-astra-cabriolet-2002/pxl_20260928_105550155_mp-1600.webp",
+      "/assets/vehicles/opel-astra-cabriolet-2002/pxl_20260928_105552866_mp-1600.webp",
+      "/assets/vehicles/opel-astra-cabriolet-2002/pxl_20260928_105556812_mp-1600.webp",
+      "/assets/vehicles/opel-astra-cabriolet-2002/pxl_20260928_105600160-1600.webp",
+      "/assets/vehicles/opel-astra-cabriolet-2002/pxl_20260928_105655617-1600.webp",
+      "/assets/vehicles/opel-astra-cabriolet-2002/pxl_20260928_105704863_mp-1600.webp",
+      "/assets/vehicles/opel-astra-cabriolet-2002/pxl_20260928_105709187-1600.webp",
+      "/assets/vehicles/opel-astra-cabriolet-2002/pxl_20260928_111118510_mp-1600.webp",
+      "/assets/vehicles/opel-astra-cabriolet-2002/pxl_20260928_111025290-1600.webp",
+      "/assets/vehicles/opel-astra-cabriolet-2002/pxl_20260928_111029426-1600.webp",
+      "/assets/vehicles/opel-astra-cabriolet-2002/pxl_20260928_111039422-1600.webp"
+    ],
+    "specs": [
+      {
+        "label": "Erstzulassung",
+        "value": "10/2002"
+      },
+      {
+        "label": "Kilometerstand",
+        "value": "85.803 km"
+      },
+      {
+        "label": "Leistung",
+        "value": "108 kW (147 PS)"
+      },
+      {
+        "label": "Hubraum",
+        "value": "2.198 cm³"
+      },
+      {
+        "label": "Kraftstoff",
+        "value": "Benzin"
+      },
+      {
+        "label": "Motor",
+        "value": "2,2-l-Saugmotor (Z22SE)"
+      },
+      {
+        "label": "Getriebe",
+        "value": "5-Gang-Schaltgetriebe"
+      },
+      {
+        "label": "Karosserie",
+        "value": "Cabriolet by Bertone"
+      },
+      {
+        "label": "Farbe",
+        "value": "Silber"
+      },
+      {
+        "label": "HU",
+        "value": "09/2028; Prüfung ohne festgestellte Mängel"
+      },
+      {
+        "label": "Abgasnorm",
+        "value": "Euro 4"
+      }
+    ],
+    "features": [
+      "Schwarze Lederausstattung",
+      "Klimaanlage",
+      "Handschaltgetriebe",
+      "Leichtmetallräder",
+      "Elektrisch betätigtes Stoffverdeck",
+      "Vier Sitzplätze"
+    ],
+    "sources": [
+      {
+        "label": "Opel/Stellantis: Astra-G-Cabriolet und Bertone",
+        "url": "https://www.media.stellantis.com/it-it/opel/press/una-opel-astra-cabrio-per-tutte-le-stagioni"
+      },
+      {
+        "label": "Opel: Astra-Cabrio-Prospekt 2001",
+        "url": "https://www.opel-team-niedersachsen.de/media/files/Astra-G-2001-02_01079-0101-Cabrio.pdf"
+      },
+      {
+        "label": "Opel/Stellantis: 2,2-Liter-Ecotec im Speedster",
+        "url": "https://www.media.stellantis.com/at-de/opel/press/einer-fur-alle-sinne"
+      }
+    ],
+    "description": "OPEL ASTRA CABRIOLET 2.2 16V – BERTONE\n\nDieses Astra Cabriolet stammt aus einer Zeit, in der Opel seine offenen Modelle gemeinsam mit Bertone entwickelte und im italienischen Grugliasco fertigen ließ. „Erdacht bei Opel. Erschaffen bei Bertone.“ – der damalige Werbesatz bringt den Charakter dieser eigenständigen Cabrio-Karosserie treffend auf den Punkt. Stoffverdeck, niedrige Gürtellinie und die ausgewogenen Proportionen verleihen dem Wagen eine klassische Offenfahrer-Silhouette.\n\nUnter der Haube arbeitet der vom Händler bestätigte Z22SE: ein 2.198 cm³ großer, vollständig aus Aluminium gefertigter 16-Ventil-Saugmotor mit 108 kW (147 PS). Derselbe 2,2-Liter-Ecotec kam seinerzeit auch im Opel Speedster zum Einsatz. Im Astra ist er mit einer Fünfgang-Handschaltung kombiniert – hier als Antrieb eines entspannten, viersitzigen Cabriolets, nicht als Sportwagen-Versprechen.\n\nDas elektrisch betätigte schwarze Stoffverdeck verschwindet in einem eigenen Verdeckkasten hinter den Rücksitzen. Zur Ausstattung dieses Wagens gehören schwarze Ledersitze, Klimaanlage und Leichtmetallräder. Silberne Karosserie und schwarzer Innenraum ergeben eine zurückhaltende, zeitlose Kombination.\n\nBei der Hauptuntersuchung am 28.09.2026 wurden 85.803 km dokumentiert; sie wurde ohne festgestellte Mängel abgeschlossen. Die nächste HU ist im September 2028 fällig. Die Prüfplakette wird laut Prüfbericht bei der Zulassung zugeteilt. Nach Händlerangabe präsentiert sich das Fahrzeug in sehr gutem Allgemeinzustand und rostfrei.\n\nTRANSPARENZ ZUM VERDECK\n\nAn zwei Stellen des Stoffverdecks wurden Nähte instandgesetzt. Diese Reparaturen benennen wir ausdrücklich; Zustand und Funktion können bei der Besichtigung geprüft werden. Die Außenbilder mit neutralem Hintergrund sind entsprechend gekennzeichnet, und Originalansichten finden sich ebenfalls in der Galerie.\n\nMit seinen dokumentierten 85.803 km, dem 147-PS-Saugmotor, Leder und Handschaltung ist dieses Bertone-Cabriolet ein angenehmer Begleiter für kommende Sommer – ein eigenständiges offenes Auto aus einer interessanten Opel-Epoche.\n\nPreis: 5.500 €. Differenzbesteuerung nach § 25a UStG; Umsatzsteuer nicht gesondert ausweisbar. Besichtigung nach Vereinbarung. Bitte prüfen Sie Fahrzeug und Ausstattung vor dem Kauf.",
+    "url": ""
   },
   {
     "id": "local-elysion-prestige-rr5-2008",
