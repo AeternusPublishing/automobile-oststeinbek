@@ -90,6 +90,11 @@ eleventyComputed:
     <div class="detail-back">
       <a class="btn btn-outline" href="{{ '/fahrzeugangebote/' | url }}">← Zurück zur Fahrzeugübersicht</a>
     </div>
+    <div class="listing-footer muted">
+      <p><strong>Fahrzeugstandort:</strong> {{ site.vehicleLocation.street }}, {{ site.vehicleLocation.zip }} {{ site.vehicleLocation.city }}. Besichtigungen und Probefahrten bitte nach Terminvereinbarung.</p>
+      <p>Unseren gesamten Fahrzeugbestand finden Sie auf unserer <a href="{{ '/fahrzeugangebote/' | url }}">Homepage</a>.</p>
+      <p><strong>Hinweis:</strong> Alle Angaben erfolgen nach bestem Wissen. Irrtümer, Eingabe- und Übertragungsfehler, Änderungen sowie Zwischenverkauf bleiben vorbehalten. Bitte prüfen Sie für Sie wesentliche Fahrzeugdaten und Ausstattungsmerkmale vor Vertragsschluss am Fahrzeug. Maßgeblich ist die schriftliche Vereinbarung.</p>
+    </div>
   </div>
 </section>
 

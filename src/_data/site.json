@@ -4,6 +4,11 @@
   "description": "Automobile Oststeinbek – hochwertige Gebrauchtwagen und junge Klassiker im Osten Hamburgs. Verkauf, Meisterwerkstatt, Garantie und europaweite Auslieferung.",
   "url": "https://www.automobile-oststeinbek.de",
   "since": 2020,
+  "vehicleLocation": {
+    "street": "Bundesstraße 39",
+    "zip": "21493",
+    "city": "Elmenhorst"
+  },
   "contact": {
     "street": "Gewerbering 8",
     "zip": "22113",
