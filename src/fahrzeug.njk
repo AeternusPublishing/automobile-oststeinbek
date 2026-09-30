@@ -39,7 +39,11 @@ eleventyComputed:
         {% if v.description %}
         <div class="detail-desc">
           <h2>Beschreibung</h2>
+          {% if v.id == "47516079290464" %}
+          {% include "vehicles/explorer-schwarz.njk" %}
+          {% else %}
           {% for para in v.description.split("\n\n") %}{% if para.length < 42 and para == (para | upper) and (para | lower) != para %}<h3 class="desc-h">{{ para }}</h3>{% else %}<p class="muted">{{ para | escape | replace("\n", "<br>") | safe }}</p>{% endif %}{% endfor %}
+          {% endif %}
           {% if v.sources and v.sources.length %}
           <h3 class="desc-h">Quellen zur Modellgeschichte</h3>
           <ul class="feature-list">
