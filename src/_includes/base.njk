@@ -33,7 +33,7 @@
   {%- elif "/fahrzeuge/" in page.url and lcpImage %}
   <link rel="preload" as="image" href="{{ lcpImage }}" imagesrcset="{{ lcpImage | imgRule(1024) }} 1024w, {{ lcpImage }} 1600w" imagesizes="(max-width: 980px) 94vw, 58vw" fetchpriority="high">
   {%- endif %}
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}?v=20261019-kundenbilder">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
