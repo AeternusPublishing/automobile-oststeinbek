@@ -32,6 +32,7 @@
   "nav": [
     { "text": "Start", "url": "/" },
     { "text": "Über uns", "url": "/ueber-uns/" },
+    { "text": "Kundenstimmen", "url": "/kundenstimmen/" },
     { "text": "Fahrzeuge", "url": "/fahrzeugangebote/" },
     { "text": "JDM-Import", "url": "/jdm-import/" },
     { "text": "Leistungen", "url": "/dienstleistungen/" },

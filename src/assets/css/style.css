@@ -306,6 +306,39 @@ a.trust-item:hover .trust-label { color: var(--accent-hover); }
   .contact-bar a:active { background: var(--bg-3); }
 }
 
+/* Kundenstimmen: ruhige, vertikale Lesefolge im bestehenden Markendesign. */
+.customer-intro { background: radial-gradient(ellipse at 85% 0%, rgba(201,162,75,.12), transparent 65%); border-bottom: 1px solid var(--border); }
+.customer-intro h1 { max-width: 21ch; }
+.customer-intro .lead { margin-bottom: 2rem; }
+.customer-container { max-width: 1040px; }
+.customer-list { margin-top: 2.5rem; }
+.customer-story { display: grid; grid-template-columns: 160px minmax(0,1fr); gap: 2rem; padding: 2.4rem 0; border-top: 1px solid var(--border); }
+.customer-story-label { display: flex; flex-direction: column; align-items: flex-start; gap: .8rem; }
+.customer-number { font-family: var(--disp); font-size: 2.8rem; line-height: 1; color: var(--accent-deep); }
+.customer-story .badge { margin: 0; }
+.customer-story h3 { color: var(--muted); font-family: var(--sans); font-size: .85rem; line-height: 1.5; letter-spacing: .02em; font-weight: 600; margin-bottom: .8rem; }
+.customer-quotation { margin: 0; }
+.customer-quotation blockquote { margin: 0; font-family: var(--disp); font-size: clamp(1.35rem, 2.8vw, 1.85rem); line-height: 1.45; }
+.customer-quotation blockquote p { margin-bottom: 1rem; }
+.customer-quotation figcaption, .customer-source { color: var(--muted); font-size: .8rem; }
+.customer-mobile-list { display: grid; gap: 1rem; margin-top: 2rem; }
+.customer-mobile-card { background: var(--bg-2); border: 1px solid var(--border); border-left: 3px solid var(--accent-deep); padding: clamp(1.3rem, 3vw, 2rem); border-radius: var(--radius); }
+.customer-review-meta { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1rem; color: var(--muted); font-size: .8rem; margin-bottom: 1rem; }
+.customer-mobile-card h3 { line-height: 1.25; }
+.customer-mobile-card p { color: var(--muted); max-width: 75ch; margin: .8rem 0; }
+.customer-originals { margin: 2rem 0 0; }
+#rueckmeldungen, #mobile-bewertungen { scroll-margin-top: 100px; }
+@media (min-width: 861px) and (max-width: 1100px) {
+  .site-nav, .site-nav ul { gap: .8rem; }
+  .site-nav a { font-size: .84rem; }
+}
+@media (max-width: 600px) {
+  .customer-story { grid-template-columns: minmax(0,1fr); gap: 1rem; padding: 1.8rem 0; }
+  .customer-story-label { flex-direction: row; align-items: center; gap: 1rem; }
+  .customer-number { font-size: 1.8rem; }
+  .customer-intro .btn-row .btn { width: 100%; justify-content: center; }
+}
+
 /* ===== Detailseiten-Politur ===== */
 .detail-price { font-size: 2.6rem; letter-spacing: .01em; }
 .avail { display: inline-flex; align-items: center; gap: .5rem; font-size: .85rem; color: var(--muted); margin: .1rem 0 0; }

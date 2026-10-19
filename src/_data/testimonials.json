@@ -1,0 +1,46 @@
+{
+  "personal": [
+    {
+      "vehicle": "Toyota Crown",
+      "title": "Freude am besonderen Fahrzeug",
+      "quote": "Besten Dank für die unproblematische Abwicklung. Ich habe grosse Freude an dem schönen Wagen, den ich gerade artgemäss im Linksverkehr in Irland bewegen darf."
+    },
+    {
+      "vehicle": "Honda Odyssey",
+      "title": "Älter geworden. Besonders geblieben.",
+      "quote": "Es macht wirklich Spaß, ein 17 Jahre altes Auto zu fahren, das sich trotzdem wie neu lenken und fahren lässt."
+    },
+    {
+      "vehicle": "Nissan Gloria",
+      "title": "Eleganz trifft Fahrkomfort",
+      "quote": "Die Kombination aus schlichter Eleganz, souveränem Antrieb und ausgezeichnetem Fahrkomfort sind faszinierend."
+    },
+    {
+      "vehicle": "Volvo XC60",
+      "title": "Gut angekommen. Gerne unterwegs.",
+      "quote": "Mir und dem Auto geht es sehr gut. Wir haben schon ein paar Runden gedreht und der Motor macht richtig Spaß."
+    }
+  ],
+  "mobile": [
+    {
+      "title": "Ein Japan-Import ohne Verkaufsdruck",
+      "text": "Ein Käufer lobt die geduldige Beratung, die transparente Kommunikation und die gründliche Vorbereitung in der eigenen Werkstatt. Auch Zulassung und technische Prüfung im Ausland gelangen.",
+      "rating": 5
+    },
+    {
+      "title": "Vertrauen auch aus der Ferne",
+      "text": "Eine Rückmeldung beschreibt den Kauf ohne vorherige Besichtigung: ausführliche Auskünfte, vorab zugesandte Papiere und eine Abholung, bei der sich das Vertrauen bestätigte.",
+      "rating": 5
+    },
+    {
+      "title": "So vorbereitet wie beschrieben",
+      "text": "Ein Käufer hebt den zutreffend beschriebenen Fahrzeugzustand, die fachkundige Beratung und die gute Verkaufsvorbereitung hervor. Die Zulassung des Japan-Imports verlief problemlos.",
+      "rating": 5
+    },
+    {
+      "title": "Auch nach dem Kauf ansprechbar",
+      "text": "Ein Käufer berichtet von offen angesprochenen Schwachstellen, einem Fahrzeug entsprechend dem Inserat und einer professionellen Abwicklung. Auch spätere Fragen wurden beantwortet.",
+      "rating": 5
+    }
+  ]
+}

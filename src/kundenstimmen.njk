@@ -1,0 +1,73 @@
+---
+layout: base.njk
+title: Kundenstimmen
+description: "Erfahrungen mit Automobile Oststeinbek: persönliche Rückmeldungen nach dem Fahrzeugkauf und ausgewählte Bewertungen auf mobile.de, anonymisiert zusammengestellt."
+ogImage: https://www.automobile-oststeinbek.de/assets/logo.svg
+---
+<section class="section customer-intro">
+  <div class="container">
+    <p class="eyebrow">Kundenstimmen</p>
+    <h1>Nach dem Kauf geht<br>die Geschichte weiter.</h1>
+    <p class="lead">Die ersten Fahrten, die Freude am besonderen Auto und ein gutes Gefühl bei der Übergabe: Hier erzählen Kunden, wie sie ihren Fahrzeugkauf bei uns erlebt haben.</p>
+    <div class="btn-row">
+      <a class="btn" href="#rueckmeldungen">Persönliche Rückmeldungen</a>
+      <a class="btn btn-outline" href="#mobile-bewertungen">Stimmen auf mobile.de</a>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight" id="rueckmeldungen" aria-labelledby="personal-title">
+  <div class="container customer-container">
+    <p class="eyebrow">Aus unserem Postfach</p>
+    <h2 id="personal-title">Ein paar Zeilen, die bleiben.</h2>
+    <p class="lead">Auszüge aus persönlichen E-Mails nach dem Kauf. Die Zitate sind im Wortlaut übernommen; Namen und Kontaktdaten veröffentlichen wir nicht.</p>
+    <div class="customer-list">
+      {% for review in testimonials.personal %}
+      <article class="customer-story">
+        <div class="customer-story-label">
+          <span class="customer-number" aria-hidden="true">0{{ loop.index }}</span>
+          <span class="badge">{{ review.vehicle }}</span>
+        </div>
+        <div>
+          <h3>{{ review.title }}</h3>
+          <figure class="customer-quotation">
+            <blockquote><p>„{{ review.quote }}“</p></blockquote>
+            <figcaption>Kundenrückmeldung per E-Mail · anonymisiert</figcaption>
+          </figure>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section reviews-band" id="mobile-bewertungen" aria-labelledby="mobile-title">
+  <div class="container customer-container">
+    <p class="eyebrow">Öffentlich nachlesbar</p>
+    <h2 id="mobile-title">Ausgewählte Stimmen auf mobile.de</h2>
+    <p class="lead">Vier positive Bewertungen aus unserem Händlerprofil, gekürzt und sinngemäß zusammengefasst. Die Auswahl zeigt einzelne Erfahrungen und bildet nicht alle Bewertungen ab.</p>
+    <div class="customer-mobile-list">
+      {% for review in testimonials.mobile %}
+      <article class="customer-mobile-card">
+        <div class="customer-review-meta"><span class="stars" aria-label="{{ review.rating }} von 5 Sternen">★★★★★</span><span>mobile.de · Fahrzeug gekauft</span></div>
+        <h3>{{ review.title }}</h3>
+        <p>{{ review.text }}</p>
+        <span class="customer-source">Sinngemäße Zusammenfassung · anonymisiert</span>
+      </article>
+      {% endfor %}
+    </div>
+    <p class="customer-originals"><a class="btn btn-outline" href="{{ site.reviews.url }}" target="_blank" rel="noopener noreferrer">Alle Bewertungen im Original auf mobile.de ↗</a></p>
+  </div>
+</section>
+
+<section class="section cta-band">
+  <div class="container center">
+    <p class="eyebrow">Ihr nächstes Kapitel</p>
+    <h2>Ein besonderes Auto beginnt<br>mit einem guten Gespräch.</h2>
+    <p class="lead">Entdecken Sie unsere aktuelle Auswahl oder vereinbaren Sie einen persönlichen Besichtigungstermin.</p>
+    <div class="btn-row">
+      <a class="btn" href="{{ '/fahrzeugangebote/' | url }}">Fahrzeuge entdecken</a>
+      <a class="btn btn-outline" href="{{ '/kontakt/' | url }}">Kontakt aufnehmen</a>
+    </div>
+  </div>
+</section>
