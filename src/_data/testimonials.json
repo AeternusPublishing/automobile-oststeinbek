@@ -2,21 +2,37 @@
   "personal": [
     {
       "vehicle": "Toyota Crown",
+      "imageSlug": "toyota-crown",
+      "imageHeight": 412,
+      "firstRegistration": "03/1997",
+      "saleMileage": "7.300 km",
       "title": "Freude am besonderen Fahrzeug",
       "quote": "Besten Dank für die unproblematische Abwicklung. Ich habe grosse Freude an dem schönen Wagen, den ich gerade artgemäss im Linksverkehr in Irland bewegen darf."
     },
     {
       "vehicle": "Honda Odyssey",
+      "imageSlug": "honda-odyssey",
+      "imageHeight": 438,
+      "firstRegistration": "03/2009",
+      "saleMileage": "71.000 km",
       "title": "Älter geworden. Besonders geblieben.",
       "quote": "Es macht wirklich Spaß, ein 17 Jahre altes Auto zu fahren, das sich trotzdem wie neu lenken und fahren lässt."
     },
     {
       "vehicle": "Nissan Gloria",
+      "imageSlug": "nissan-gloria",
+      "imageHeight": 375,
+      "firstRegistration": "02/1997",
+      "saleMileage": "34.500 km",
       "title": "Eleganz trifft Fahrkomfort",
       "quote": "Die Kombination aus schlichter Eleganz, souveränem Antrieb und ausgezeichnetem Fahrkomfort sind faszinierend."
     },
     {
       "vehicle": "Volvo XC60",
+      "imageSlug": "volvo-xc60",
+      "imageHeight": 484,
+      "firstRegistration": "12/2010",
+      "saleMileage": "49.500 km",
       "title": "Gut angekommen. Gerne unterwegs.",
       "quote": "Mir und dem Auto geht es sehr gut. Wir haben schon ein paar Runden gedreht und der Motor macht richtig Spaß."
     }

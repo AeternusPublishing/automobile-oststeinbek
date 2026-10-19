@@ -25,10 +25,26 @@ ogImage: https://www.automobile-oststeinbek.de/assets/logo.svg
       {% for review in testimonials.personal %}
       <article class="customer-story">
         <div class="customer-story-label">
+          <div class="customer-story-heading">
           <span class="customer-number" aria-hidden="true">0{{ loop.index }}</span>
           <span class="badge">{{ review.vehicle }}</span>
+          </div>
+          {% if review.imageSlug %}
+          <figure class="customer-car-photo">
+            <img src="{{ ('/assets/kundenstimmen/' + review.imageSlug + '-1200.webp') | url }}"
+                 srcset="{{ ('/assets/kundenstimmen/' + review.imageSlug + '-640.webp') | url }} 640w, {{ ('/assets/kundenstimmen/' + review.imageSlug + '-1200.webp') | url }} 1200w"
+                 sizes="(max-width: 700px) 92vw, 440px"
+                 alt="{{ review.vehicle }} – Seitenansicht des verkauften Fahrzeugs"
+                 width="1200" height="{{ review.imageHeight }}" loading="lazy" decoding="async">
+            <figcaption>Fahrzeugfoto aus unserem Verkaufsarchiv</figcaption>
+          </figure>
+          {% endif %}
+          <dl class="customer-car-specs">
+            {% if review.firstRegistration %}<div><dt>Erstzulassung</dt><dd>{{ review.firstRegistration }}</dd></div>{% endif %}
+            {% if review.saleMileage %}<div><dt>Laufleistung beim Verkauf</dt><dd>{{ review.saleMileage }}</dd></div>{% endif %}
+          </dl>
         </div>
-        <div>
+        <div class="customer-story-text">
           <h3>{{ review.title }}</h3>
           <figure class="customer-quotation">
             <blockquote><p>„{{ review.quote }}“</p></blockquote>

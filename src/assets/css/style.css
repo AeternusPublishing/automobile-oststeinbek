@@ -312,8 +312,15 @@ a.trust-item:hover .trust-label { color: var(--accent-hover); }
 .customer-intro .lead { margin-bottom: 2rem; }
 .customer-container { max-width: 1040px; }
 .customer-list { margin-top: 2.5rem; }
-.customer-story { display: grid; grid-template-columns: 160px minmax(0,1fr); gap: 2rem; padding: 2.4rem 0; border-top: 1px solid var(--border); }
+.customer-story { display: grid; grid-template-columns: minmax(0,.95fr) minmax(0,1.05fr); gap: clamp(1.5rem,4vw,2.5rem); padding: 2.4rem 0; border-top: 1px solid var(--border); align-items: center; }
 .customer-story-label { display: flex; flex-direction: column; align-items: flex-start; gap: .8rem; }
+.customer-story-heading { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; }
+.customer-car-photo { width: 100%; margin: .3rem 0 0; }
+.customer-car-photo img { width: 100%; height: auto; border: 1px solid var(--border); border-radius: var(--radius); }
+.customer-car-photo figcaption { margin-top: .4rem; color: var(--muted); font-size: .72rem; }
+.customer-car-specs { display: grid; grid-template-columns: auto auto; gap: .8rem 1.6rem; width: 100%; margin: .3rem 0 0; }
+.customer-car-specs dt { color: var(--muted); font-size: .73rem; }
+.customer-car-specs dd { margin: .15rem 0 0; font-size: 1rem; font-weight: 700; color: var(--text); }
 .customer-number { font-family: var(--disp); font-size: 2.8rem; line-height: 1; color: var(--accent-deep); }
 .customer-story .badge { margin: 0; }
 .customer-story h3 { color: var(--muted); font-family: var(--sans); font-size: .85rem; line-height: 1.5; letter-spacing: .02em; font-weight: 600; margin-bottom: .8rem; }
@@ -332,9 +339,9 @@ a.trust-item:hover .trust-label { color: var(--accent-hover); }
   .site-nav, .site-nav ul { gap: .8rem; }
   .site-nav a { font-size: .84rem; }
 }
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .customer-story { grid-template-columns: minmax(0,1fr); gap: 1rem; padding: 1.8rem 0; }
-  .customer-story-label { flex-direction: row; align-items: center; gap: 1rem; }
+  .customer-story-label { flex-direction: column; align-items: stretch; gap: .8rem; }
   .customer-number { font-size: 1.8rem; }
   .customer-intro .btn-row .btn { width: 100%; justify-content: center; }
 }
