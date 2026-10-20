@@ -2,7 +2,7 @@
   {
     "id": "43147496598656",
     "slug": "volvo-v70-t5-summum-rhd-8656",
-    "featured": false,
+    "featured": true,
     "badge": "RHD · Top Zustand",
     "title": "Volvo V70 T5 Summum *RHD*",
     "text": "Unfallfrei · EZ 07/2011 · 74.900 km · 241 PS · Benzin",
@@ -392,144 +392,6 @@
     "url": "https://suchen.mobile.de/fahrzeuge/details.html?id=449122108"
   },
   {
-    "id": "459276693",
-    "slug": "lexus-gs-350-rhd",
-    "featured": true,
-    "badge": "JDM · RHD · Neuwertig",
-    "title": "Lexus GS 350 *RHD*",
-    "text": "Unfallfrei · EZ 06/2006 · 22.000 km · 315 PS · Benzin",
-    "price": "14.990 €¹",
-    "image": "https://img.classistatic.de/api/v1/mo-prod/images/c9/c9784e6b-1d21-4817-ad78-77ef753b48c9?rule=mo-1600.jpg",
-    "images": [
-      "https://img.classistatic.de/api/v1/mo-prod/images/c9/c9784e6b-1d21-4817-ad78-77ef753b48c9?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/b0/b0329a42-ddc9-4ca1-96d9-0d0eedc7626b?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/67/674c82ea-846e-4a41-8937-7d79d64a58c7?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/84/84a62601-a187-4bee-8b89-4ecf4293006d?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/e9/e99541b9-e3b4-4ab2-9364-92d2dda1e182?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/e1/e1d4ffda-35c1-4777-a3a1-f6649930a4a6?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/4e/4e3b97ae-4229-4308-a560-3088be3c7493?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/c0/c0a1741a-c275-45d8-9d2b-aa4f275d0382?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/27/27a605aa-0e5d-4f17-864f-639e7cbd00c1?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/35/35940a5b-80a7-4bf1-a96d-17a3e735cbab?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/6c/6c24f8b2-8251-49f8-9640-502002bf1fed?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/6b/6bba5f19-aed1-4a3f-97a5-28b10f1fd1d4?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/55/5577e85b-5d5d-47d3-8769-11d0d35b9770?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/b1/b1d2e406-8132-43ba-87e8-6ca5aa84655c?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/c7/c79139d7-516c-450d-a8b4-61ffb35803d4?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/68/689940b3-d57d-4a95-be18-631503f83523?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/20/208aad08-1af3-4783-8aa1-81bb21b5897b?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/66/660d404e-2d0a-4ca9-922e-116a71415cf4?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/29/2994940e-ff58-4f45-af1e-7855f80e9200?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/64/6423db46-0016-4bbf-9d6a-29a0d016eea0?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/b2/b24b6ed0-41e8-4bbe-9cbe-fc536b9fbde0?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/5b/5bd338c6-c4f5-4573-bb0d-3bc60ae3d5e1?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/b0/b0b4706b-6e18-430c-89f1-2d7fdcc5297e?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/da/daf458b3-4cb6-4f57-b3b2-bf9fecf1f7ec?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/09/0900db17-4197-4edd-a1c1-e66346111cad?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/83/83a563b1-6ea5-47c8-9b5d-4a3b17915963?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/64/646ffee1-71f6-4aaf-bf13-45a00e249839?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/c8/c89ae92d-b2df-47d3-8db5-5b8848df1bdc?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/bc/bc4ab93b-71a0-467c-b31d-64ab6224fc3d?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/bb/bbdc4a5a-93a1-4be4-b53d-d94b466aef43?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/b3/b3bfc054-31fd-468f-a1b8-8fe29c58f2d5?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/c2/c2010792-06f0-408d-9e06-cce45bc6426b?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/58/58bb2cbe-222a-43cd-9dd5-4eade03f820e?rule=mo-1600.jpg"
-    ],
-    "specs": [
-      {
-        "label": "Erstzulassung",
-        "value": "06/2006"
-      },
-      {
-        "label": "Kilometerstand",
-        "value": "22.000 km"
-      },
-      {
-        "label": "Leistung",
-        "value": "232 kW (315 PS)"
-      },
-      {
-        "label": "Hubraum",
-        "value": "3.490 cm³"
-      },
-      {
-        "label": "Getriebe",
-        "value": "Automatik"
-      },
-      {
-        "label": "Kraftstoff",
-        "value": "Benzin"
-      },
-      {
-        "label": "Farbe",
-        "value": "White Pearl"
-      },
-      {
-        "label": "Innenausstattung",
-        "value": "Leder, Schwarz"
-      },
-      {
-        "label": "Sitze",
-        "value": "5"
-      },
-      {
-        "label": "Vorbesitzer",
-        "value": "1"
-      },
-      {
-        "label": "Schadstoffklasse",
-        "value": "Euro 4"
-      },
-      {
-        "label": "HU",
-        "value": "Neu bei Übergabe"
-      },
-      {
-        "label": "Scheckheftgepflegt",
-        "value": "Ja"
-      },
-      {
-        "label": "Unfallfrei",
-        "value": "Ja"
-      }
-    ],
-    "features": [
-      "Abblendender Innenspiegel",
-      "ABS",
-      "Alarmanlage",
-      "Armlehne",
-      "Bordcomputer",
-      "CD-Wechsler",
-      "Einparkhilfe hinten",
-      "Einparkhilfe vorn",
-      "Elektr. Außenspiegel",
-      "Elektr. Fensterheber",
-      "Elektr. Heckklappe",
-      "Elektr. Sitzverstellung",
-      "ESP",
-      "Isofix",
-      "Kollisionswarner",
-      "Lederlenkrad",
-      "Leichtmetallfelgen",
-      "Lichtsensor",
-      "Lordosenstütze",
-      "Multifunktionslenkrad",
-      "Nebelscheinwerfer",
-      "Rückfahrkamera",
-      "Schaltwippen",
-      "Schiebedach",
-      "Servolenkung",
-      "Sitzheizung",
-      "Soundsystem",
-      "Sportpaket",
-      "Wegfahrsperre",
-      "Xenon-Scheinwerfer",
-      "Zentralverriegelung"
-    ],
-    "description": "2GR-FSE · D-4S · 3,5-Liter-V6 · 315 PS · 22.000 km · GRS191 · Tahara\nMit der dritten Generation des GS trat Lexus 2005 auch auf dem japanischen Heimatmarkt unter eigenem Namen an. Der Wagen gehörte damit zu jener ersten Generation von Modellen, mit denen Toyota Lexus in Japan von einer Exportmarke zu einer eigenständigen Premiummarke machte. Chefingenieur Shigetoshi Miyoshi erklärte bei der Vorstellung sinngemäß, man habe nicht versucht, schlicht einen besseren BMW 5er zu bauen; Lexus wolle eine eigenständige technische Antwort geben. Dieser GS 350, Typ GRS191, zeigt ziemlich genau, was damit gemeint war.\nSein Motor ist dafür beinahe ein Lehrstück. Der 2GR-FSE schöpft aus 3.456 cm³ 232 kW beziehungsweise 315 PS und 377 Nm. Entscheidend sind jedoch die Buchstaben hinter dem Grundmotor. FSE steht für die aufwendigere, auf Direkteinspritzung ausgelegte Variante der GR-Familie; Lexus kombinierte sie mit D-4S – Direct injection 4-stroke gasoline engine Superior version. Dabei besitzt jeder Zylinder nicht nur einen Hochdruck-Direkteinspritzer im Brennraum, sondern zusätzlich einen klassischen Saugrohreinspritzer. Je nach Last, Drehzahl und Temperatur arbeitet der Motor mit einer oder beiden Einspritzarten.\nDiese Lösung ist technisch erheblich raffinierter, als der unscheinbare Begriff „3,5-Liter-V6“ vermuten lässt. Die Saugrohreinspritzung unterstützt eine saubere Gemischbildung und hält die Einlassventile frei; die Direkteinspritzung erlaubt unter hoher Last eine präzisere Dosierung und innere Kühlung des Brennraums. Hinzu kommt Dual VVT-i, also eine kontinuierliche Verstellung sowohl der Einlass- als auch der Auslassnockenwellen. Das Ergebnis ist kein aufgeladener Motor mit schlagartig einsetzendem Drehmoment, sondern ein großer Saug-V6, der vom Leerlauf bis in hohe Drehzahlen beinahe ohne Bruch durchzieht.\nDie Leistung gelangt über die sechsstufige Aisin A760E-Wandlerautomatik an die Hinterachse. Auch das gehört zur Grundidee des GS: längs eingebauter Motor, Hinterradantrieb, klassische Proportionen – allerdings ausgeführt mit jener beinahe pedantischen japanischen Präzision, die Lexus in dieser Epoche kultivierte. Gebaut wurde der Wagen im Toyota-Werk Tahara, einem Werk, das innerhalb des Konzerns gerade für hochwertige Lexus-Modelle und besonders enge Fertigungstoleranzen bekannt wurde. Toyota führt für den japanischen GRS191 ausdrücklich den 2GR-FSE, Hinterradantrieb und Tahara als Produktionsstätte.\nDieses Exemplar trägt den Dreischicht-Perleffektlack 077 Pearl White über schwarzem Echtleder und klassischen Holzapplikationen. Es ist eine jener Lexus-Kombinationen, die nicht um modische Wirkung bitten und deshalb erstaunlich langsam altern. Elektrische Sitze, Klimaautomatik, das originale Navigationssystem und Rückfahrkamera ergänzen den Innenraum; wichtiger ist jedoch sein Zustand. 22.000 Kilometer sind dokumentiert. Fahrersitz, Lenkrad, Holz und Bedienelemente zeigen entsprechend wenig von dem Verschleiß, der bei einem beinahe zwei Jahrzehnte alten GS normalerweise längst selbstverständlich wäre. Die Ausgangsdaten des Fahrzeugs entsprechen der bisherigen Fahrzeugbeschreibung.\nTECHNISCHE MASSNAHMEN AN DIESEM FAHRZEUG\n\n- frisches Motoröl\n- neue Zündkerzen\n- neue Batterie\n- Fahrzeug technisch durchgesehen\n- dokumentierte Laufleistung von ca. 22.000 km\n- nach vorliegenden Angaben rostfrei\n- nach vorliegenden Angaben unfallfrei\n- vollständiger, unverbastelter Originalcharakter\nMan kann den GS 350 auf 315 PS reduzieren. Man übersieht dann allerdings das Wesentliche: 2GR-FSE, zwei Einspritzsysteme je Zylinder, Dual VVT-i, Aisin-Wandlerautomatik und Hinterradantrieb bilden eine technische Einheit, die Lexus heute in dieser Form nicht mehr baut. Dieser hier hat erst 22.000 Kilometer hinter sich. Für jemanden, der verstehen möchte, weshalb die großen japanischen Saugmotor-Limousinen inzwischen eine eigene Anhängerschaft besitzen, ist das vermutlich die kürzeste Erklärung.\nFahrzeugstandort: Bundesstraße 39, 21493 Elmenhorst. Besichtigungen und Probefahrten bitte nach Terminvereinbarung.\nUnseren gesamten Fahrzeugbestand finden Sie auf unserer Homepage: https://www.automobile-oststeinbek.de/fahrzeugangebote/\nHinweis: Alle Angaben erfolgen nach bestem Wissen. Irrtümer, Eingabe- und Übertragungsfehler, Änderungen sowie Zwischenverkauf bleiben vorbehalten. Bitte prüfen Sie für Sie wesentliche Fahrzeugdaten und Ausstattungsmerkmale vor Vertragsschluss am Fahrzeug. Maßgeblich ist die schriftliche Vereinbarung.",
-    "url": "https://suchen.mobile.de/fahrzeuge/details.html?id=459276693"
-  },
-  {
     "id": "460466366",
     "slug": "ford-explorer-v8-eddie-bauer-weiss-2006",
     "featured": false,
@@ -750,6 +612,96 @@
     ],
     "description": "Ford Explorer 4.6 V8 Eddie Bauer 4WD\n\n4.6 Modular V8 · 296 PS · 6R80 · Control Trac 4WD · 89.000 km · Modelljahr 2010 · 7-Sitzer\n\nDieser Explorer stammt aus dem letzten Modelljahr der klassischen, rahmenbasierten Explorer-Generation. Danach wechselte Ford auf eine selbsttragende Konstruktion und schlug technisch einen völlig neuen Weg ein. Der 2010er Eddie Bauer steht damit am Ende jener ursprünglichen amerikanischen Explorer-Linie – allerdings in ihrer technisch ausgereiftesten Form.\n\nUnter der Haube arbeitet Fords bewährter 4.6 Modular V8 in der 3-Ventil-Ausführung. Der 4.601-cm³-Saugmotor besitzt Aluminiumzylinderköpfe, kettengetriebene Nockenwellen und VCT – Variable Camshaft Timing. Mit 296 PS und rund 427 Nm ist er weniger auf spektakuläre Spitzenwerte als auf gleichmäßige Kraft, Laufruhe und Dauerhaltbarkeit ausgelegt.\n\nDahinter arbeitet beim späten Modelljahr die 6R80-Sechsgang-Wandlerautomatik. Die Kraft wird über Control Trac 4WD an beide Achsen übertragen; für schwierigen Untergrund steht eine echte Geländeuntersetzung zur Verfügung. Anders als viele klassische Rahmen-SUV besitzt diese Explorer-Generation zudem Einzelradaufhängung an Vorder- und Hinterachse. Dadurch verbindet sie die robuste Grundarchitektur eines echten amerikanischen Geländewagens mit erstaunlich komfortablem Straßenverhalten.\n\nZur Sicherheit gehört AdvanceTrac mit RSC – Roll Stability Control. Das System überwacht neben Traktion und Gierrate auch die Wankbewegung des hohen Aufbaus und unterstützt insbesondere bei Beladung und Anhängerbetrieb.\n\nEddie Bauer\n\nDie Eddie-Bauer-Ausführung war weit mehr als ein Schriftzug auf der Heckklappe. Dieses Fahrzeug trägt die klassische Kombination aus schwarzer Karosserie und Pueblo-Gold-Akzenten, ergänzt um Chromdetails und das helle Interieur.\n\nIm Innenraum erwarten den Fahrer unter anderem:\n\n• beige Leder-/Teillederausstattung\n• sieben Sitzplätze\n• beheizbare Vordersitze\n• elektrische Sitzverstellung\n• Tempomat\n• Klimaautomatik\n• großzügiger Gepäckraum\n• versenkbare dritte Sitzreihe\n\nGerade die Farbkombination gehört unmittelbar zur damaligen Eddie-Bauer-Linie und verleiht dem Explorer jene unverwechselbare amerikanische Präsenz, die moderne SUV kaum noch besitzen.\n\nMit erst rund 89.000 km hat dieses Exemplar zudem eine bemerkenswert geringe Laufleistung. Viele Explorer dieser Generation haben längst ein deutlich arbeitsreicheres Leben hinter sich. Hier verbindet sich die späte technische Ausbaustufe des Modells mit einer Laufleistung, die für einen 2010er V8 außergewöhnlich interessant ist.\n\n4.6 Modular 3V. 6R80. Control Trac. Leiterrahmen. Sieben Sitze.\n\nEin echter amerikanischer V8-SUV aus der letzten Generation, bevor aus dem Explorer ein grundsätzlich anderes Fahrzeug wurde.\n\nTechnische Maßnahmen an diesem Fahrzeug\n\nDie folgenden Punkte betreffen ausdrücklich dieses konkrete Fahrzeug und nicht die allgemeine Modellbeschreibung:\n\n• neue Ganzjahresreifen\n• Bremsanlage erneuert\n• Zündkerzen erneuert\n• umfangreicher Service durchgeführt\n• Automatikgetriebe gewartet\n• neue Hauptuntersuchung bei Verkauf\n• Kilometerstand ca. 89.000 km\n\nKein Mode-SUV, der Robustheit nur darstellen möchte. Hier steckt sie noch konstruktiv unter der Karosserie.",
     "url": "https://suchen.mobile.de/fahrzeuge/details.html?id=47516079290464"
+  },
+  {
+    "id": "51741058414464",
+    "slug": "subaru-forester-2-0xt-platinum-lineartronic",
+    "featured": false,
+    "badge": "Leichter Hagelschaden · stark reduziert",
+    "title": "Subaru Forester 2.0XT Platinum Lineartronic",
+    "text": "EZ 05/2013 · 115.500 km · 241 PS · Benzin",
+    "price": "12.500 €",
+    "image": "https://img.classistatic.de/api/v1/mo-prod/images/00/008ef875-526c-48a9-8b07-757d21dd764a?rule=mo-1600.jpg",
+    "images": [
+      "https://img.classistatic.de/api/v1/mo-prod/images/00/008ef875-526c-48a9-8b07-757d21dd764a?rule=mo-1600.jpg",
+      "https://img.classistatic.de/api/v1/mo-prod/images/69/69808925-2119-4a5d-bf39-3b1cd7facc2c?rule=mo-1600.jpg",
+      "https://img.classistatic.de/api/v1/mo-prod/images/eb/ebf13498-960d-4aa4-9999-20a1c5845eb5?rule=mo-1600.jpg",
+      "https://img.classistatic.de/api/v1/mo-prod/images/10/10218114-5d8b-4ac6-8495-70b3e68ba708?rule=mo-1600.jpg",
+      "https://img.classistatic.de/api/v1/mo-prod/images/59/5932062e-6a6c-49ce-9df9-c2c78041b125?rule=mo-1600.jpg",
+      "https://img.classistatic.de/api/v1/mo-prod/images/d4/d46ff4d6-e783-4177-93d8-c99497eb6209?rule=mo-1600.jpg",
+      "https://img.classistatic.de/api/v1/mo-prod/images/36/36ae40a8-04a9-4ffa-be38-7d5d4db38331?rule=mo-1600.jpg"
+    ],
+    "specs": [
+      {
+        "label": "Erstzulassung",
+        "value": "05/2013"
+      },
+      {
+        "label": "Kilometerstand",
+        "value": "115.500 km"
+      },
+      {
+        "label": "Leistung",
+        "value": "177 kW (241 PS)"
+      },
+      {
+        "label": "Hubraum",
+        "value": "1.998 cm³"
+      },
+      {
+        "label": "Getriebe",
+        "value": "Automatik"
+      },
+      {
+        "label": "Kraftstoff",
+        "value": "Benzin"
+      },
+      {
+        "label": "Farbe",
+        "value": "Ice Silver Metallic"
+      },
+      {
+        "label": "Innenausstattung",
+        "value": "Teilleder, Schwarz"
+      },
+      {
+        "label": "Sitze",
+        "value": "5"
+      },
+      {
+        "label": "Schadstoffklasse",
+        "value": "Euro 5"
+      }
+    ],
+    "features": [
+      "ABS",
+      "Armlehne",
+      "Bordcomputer",
+      "Einparkhilfe hinten",
+      "Elektr. Außenspiegel",
+      "Elektr. Fensterheber",
+      "Elektr. Heckklappe",
+      "Elektr. Sitzverstellung",
+      "ESP",
+      "Isofix",
+      "Lederlenkrad",
+      "Leichtmetallfelgen",
+      "Lichtsensor",
+      "Multifunktionslenkrad",
+      "Navigationssystem",
+      "Nebelscheinwerfer",
+      "Panoramadach",
+      "Rückfahrkamera",
+      "Schaltwippen",
+      "Schiebedach",
+      "Servolenkung",
+      "Sitzheizung",
+      "Soundsystem",
+      "Xenon-Scheinwerfer",
+      "Zentralverriegelung"
+    ],
+    "description": "Subaru Forester 2.0XT Platinum Lineartronic – 240 PS, Symmetrical AWD\nErstzulassung 27.05.2013 · 115.500 km · HU bis 05/2028\nTechnisch einwandfreier und gepflegter Forester mit dem 2,0-Liter-Turboboxer FA20 DIT, 177 kW (240 PS), Lineartronic-Automatik mit Schaltwippen und permanentem Allradantrieb.\n\nZUSTAND UND PREIS\n\nDie Karosserie weist einen minimalen Hagelschaden auf. Dieser ist bei der Preisgestaltung berücksichtigt. Technisch ist das Fahrzeug einwandfrei.\n12.500 € Endpreis. Differenzbesteuert, Mehrwertsteuer nicht ausweisbar.\n8-fach bereift: Sommer- und Winterräder, Winterreifen auf originalen Subaru-Felgen.\n\nAUSSTATTUNG\n\n• Platinum-Ausführung\n• X-Mode und Bergabfahrhilfe\n• SI-Drive mit Sport Sharp\n• Harman/Kardon-Soundsystem mit Navigation\n• Elektrisches Panorama-Glasschiebedach\n• Elektrische Heckklappe\n• Schlüsselloser Zugang\n• Elektrisch verstellbarer Fahrersitz und Sitzheizung\n• Zweizonen-Klimaautomatik\n• Rückfahrkamera\n• Xenonscheinwerfer\n• 18-Zoll-Leichtmetallräder\nWARTUNG\n\nDie vorhandenen Werkstattbelege dokumentieren unter anderem erneuerte Zündkerzen, hintere Radlager, Motoröl samt Filter, vordere Querlenker und eine Achsvermessung.\nHinweis zu den Bildern: Bei den Außenfotos wurde der Hintergrund durch eine Naturkulisse ersetzt. Maßgeblich ist der Zustand am Fahrzeug bei Besichtigung.\nBesichtigung und Probefahrt nach Terminvereinbarung.\nAutomobile Oststeinbek\nhttps://www.automobile-oststeinbek.de/\nIrrtümer, Eingabefehler, Änderungen und Zwischenverkauf vorbehalten. Maßgeblich sind die Vereinbarungen im Kaufvertrag.",
+    "url": "https://suchen.mobile.de/fahrzeuge/details.html?id=51741058414464"
   },
   {
     "id": "local-opel-astra-cabriolet-2002-w0l0tgf673b000132",
