@@ -35,6 +35,17 @@
       "saleMileage": "49.500 km",
       "title": "Gut angekommen. Gerne unterwegs.",
       "quote": "Mir und dem Auto geht es sehr gut. Wir haben schon ein paar Runden gedreht und der Motor macht richtig Spaß."
+    },
+    {
+      "vehicle": "Nissan President",
+      "imageSlug": "nissan-president",
+      "imageHeight": 355,
+      "firstRegistration": "11/1992",
+      "saleMileage": "18.000 km",
+      "title": "Vollkommen zufrieden.",
+      "quote": "BTW I am fully satisfied with the car 😎",
+      "translation": "Übrigens bin ich mit dem Auto vollkommen zufrieden.",
+      "source": "WhatsApp"
     }
   ],
   "mobile": [

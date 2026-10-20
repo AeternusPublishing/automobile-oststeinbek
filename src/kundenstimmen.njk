@@ -20,7 +20,7 @@ ogImage: https://www.automobile-oststeinbek.de/assets/logo.svg
   <div class="container customer-container">
     <p class="eyebrow">Aus unserem Postfach</p>
     <h2 id="personal-title">Ein paar Zeilen, die bleiben.</h2>
-    <p class="lead">Auszüge aus persönlichen E-Mails nach dem Kauf. Die Zitate sind im Wortlaut übernommen; Namen und Kontaktdaten veröffentlichen wir nicht.</p>
+    <p class="lead">Auszüge aus persönlichen E-Mails und WhatsApp-Nachrichten nach dem Kauf. Die Originalzitate sind im Wortlaut übernommen; Übersetzungen sind gekennzeichnet. Namen und Kontaktdaten veröffentlichen wir nicht.</p>
     <div class="customer-list">
       {% for review in testimonials.personal %}
       <article class="customer-story">
@@ -48,7 +48,8 @@ ogImage: https://www.automobile-oststeinbek.de/assets/logo.svg
           <h3>{{ review.title }}</h3>
           <figure class="customer-quotation">
             <blockquote><p>„{{ review.quote }}“</p></blockquote>
-            <figcaption>Kundenrückmeldung per E-Mail · anonymisiert</figcaption>
+            {% if review.translation %}<p>Deutsche Übersetzung: „{{ review.translation }}“</p>{% endif %}
+            <figcaption>Kundenrückmeldung per {{ review.source or 'E-Mail' }} · anonymisiert</figcaption>
           </figure>
         </div>
       </article>
