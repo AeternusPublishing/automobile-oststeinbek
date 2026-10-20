@@ -65,5 +65,25 @@
       "Dashcam vorne und hinten"
     ],
     "preserveDescription": true
+  },
+  "51741058414464": {
+    "images": [
+      "/assets/vehicles/forester-xt/front-1600.webp",
+      "/assets/vehicles/forester-xt/side-1600.webp",
+      "/assets/vehicles/forester-xt/rear-1600.webp",
+      "/assets/vehicles/forester-xt/front_detail-1600.webp",
+      "/assets/vehicles/forester-xt/dashboard-1600.webp",
+      "/assets/vehicles/forester-xt/rear_seat-1600.webp",
+      "/assets/vehicles/forester-xt/harman_kardon-1600.webp"
+    ],
+    "preserveDescription": true,
+    "features": [
+      "Sommerreifen",
+      "Winterreifen",
+      "Harman/Kardon-Soundsystem mit Navigation",
+      "X-Mode",
+      "Bergabfahrhilfe",
+      "8-fach bereift"
+    ]
   }
 }

@@ -615,21 +615,21 @@
   },
   {
     "id": "51741058414464",
-    "slug": "subaru-forester-2-0xt-platinum-lineartronic",
+    "slug": "subaru-forester-2-0xt-platinum-2013",
     "featured": false,
-    "badge": "Leichter Hagelschaden · stark reduziert",
+    "badge": "Minimaler Hagelschaden · 8-fach bereift",
     "title": "Subaru Forester 2.0XT Platinum Lineartronic",
-    "text": "EZ 05/2013 · 115.500 km · 241 PS · Benzin",
-    "price": "12.500 €",
-    "image": "https://img.classistatic.de/api/v1/mo-prod/images/00/008ef875-526c-48a9-8b07-757d21dd764a?rule=mo-1600.jpg",
+    "text": "EZ 05/2013 · 115.500 km · 240 PS · HU 05/2028",
+    "price": "12.500 € · differenzbesteuert",
+    "image": "/assets/vehicles/forester-xt/front-1600.webp",
     "images": [
-      "https://img.classistatic.de/api/v1/mo-prod/images/00/008ef875-526c-48a9-8b07-757d21dd764a?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/69/69808925-2119-4a5d-bf39-3b1cd7facc2c?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/eb/ebf13498-960d-4aa4-9999-20a1c5845eb5?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/10/10218114-5d8b-4ac6-8495-70b3e68ba708?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/59/5932062e-6a6c-49ce-9df9-c2c78041b125?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/d4/d46ff4d6-e783-4177-93d8-c99497eb6209?rule=mo-1600.jpg",
-      "https://img.classistatic.de/api/v1/mo-prod/images/36/36ae40a8-04a9-4ffa-be38-7d5d4db38331?rule=mo-1600.jpg"
+      "/assets/vehicles/forester-xt/front-1600.webp",
+      "/assets/vehicles/forester-xt/side-1600.webp",
+      "/assets/vehicles/forester-xt/rear-1600.webp",
+      "/assets/vehicles/forester-xt/front_detail-1600.webp",
+      "/assets/vehicles/forester-xt/dashboard-1600.webp",
+      "/assets/vehicles/forester-xt/rear_seat-1600.webp",
+      "/assets/vehicles/forester-xt/harman_kardon-1600.webp"
     ],
     "specs": [
       {
@@ -642,7 +642,7 @@
       },
       {
         "label": "Leistung",
-        "value": "177 kW (241 PS)"
+        "value": "177 kW (240 PS)"
       },
       {
         "label": "Hubraum",
@@ -650,7 +650,11 @@
       },
       {
         "label": "Getriebe",
-        "value": "Automatik"
+        "value": "TR690 Lineartronic"
+      },
+      {
+        "label": "Antrieb",
+        "value": "Symmetrical AWD"
       },
       {
         "label": "Kraftstoff",
@@ -659,6 +663,22 @@
       {
         "label": "Farbe",
         "value": "Ice Silver Metallic"
+      },
+      {
+        "label": "HU",
+        "value": "05/2028"
+      },
+      {
+        "label": "Bereifung",
+        "value": "8-fach, Winterreifen auf originalen Subaru-Felgen"
+      },
+      {
+        "label": "Karosserie",
+        "value": "Minimaler Hagelschaden"
+      },
+      {
+        "label": "Besteuerung",
+        "value": "Differenzbesteuert – MwSt. nicht ausweisbar"
       },
       {
         "label": "Innenausstattung",
@@ -674,33 +694,25 @@
       }
     ],
     "features": [
-      "ABS",
-      "Armlehne",
-      "Bordcomputer",
-      "Einparkhilfe hinten",
-      "Elektr. Außenspiegel",
-      "Elektr. Fensterheber",
-      "Elektr. Heckklappe",
-      "Elektr. Sitzverstellung",
-      "ESP",
-      "Isofix",
-      "Lederlenkrad",
-      "Leichtmetallfelgen",
-      "Lichtsensor",
-      "Multifunktionslenkrad",
-      "Navigationssystem",
-      "Nebelscheinwerfer",
-      "Panoramadach",
+      "18-Zoll-Leichtmetallräder",
+      "Bergabfahrhilfe",
+      "Elektrische Heckklappe",
+      "Elektrisches Panorama-Glasschiebedach",
+      "Harman/Kardon-Soundsystem mit Navigation",
+      "Keyless Access",
+      "Teilleder",
       "Rückfahrkamera",
       "Schaltwippen",
-      "Schiebedach",
-      "Servolenkung",
+      "SI-Drive mit Sport Sharp",
       "Sitzheizung",
-      "Soundsystem",
-      "Xenon-Scheinwerfer",
-      "Zentralverriegelung"
+      "X-Mode",
+      "Xenonlicht",
+      "Zweizonen-Klimaautomatik",
+      "Sommerreifen",
+      "Winterreifen",
+      "8-fach bereift"
     ],
-    "description": "Subaru Forester 2.0XT Platinum Lineartronic – 240 PS, Symmetrical AWD\nErstzulassung 27.05.2013 · 115.500 km · HU bis 05/2028\nTechnisch einwandfreier und gepflegter Forester mit dem 2,0-Liter-Turboboxer FA20 DIT, 177 kW (240 PS), Lineartronic-Automatik mit Schaltwippen und permanentem Allradantrieb.\n\nZUSTAND UND PREIS\n\nDie Karosserie weist einen minimalen Hagelschaden auf. Dieser ist bei der Preisgestaltung berücksichtigt. Technisch ist das Fahrzeug einwandfrei.\n12.500 € Endpreis. Differenzbesteuert, Mehrwertsteuer nicht ausweisbar.\n8-fach bereift: Sommer- und Winterräder, Winterreifen auf originalen Subaru-Felgen.\n\nAUSSTATTUNG\n\n• Platinum-Ausführung\n• X-Mode und Bergabfahrhilfe\n• SI-Drive mit Sport Sharp\n• Harman/Kardon-Soundsystem mit Navigation\n• Elektrisches Panorama-Glasschiebedach\n• Elektrische Heckklappe\n• Schlüsselloser Zugang\n• Elektrisch verstellbarer Fahrersitz und Sitzheizung\n• Zweizonen-Klimaautomatik\n• Rückfahrkamera\n• Xenonscheinwerfer\n• 18-Zoll-Leichtmetallräder\nWARTUNG\n\nDie vorhandenen Werkstattbelege dokumentieren unter anderem erneuerte Zündkerzen, hintere Radlager, Motoröl samt Filter, vordere Querlenker und eine Achsvermessung.\nHinweis zu den Bildern: Bei den Außenfotos wurde der Hintergrund durch eine Naturkulisse ersetzt. Maßgeblich ist der Zustand am Fahrzeug bei Besichtigung.\nBesichtigung und Probefahrt nach Terminvereinbarung.\nAutomobile Oststeinbek\nhttps://www.automobile-oststeinbek.de/\nIrrtümer, Eingabefehler, Änderungen und Zwischenverkauf vorbehalten. Maßgeblich sind die Vereinbarungen im Kaufvertrag.",
+    "description": "Subaru Forester 2.0XT Platinum · FA20 DIT · 240 PS · TR690 Lineartronic · Symmetrical AWD · X-Mode · Harman/Kardon · Teilleder · Panorama\n\nMan muss bei diesem Forester zweimal hinsehen. Äußerlich gibt er sich so sachlich, wie Subaru es über Jahrzehnte kultivierte: aufrechte Karosserie, große Glasflächen, klare Linien. Doch unter dieser vernünftigen Hülle steckt die Spitzenausführung der europäischen SJ-Baureihe – ein 2.0XT Platinum, dessen Antriebsstrang deutlich mehr kann, als sein unaufgeregter Auftritt verrät.\n\nSubaru hielt bei der vierten Forester-Generation an seinen Grundsätzen fest: längs eingebauter Boxermotor, permanenter Symmetrical AWD und 220 Millimeter Bodenfreiheit. An die Spitze setzte die Marke den FA20 DIT. Der 1.998 cm³ große Vierzylinder-Boxer verbindet Direkteinspritzung mit Turboaufladung; Bohrung und Hub messen jeweils 86 Millimeter, die Verdichtung beträgt 10,6 : 1. In europäischer Abstimmung liefert er 177 kW (240 PS) und 350 Nm. Ein Motor, der einen praktischen Forester erstaunlich schnell macht, ohne dass dieser optisch darauf bestehen müsste.\n\nHinter dem Boxer arbeitet gemäß Typenschild dieses Fahrzeugs die TR690SBZCA, Subarus kräftige Lineartronic für drehmomentstarke Anwendungen. Im Alltag gleitet sie stufenlos; über SI-Drive verändert der Fahrer die Reaktion des Antriebs. Im Sport-Sharp-Modus S# lassen sich acht nachgebildete Übersetzungsstufen per Lenkradwippe anwählen. Technischer Aufwand, den man nicht sieht – aber unmittelbar spürt.\n\nX-Mode gibt dem Allradantrieb sein zweites Revier. Das System stimmt Motor, Getriebe, Allradregelung und Bremseingriffe auf schwierigen Untergrund ab; die Bergabfahrhilfe unterstützt auf Gefälle. Zusammen mit der Bodenfreiheit ist das mehr als die übliche SUV-Geste: Der Forester behält seine Traktion auch dort im Blick, wo der Asphalt endet.\n\nDie Platinum-Ausführung fügt dem ernsthaften technischen Unterbau jene Seite hinzu, die man einem Forester von außen kaum ansieht: Teilleder, Harman/Kardon, elektrisches Panorama-Glasschiebedach, schlüsselloser Zugang und elektrische Heckklappe. Dazu kommen ein elektrisch verstellbarer und beheizbarer Fahrersitz, Zweizonen-Klimaautomatik, Rückfahrkamera, Xenonlicht und 18-Zoll-Leichtmetallräder. Gerade dieser Gegensatz macht den Wagen interessant. Unter der sachlichen Karosserie arbeiten FA20 DIT, TR690, SI-Drive und X-Mode; im Innenraum empfängt einen die volle Komfortausstattung der damaligen Baureihe.\n\nDas originale Harman/Kardon-System mit Navigation und acht Lautsprechern ist dabei mehr als ein schönes Ausstattungsdetail: Im deutschen Modelljahr 2013 war es beim 2.0XT der Platinum-Version vorbehalten. Es unterstreicht, welche Ausführung hier vor einem steht.\n\nGEPFLEGT UND DOKUMENTIERT\n\nErstzulassung 27.05.2013, aktuell 115.500 km, HU bis 05/2028. Dieser Forester ist sehr gepflegt und technisch einwandfrei. Die vorliegenden Werkstattbelege dokumentieren unter anderem erneuerte Zündkerzen, hintere Radlager, Motoröl samt Filter, vordere Querlenker und eine Achsvermessung. Er ist achtfach bereift, einschließlich Winterreifen auf originalen Subaru-Felgen.\n\nTRANSPARENTER PREIS\n\nDie Karosserie hat einen minimalen Hagelschaden. Der Forester ist technisch einwandfrei und achtfach bereift. Der Preis beträgt 12.500 €, differenzbesteuert; die Mehrwertsteuer ist nicht ausweisbar. Die Außenfotos sind Hintergrundmontagen mit asphaltierter Naturkulisse; maßgeblich ist der Zustand am Fahrzeug bei Besichtigung.\n\nKeine Lufthutze, kein großes Emblem, kein optisches Theater. FA20 DIT. TR690. S#. X-Mode. Symmetrical AWD. Wer weiß, was diese Kürzel bedeuten, erkennt den Wagen.",
     "url": "https://suchen.mobile.de/fahrzeuge/details.html?id=51741058414464"
   },
   {
@@ -1102,90 +1114,6 @@
       "Zentralverriegelung"
     ],
     "description": "JE-ZE · 3,0-Liter-V6 · 200 PS · 4WS · Black Forest Mica · 24.000 km · Oldtimer\n\nWer verstehen will, warum Mazda Anfang der Neunziger Jahre Automobile wie den Sentia baute, muss sich für einen Augenblick an ein anderes Mazda erinnern. Das Unternehmen gewann 1991 mit dem 787B in Le Mans, unterhielt parallel neue Marken wie Eunos, ɛ̃fini und Autozam und war überzeugt, dass ein vergleichsweise kleiner japanischer Hersteller technisch und gestalterisch in nahezu jede Fahrzeugklasse vorstoßen könne. Es war eine kurze, kostspielige und außerordentlich schöpferische Phase. Der Sentia entstand genau in diesem Augenblick.\n\nEr war Mazdas große Limousine – Nachfolger des Luce, oberhalb des gewöhnlichen Modellprogramms angesiedelt und dennoch bewusst kein bloßes Chauffeursfahrzeug. Mazda selbst beschreibt die erste Sentia-Generation rückblickend ausdrücklich als Fahrerwagen, bei dem Komfort und hohe Fahrstabilität mit einer ungewöhnlich niedrigen, gestreckten Karosserie verbunden werden sollten. Innerhalb der damaligen Mehrmarkenstrategie erhielt die Konstruktion sogar einen eigenen luxuriösen Bruder: den ɛ̃fini MS-9. Eunos war Teil derselben großen Mazda-Offensive jener Jahre; der unmittelbare Schwesterwagen des Sentia trug jedoch das ɛ̃fini-Zeichen.\n\nUnter der Haube dieses Exclusive arbeitet der JE-ZE. Das ist kein beliebiger Dreiliter aus dem Mazda-Regal, sondern ein 2.954 cm³ großer V6 mit zwei obenliegenden Nockenwellen, 24 Ventilen und 200 PS bei 6.000/min. Seine Besonderheit liegt unter anderem im Ansaugtrakt: Mazda verwendete eine variable Ansauggeometrie, die abhängig vom Betriebszustand den wirksamen Ansaugweg verändert. Lange Wege begünstigen Füllung und Drehmoment bei niedrigeren Drehzahlen, kürzere Wege verbessern den Gasdurchsatz bei höherer Motordrehzahl.\n\nNoch ungewöhnlicher ist die Einbaulage. Der längs montierte V6 sitzt weit hinter der Vorderachse; Mazda vermarktete die Konstruktion deshalb ausdrücklich als Front-Mittelmotor-Anordnung. Der Tank wurde weit nach hinten gerückt, die Leistung geht an die Hinterräder. Was heute in fast jeder Präsentation eines Sportwagens als Gewichtsverteilungsargument hervorgehoben würde, verbarg Mazda Anfang der Neunziger unter der Karosserie einer großen Limousine.\n\nDazu kommt 4WS – Four Wheel Steering. Bei niedriger Geschwindigkeit lenken die Hinterräder gegenläufig zu den Vorderrädern und verkürzen damit den virtuellen Wendekreis; bei höherem Tempo erfolgt die Bewegung gleichsinnig, wodurch Spurwechsel und schnelle Kurven ruhiger werden. Die komplexe unabhängige Radführung zeigt, wie ernst Mazda den Begriff „Fahrerlimousine“ nahm. Hier wurde nicht versucht, Größe durch weiche Federung zu kaschieren – die gesamte Fahrwerksgeometrie sollte dafür sorgen, dass ein beinahe fünf Meter langer Wagen kleiner wirkt, als er ist.\n\nSelbst die Farbe erzählt von diesem Ehrgeiz. Black Forest Mica ist ein extrem dunkles Grün, das bei schwachem Licht beinahe schwarz erscheint und erst in direktem Licht seinen eigentlichen Farbton preisgibt. Für die Exclusive-Ausführung verband Mazda diese Farbe mit seiner damals aufwendigen Hi-Reflex-Coat-Lacktechnik, deren Aufgabe gerade darin bestand, Tiefe und Reflexion stärker hervortreten zu lassen. Beige Lederausstattung und das vollständig erhaltene originale Mazda-Audiosystem bilden dazu einen Gegenpol, der heute fast vollkommen aus dem Straßenbild verschwunden ist.\n\nUnd dann sind da nur 24.000 Kilometer. Damit wird aus einem ohnehin seltenen Modell ein Fahrzeug, dessen ursprüngliche Qualität noch tatsächlich erfahrbar ist. Die Lenkung, die Polsterung, die Schalter, das Leder und die mechanischen Baugruppen haben nicht dreihunderttausend Kilometer Geschichte hinter sich. Dieser Wagen ist alt genug für den Oldtimerstatus – aber mechanisch noch erstaunlich jung. Die vorhandene Fahrzeugbeschreibung bestätigt Laufleistung, Ausstattung und die bislang vorgenommenen Arbeiten.\n\nTECHNISCHE MASSNAHMEN AN DIESEM FAHRZEUG\n\n- neue Zündkerzen\n- Motoröl erneuert\n- Getriebeöl erneuert\n- neue Sommerreifen montiert\n- Fahrzeug weitgehend im Originalzustand erhalten\n- Zahnriemenwechsel auf Wunsch möglich\n- neue HU bei Übergabe\n- rund 24.000 km Laufleistung\n\nDer Sentia braucht keine erfundene Exotik. Seine wirkliche Konstruktion ist außergewöhnlich genug: JE-ZE-V6, Front-Mittelmotor-Anordnung, Hinterradantrieb, variable Ansaugwege, 4WS, Hi-Reflex-Lackierung und die direkte Verbindung zum ɛ̃fini MS-9. Er stammt aus den wenigen Jahren, in denen Mazda offenbar glaubte, technische Vernunft bestehe darin, lieber eine gute Lösung zu viel als eine zu wenig einzubauen.\n\nVielleicht war genau das wirtschaftlich nicht vernünftig. Für das Automobil war es ein Glück.",
-    "url": "",
-    "pinned": true
-  },
-  {
-    "id": "local-forester-xt-2013",
-    "slug": "subaru-forester-2-0xt-platinum-2013",
-    "featured": false,
-    "badge": "Leichter Hagelschaden · stark reduziert",
-    "title": "Subaru Forester 2.0XT Platinum",
-    "text": "EZ 05/2013 · 115.500 km · 240 PS · HU 05/2028",
-    "price": "12.500 €",
-    "image": "/assets/vehicles/forester-xt/front-1600.webp",
-    "images": [
-      "/assets/vehicles/forester-xt/front-1600.webp",
-      "/assets/vehicles/forester-xt/side-1600.webp",
-      "/assets/vehicles/forester-xt/rear-1600.webp",
-      "/assets/vehicles/forester-xt/front_detail-1600.webp",
-      "/assets/vehicles/forester-xt/dashboard-1600.webp",
-      "/assets/vehicles/forester-xt/rear_seat-1600.webp",
-      "/assets/vehicles/forester-xt/harman_kardon-1600.webp"
-    ],
-    "specs": [
-      {
-        "label": "Erstzulassung",
-        "value": "05/2013"
-      },
-      {
-        "label": "Kilometerstand",
-        "value": "115.500 km"
-      },
-      {
-        "label": "Leistung",
-        "value": "177 kW (240 PS)"
-      },
-      {
-        "label": "Hubraum",
-        "value": "1.998 cm³"
-      },
-      {
-        "label": "Getriebe",
-        "value": "TR690 Lineartronic"
-      },
-      {
-        "label": "Antrieb",
-        "value": "Symmetrical AWD"
-      },
-      {
-        "label": "Kraftstoff",
-        "value": "Benzin"
-      },
-      {
-        "label": "Farbe",
-        "value": "Ice Silver Metallic"
-      },
-      {
-        "label": "HU",
-        "value": "05/2028"
-      },
-      {
-        "label": "Bereifung",
-        "value": "8-fach, Winterreifen auf originalen Subaru-Felgen"
-      },
-      {
-        "label": "Karosserie",
-        "value": "Leichter Hagelschaden"
-      }
-    ],
-    "features": [
-      "18-Zoll-Leichtmetallräder",
-      "Bergabfahrhilfe",
-      "Elektrische Heckklappe",
-      "Elektrisches Panorama-Glasschiebedach",
-      "Harman/Kardon-Soundsystem mit Navigation",
-      "Keyless Access",
-      "Lederausstattung",
-      "Rückfahrkamera",
-      "Schaltwippen",
-      "SI-Drive mit Sport Sharp",
-      "Sitzheizung",
-      "X-Mode",
-      "Xenonlicht",
-      "Zweizonen-Klimaautomatik"
-    ],
-    "description": "Subaru Forester 2.0XT Platinum · FA20 DIT · 240 PS · TR690 Lineartronic · Symmetrical AWD · X-Mode · Harman/Kardon · Leder · Panorama\n\nMan muss bei diesem Forester zweimal hinsehen. Äußerlich gibt er sich so sachlich, wie Subaru es über Jahrzehnte kultivierte: aufrechte Karosserie, große Glasflächen, klare Linien. Doch unter dieser vernünftigen Hülle steckt die Spitzenausführung der europäischen SJ-Baureihe – ein 2.0XT Platinum, dessen Antriebsstrang deutlich mehr kann, als sein unaufgeregter Auftritt verrät.\n\nSubaru hielt bei der vierten Forester-Generation an seinen Grundsätzen fest: längs eingebauter Boxermotor, permanenter Symmetrical AWD und 220 Millimeter Bodenfreiheit. An die Spitze setzte die Marke den FA20 DIT. Der 1.998 cm³ große Vierzylinder-Boxer verbindet Direkteinspritzung mit Turboaufladung; Bohrung und Hub messen jeweils 86 Millimeter, die Verdichtung beträgt 10,6 : 1. In europäischer Abstimmung liefert er 177 kW (240 PS) und 350 Nm. Ein Motor, der einen praktischen Forester erstaunlich schnell macht, ohne dass dieser optisch darauf bestehen müsste.\n\nHinter dem Boxer arbeitet gemäß Typenschild dieses Fahrzeugs die TR690SBZCA, Subarus kräftige Lineartronic für drehmomentstarke Anwendungen. Im Alltag gleitet sie stufenlos; über SI-Drive verändert der Fahrer die Reaktion des Antriebs. Im Sport-Sharp-Modus S# lassen sich acht nachgebildete Übersetzungsstufen per Lenkradwippe anwählen. Technischer Aufwand, den man nicht sieht – aber unmittelbar spürt.\n\nX-Mode gibt dem Allradantrieb sein zweites Revier. Das System stimmt Motor, Getriebe, Allradregelung und Bremseingriffe auf schwierigen Untergrund ab; die Bergabfahrhilfe unterstützt auf Gefälle. Zusammen mit der Bodenfreiheit ist das mehr als die übliche SUV-Geste: Der Forester behält seine Traktion auch dort im Blick, wo der Asphalt endet.\n\nDie Platinum-Ausführung fügt dem ernsthaften technischen Unterbau jene Seite hinzu, die man einem Forester von außen kaum ansieht: Leder, Harman/Kardon, elektrisches Panorama-Glasschiebedach, schlüsselloser Zugang und elektrische Heckklappe. Dazu kommen ein elektrisch verstellbarer und beheizbarer Fahrersitz, Zweizonen-Klimaautomatik, Rückfahrkamera, Xenonlicht und 18-Zoll-Leichtmetallräder. Gerade dieser Gegensatz macht den Wagen interessant. Unter der sachlichen Karosserie arbeiten FA20 DIT, TR690, SI-Drive und X-Mode; im Innenraum empfängt einen die volle Komfortausstattung der damaligen Baureihe.\n\nDas originale Harman/Kardon-System mit Navigation und acht Lautsprechern ist dabei mehr als ein schönes Ausstattungsdetail: Im deutschen Modelljahr 2013 war es beim 2.0XT der Platinum-Version vorbehalten. Es unterstreicht, welche Ausführung hier vor einem steht.\n\nGEPFLEGT UND DOKUMENTIERT\n\nErstzulassung 27.05.2013, aktuell 115.500 km, HU bis 05/2028. Dieser Forester ist sehr gepflegt und technisch intensiv betreut; akute technische Mängel sind nicht bekannt. Die vorliegenden Werkstattbelege dokumentieren unter anderem erneuerte Zündkerzen, hintere Radlager, Motoröl samt Filter, vordere Querlenker und eine Achsvermessung. Er ist achtfach bereift, einschließlich Winterreifen auf originalen Subaru-Felgen.\n\nTRANSPARENTER PREIS\n\nDie Karosserie hat einen leichten Hagelschaden. Deshalb steht dieser 2.0XT Platinum deutlich reduziert für 12.500 € im Angebot. Die Außenfotos sind Hintergrundmontagen mit asphaltierter Naturkulisse; maßgeblich ist der Zustand am Fahrzeug bei Besichtigung.\n\nKeine Lufthutze, kein großes Emblem, kein optisches Theater. FA20 DIT. TR690. S#. X-Mode. Symmetrical AWD. Wer weiß, was diese Kürzel bedeuten, erkennt den Wagen.",
     "url": "",
     "pinned": true
   }
