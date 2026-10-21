@@ -1,0 +1,14 @@
+---
+layout: base.njk
+pagination:
+  data: v8.engines
+  size: 1
+  alias: engine
+  addAllPagesToCollections: true
+permalink: "/die-grossen-v8/{{ engine.slug }}/index.html"
+eleventyComputed:
+  title: "{{ engine.title }} – Die großen V8"
+  description: "{{ engine.subtitle }}"
+v8Section: true
+---
+<article class="container v8-detail"><a class="v8-back" href="{{ '/die-grossen-v8/' | url }}">← Die großen V8 · alle neun Porträts</a><header><p class="eyebrow">{{ engine.number }} / 09 · {{ engine.country }}</p><h1>{{ engine.title }}</h1><p class="v8-subtitle">{{ engine.subtitle }}</p><p class="v8-spec">{{ engine.spec }}</p></header><div class="v8-detail-grid"><div class="v8-prose">{% for paragraph in engine.paragraphs %}<p>{{ paragraph }}</p>{% endfor %}</div><aside aria-label="Bilder zum Porträt">{% if engine.image %}{% set picture = engine.image %}{% include "v8-figure.njk" %}{% else %}<div class="v8-type-art"><span aria-hidden="true">{{ engine.code }}</span><p>Historisches Archivmotiv noch offen</p><small>Für diese Ausführung liegt noch kein ausreichend belegtes Entwicklungsmotiv vor.</small></div>{% endif %}{% if engine.person %}{% set picture = engine.person %}{% include "v8-figure.njk" %}{% endif %}</aside></div><nav class="v8-pagination" aria-label="Weitere Motorporträts"><a href="{{ ('/die-grossen-v8/' + engine.previous + '/') | url }}">← Vorheriges Porträt</a><a href="{{ ('/die-grossen-v8/' + engine.next + '/') | url }}">Nächstes Porträt →</a></nav></article>

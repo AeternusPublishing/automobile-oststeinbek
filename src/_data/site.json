@@ -30,12 +30,37 @@
     "url": "https://www.mobile.de/bewertungen/AutomobileOststeinbek"
   },
   "nav": [
-    { "text": "Start", "url": "/" },
-    { "text": "Über uns", "url": "/ueber-uns/" },
-    { "text": "Kundenstimmen", "url": "/kundenstimmen/" },
-    { "text": "Fahrzeuge", "url": "/fahrzeugangebote/" },
-    { "text": "JDM-Import", "url": "/jdm-import/" },
-    { "text": "Leistungen", "url": "/dienstleistungen/" },
-    { "text": "Kontakt", "url": "/kontakt/" }
+    {
+      "text": "Start",
+      "url": "/"
+    },
+    {
+      "text": "Über uns",
+      "url": "/ueber-uns/"
+    },
+    {
+      "text": "Kundenstimmen",
+      "url": "/kundenstimmen/"
+    },
+    {
+      "text": "Fahrzeuge",
+      "url": "/fahrzeugangebote/"
+    },
+    {
+      "text": "JDM-Import",
+      "url": "/jdm-import/"
+    },
+    {
+      "text": "Leistungen",
+      "url": "/dienstleistungen/"
+    },
+    {
+      "text": "Die großen V8",
+      "url": "/die-grossen-v8/"
+    },
+    {
+      "text": "Kontakt",
+      "url": "/kontakt/"
+    }
   ]
 }

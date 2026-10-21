@@ -1,0 +1,11 @@
+---
+layout: base.njk
+title: Die großen V8
+description: Neun Motoren, neun Charaktere. Eine Würdigung automobiler Ingenieurskunst.
+v8Section: true
+---
+<section class="v8-hero container"><div><p class="eyebrow">Die Sammlung · 01—09</p><h1>Die großen <span>V8.</span></h1><h2>{{ v8.introTitle }}</h2><p class="v8-opening">{{ v8.intro[0] }}</p><a class="btn btn-outline" href="#portraets">Die neun Motoren entdecken ↓</a></div><div class="v8-hero-art">{% set picture = v8.engines[7].image %}{% include "v8-figure.njk" %}</div></section>
+<section class="container v8-intro"><p class="eyebrow">Eine Würdigung. Keine Rangliste.</p><div>{% for paragraph in v8.intro %}{% if not loop.first %}<p>{{ paragraph }}</p>{% endif %}{% endfor %}</div></section>
+<section id="portraets" class="container v8-collection"><div class="v8-heading"><h2>Neun Konstruktionen.<br>Neun eigene Wege.</h2><p>Japan · Deutschland · USA</p></div><nav class="v8-jump" aria-label="Motoren direkt auswählen">{% for engine in v8.engines %}<a href="#{{ engine.slug }}">{{ engine.code }}</a>{% endfor %}</nav>
+{% for engine in v8.engines %}<article class="v8-entry" id="{{ engine.slug }}"><div class="v8-index">{{ engine.number }}</div><div class="v8-entry-copy"><p class="eyebrow">{{ engine.country }} · {{ engine.title }}</p><h3><a href="{{ ('/die-grossen-v8/' + engine.slug + '/') | url }}">{{ engine.subtitle }}</a></h3><p>{{ engine.paragraphs[0] }}</p><a class="v8-read" href="{{ ('/die-grossen-v8/' + engine.slug + '/') | url }}">Das vollständige Porträt lesen <span aria-hidden="true">↗</span></a></div><div class="v8-entry-art">{% if engine.image %}{% set picture = engine.image %}{% include "v8-figure.njk" %}{% else %}<div class="v8-type-art"><span aria-hidden="true">{{ engine.code }}</span><p>{{ engine.spec }}</p><small>Historisches Archivmotiv wird ergänzt</small></div>{% endif %}</div></article>{% endfor %}</section>
+<section class="container v8-outro"><p class="eyebrow">Ingenieurskunst, die bleibt</p><h2>{{ v8.outroTitle }}</h2>{% for paragraph in v8.outro %}<p>{{ paragraph }}</p>{% endfor %}</section>

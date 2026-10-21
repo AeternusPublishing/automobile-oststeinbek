@@ -1,0 +1,243 @@
+{
+  "introTitle": "Ingenieurskunst, die bleibt",
+  "intro": [
+    "Der V8 gehört zu den konstruktiven Höhepunkten der klassischen Verbrennertechnik. In seinen gelungensten Ausführungen verbindet er souveräne Kraftentfaltung mit feiner Laufkultur, unmittelbarem Ansprechen und einer Gelassenheit, die eine lange Fahrt zu etwas Besonderem macht. Seine Größe liegt nicht allein in der Leistung. Sie liegt auch darin, wie selbstverständlich er diese Leistung bereitstellt.",
+    "Gerade die Achtzylinder der 1990er- und 2000er-Jahre zeigen unterschiedliche Wege zu diesem Ideal: japanische Präzision, deutsche Konstruktionskultur und amerikanischen Erfindungsgeist. Aufwendige Vierventiltechnik steht neben bewusst einfachen Lösungen; leichte Aluminiumkonstruktionen neben kräftig dimensionierten Motoren für schwere Aufgaben. Gemeinsam ist ihnen eine klare Vorstellung davon, was ein guter Antrieb leisten soll.",
+    "Dabei muss ein V8 keineswegs ständig aus dem Vollen schöpfen. Bei gleichmäßiger, maßvoller Autobahnfahrt kann eine gut übersetzte Reiselimousine einen für ihre Klasse bemerkenswert zurückhaltenden Verbrauch erreichen. Entscheidend sind das gesamte Fahrzeug, seine Übersetzung und das Reisetempo – nicht allein die Zahl seiner Zylinder. Auch hohe Laufleistungen passen zu dieser Bauart: Eine sorgfältige Konstruktion, regelmäßige Wartung und ein angemessener Umgang schaffen die Voraussetzungen für ein langes Motorenleben.",
+    "Für uns ist diese Sammlung mehr als ein Rückblick. Viele Fahrzeuge mit solchen Achtzylindern haben wir über die Jahre verkauft. Ihre unterschiedlichen Charaktere gehören deshalb auch zur Geschichte unseres Unternehmens. Wir stellen hier neun Konstruktionen vor, die uns aus unterschiedlichen Gründen bemerkenswert erscheinen: nicht als Rangliste, sondern als Würdigung einer besonderen Form automobiler Ingenieurskunst."
+  ],
+  "outroTitle": "Was diese Motoren verbindet",
+  "outro": [
+    "Diese neun Konstruktionen verfolgen nicht dieselbe Idee von Vollkommenheit. Manche beeindrucken durch ihre Feinheit, andere durch ihren zweckmäßigen Aufbau, ihre Kraftentfaltung oder ihren technischen Ehrgeiz. Gerade darin liegt der Wert dieser Sammlung.",
+    "Uns interessieren Motoren, deren Charakter über eine Leistungsangabe hinausgeht. Antriebe, an denen sich erkennen lässt, was ihre Konstrukteure erreichen wollten – und wie unterschiedlich der Weg dorthin aussehen konnte.",
+    "Der große Achtzylinder steht dabei für eine besondere Vorstellung vom Automobil: Kraft als Reserve, Technik als sorgfältige Arbeit und Komfort als die Fähigkeit, lange Strecken angenehm zurückzulegen. Diese Qualitäten verdienen Aufmerksamkeit, auch wenn ein Fahrzeug längst nicht mehr neu ist."
+  ],
+  "engines": [
+    {
+      "title": "Toyota 1UZ-FE",
+      "slug": "toyota-1uz-fe",
+      "country": "Japan",
+      "code": "1UZ-FE",
+      "number": "01",
+      "subtitle": "Die Präzision der Stille",
+      "spec": "4,0 Liter · 32 Ventile · Vier obenliegende Nockenwellen · Vorgestellt 1989",
+      "paragraphs": [
+        "Es gibt Motoren, die ihre Gegenwart unüberhörbar verkünden. Der 1UZ-FE wurde für das Gegenteil geschaffen: Er sollte arbeiten, ohne sich aufzudrängen. Als Herz des ersten Lexus LS 400 gehörte er zu einer Entwicklung, bei der Laufruhe, Fertigungsgenauigkeit und die Abstimmung des gesamten Antriebs ungewöhnlich große Aufmerksamkeit erhielten.",
+        "Seine technische Substanz war entsprechend anspruchsvoll. Ein steifer Aluminiumblock, vier obenliegende Nockenwellen und 32 Ventile verbanden sich mit sorgfältig ausbalancierten bewegten Teilen. Toyota betrachtete dabei nicht nur den Motor für sich: Auch seine Lagerung und die Anordnung der Nebenaggregate wurden auf geringe Geräusch- und Schwingungsübertragung ausgelegt. Die Stille im Innenraum war das Ergebnis vieler aufeinander abgestimmter Entscheidungen.",
+        "Darin liegt der besondere Reiz dieses Achtzylinders. Er verkörpert keine demonstrative Kraft, sondern eine zurückhaltende Form von Leistungsfähigkeit. Sein Charakter lässt sich am besten als Präzision ohne Härte beschreiben: kultiviert im Leerlauf, gleichmäßig im Antritt und mit genügend Reserven für die große Reise.",
+        "Für unsere Sammlung ist der 1UZ-FE ein Schlüsselstück. Er zeigt, dass die Qualität eines Motors nicht nur an seiner Höchstleistung erkennbar wird. Manchmal offenbart sie sich gerade darin, wie wenig von seiner Arbeit zu spüren ist – und wie selbstverständlich daraus Bewegung entsteht."
+      ],
+      "image": {
+        "file": "/assets/v8/1uz-schnittzeichnung.jpg",
+        "caption": "1UZ-FE: zeitgenössische Schnittzeichnung aus „LS 400: The Lexus Story“, Druckseite 63. Scan einer historischen Herstellerpublikation.",
+        "source": "https://xr793.com/wp-content/uploads/2025/10/1990-Lexus-LS400-Story.pdf#page=65",
+        "credit": "Toyota / Lexus · Scan: XR793",
+        "rights": "Bildrechte ungeklärt"
+      },
+      "previous": "ford-modular-46-3v",
+      "next": "toyota-3uz-fe",
+      "person": {
+        "file": "/assets/v8/lexus-dohi-quellseite.jpg",
+        "caption": "Yoshihiko Dohi, Assistant General Manager, Engine. Das zeitgenössische Porträt steht auf Druckseite 60; der Band nennt auf Seite 66 sein Motorenteam.",
+        "source": "https://xr793.com/wp-content/uploads/2025/10/1990-Lexus-LS400-Story.pdf#page=62",
+        "credit": "Toyota / Lexus · Scan: XR793",
+        "rights": "Bildrechte ungeklärt",
+        "crop": true
+      }
+    },
+    {
+      "title": "Toyota 3UZ-FE",
+      "slug": "toyota-3uz-fe",
+      "country": "Japan",
+      "code": "3UZ-FE",
+      "number": "02",
+      "subtitle": "Die Reife der großen Reiselimousine",
+      "spec": "4,3 Liter · 32 Ventile · Variable Einlasssteuerzeiten · Bekannt aus LS 430, GS 430 und SC 430",
+      "paragraphs": [
+        "Mit dem 3UZ-FE führte Toyota eine bereits überzeugende Idee weiter. Der größere Hubraum und die variable Steuerung der Einlassnockenwellen sollten nicht lediglich bessere Zahlen liefern. Sie dienten vor allem einer Kraftentfaltung, die den Ansprüchen einer komfortablen Oberklasselimousine ebenso entgegenkam wie denen eines gepflegten Reisecoupés.",
+        "Im Lexus LS 430 wurde dieser Motor zum Mittelpunkt eines bemerkenswert fein abgestimmten Antriebs. Die Konstrukteure arbeiteten an geringerer Reibung, reduzierten Bauteilmassen und einer möglichst unauffälligen Zusammenarbeit von Motor und Automatikgetriebe. Zum Modelljahr 2004 erhielt der LS 430 zudem eine Sechsgangautomatik. Die Weiterentwicklung galt damit nicht nur dem Triebwerk, sondern dem gesamten Ablauf des Fahrens.",
+        "Der Charakter des 3UZ-FE ist entsprechend gelassen. Er passt zu einer Fahrweise, bei der Kraft als Reserve vorhanden sein soll, ohne ständig abgerufen werden zu müssen. Zügiges Beschleunigen und ruhiges Reisen stehen hier nicht im Widerspruch, sondern gehören zur selben Vorstellung von Komfort.",
+        "Seine Bedeutung liegt in dieser Reife. Der 3UZ-FE ist keine spektakuläre Abkehr vom Vorgänger, sondern eine sorgfältige Verfeinerung. Für uns steht er für jene Art technischen Fortschritts, die sich weniger in einer neuen Schlagzeile als in der Geschlossenheit des Ergebnisses zeigt: ein Antrieb, bei dem vieles bedacht wurde und wenig aufdringlich wirkt."
+      ],
+      "image": {
+        "file": "/assets/v8/3uz-windkanal.jpg",
+        "caption": "Lexus LS 430 im Windkanal. Lexus-Werksarchiv, Baureihenzeitraum 2000–2003; genaues Aufnahmedatum nicht ausgewiesen. Fahrzeug-Aerodynamik, kein Motorenprüfstand.",
+        "source": "https://media.lexus.co.uk/images/ls-430-2000-2003-engine-wind-tunnel/",
+        "credit": "Lexus / Toyota (GB)",
+        "rights": "Bildrechte ungeklärt"
+      },
+      "previous": "toyota-1uz-fe",
+      "next": "toyota-2uz-fe"
+    },
+    {
+      "title": "Toyota 2UZ-FE",
+      "slug": "toyota-2uz-fe",
+      "country": "Japan",
+      "code": "2UZ-FE",
+      "number": "03",
+      "subtitle": "Kultivierte Kraft für schwere Aufgaben",
+      "spec": "4,7 Liter · Graugussblock · Aluminiumzylinderköpfe · 32 Ventile",
+      "paragraphs": [
+        "Innerhalb der UZ-Familie nimmt der 2UZ-FE eine eigene Stellung ein. Während seine Verwandten besonders mit den großen Lexus-Limousinen verbunden sind, gehört dieser Achtzylinder zur Welt schwerer Geländewagen. Im Land Cruiser 100 verbindet er die Anforderungen eines arbeitsfähigen Allradfahrzeugs mit dem Anspruch an einen angenehmen Reiseantrieb.",
+        "Seine Konstruktion bringt diese Verbindung zum Ausdruck. Der Zylinderblock besteht aus Grauguss, die Zylinderköpfe aus Aluminium; vier obenliegende Nockenwellen steuern insgesamt 32 Ventile. Der Motor ist damit weder ein bloß vergrößerter Limousinenantrieb noch eine bewusst grobe Arbeitsmaschine. Er verbindet eine andere Werkstoffwahl und großzügigen Hubraum mit der anspruchsvollen Ventiltechnik seiner Familie.",
+        "Sein Maßstab ist nicht die höchstmögliche Leistung aus jedem Liter. Interessanter ist, wie Kraft im Fahrzeug nutzbar wird: beim gleichmäßigen Beschleunigen, beim Reisen mit Beladung und in Situationen, in denen sich ein großer Wagen ohne unnötige Hektik bewegen soll. Im Land Cruiser wurde dieser Gedanke durch eine auf Komfort und Zugaufgaben abgestimmte Gesamttechnik ergänzt.",
+        "Der 2UZ-FE verdient seinen Platz in unserer Sammlung gerade wegen dieser Verbindung. Er zeigt eine weniger repräsentative, dafür ausgesprochen zweckgebundene Seite des Achtzylinders. Technische Qualität bedeutet hier, anspruchsvolle Aufgaben mit Ruhe zu erfüllen – und dabei die angenehmen Eigenschaften eines kultivierten Benzinmotors zu bewahren."
+      ],
+      "image": {
+        "file": "/assets/v8/2uz-pruefstand.jpg",
+        "caption": "Der 4,7-Liter-2UZ-FE des Million-Mile-Tundra auf dem Prüfstand in Huntsville. Spätere Untersuchung nach dem Erreichen der Million-Meilen-Marke 2016, keine Aufnahme aus der ursprünglichen Motorenentwicklung. Genaues Aufnahmedatum nicht ausgewiesen.",
+        "source": "https://www.motortrend.com/features/million-mile-tundra-the-tear-down/",
+        "credit": "MotorTrend / Truck Trend · Bildnachweis im Artikel: Manufacturer",
+        "rights": "Bildrechte ungeklärt"
+      },
+      "previous": "toyota-3uz-fe",
+      "next": "nissan-vh45de"
+    },
+    {
+      "title": "Nissan VH45DE",
+      "slug": "nissan-vh45de",
+      "country": "Japan",
+      "code": "VH45DE",
+      "number": "04",
+      "subtitle": "Eine eigenständige Antwort auf die Oberklasse",
+      "spec": "4,5 Liter · 32 Ventile · Vier obenliegende Nockenwellen · Vorgestellt 1989 im Infiniti Q45",
+      "paragraphs": [
+        "Mit dem Infiniti Q45 betrat Nissan die internationale automobile Oberklasse mit einer eigenen Vorstellung von Luxus. Das Fahrzeug sollte nicht lediglich bekannte europäische Formen nachbilden. Unter seiner Haube arbeitete ein neu entwickelter Achtzylinder, der diesem Anspruch eine technische Grundlage gab: der VH45DE.",
+        "Mit 4,5 Litern Hubraum, vier obenliegenden Nockenwellen und 32 Ventilen gehörte er zu den anspruchsvollen Konstruktionen seiner Zeit. Für die japanische Ausführung des Q45 dokumentiert Nissan 280 PS und 400 Newtonmeter. Seine Nennleistung erreichte der Motor bei 6.000 Umdrehungen pro Minute – eine Auslegung, die neben der nötigen Souveränität auch einen ausgeprägten Leistungswillen erkennen lässt.",
+        "Gerade diese Verbindung macht ihn interessant. Der VH45DE lässt sich nicht auf die Rolle einer möglichst unauffälligen Kraftquelle reduzieren. In ihm begegnen sich der Anspruch einer großen Limousine und die technische Ambition eines Herstellers, der seinen eigenen Platz in diesem Segment begründen wollte.",
+        "Neben den bekannteren europäischen Namen verdient dieser Nissan deshalb besondere Aufmerksamkeit. Er erinnert daran, wie vielfältig die Oberklasse an der Schwelle zu den 1990er-Jahren gedacht wurde. Für unsere Sammlung ist er kein bloßer Gegenentwurf zum Lexus-V8, sondern eine eigenständige Persönlichkeit: großzügig im Hubraum, anspruchsvoll im Aufbau und geprägt von dem Selbstbewusstsein, automobile Qualität auf eigene Weise zu definieren."
+      ],
+      "image": {
+        "file": "/assets/v8/vh45de-1989.jpg",
+        "caption": "VH45DE, 1989. Historische Motoransicht aus dem Nissan-Heritage-Archiv.",
+        "source": "https://global.nissannews.com/en/heritage_model_infiniti_q45",
+        "credit": "Nissan Motor Corporation",
+        "rights": "Bildrechte ungeklärt"
+      },
+      "previous": "toyota-2uz-fe",
+      "next": "cadillac-northstar"
+    },
+    {
+      "title": "Cadillac Northstar",
+      "slug": "cadillac-northstar",
+      "country": "USA",
+      "code": "Northstar",
+      "number": "05",
+      "subtitle": "Amerikas technischer Aufbruch",
+      "spec": "4,6 Liter als prägende Grundausführung · Aluminiumkonstruktion · Vier obenliegende Nockenwellen · 32 Ventile",
+      "paragraphs": [
+        "Der Name Northstar steht für einen besonderen Anspruch innerhalb der Geschichte von Cadillac. Mit diesem zum Modelljahr 1993 eingeführten Achtzylinder verband die Marke ihre Vorstellung von großzügigem amerikanischem Komfort mit einer aufwendigen, drehfreudigen Motorkonstruktion.",
+        "Aluminium für Block und Zylinderköpfe, vier obenliegende Nockenwellen und 32 Ventile bestimmten das technische Bild. Der Northstar sollte nicht allein aus seinem Hubraum wirken. Seine Konstruktion eröffnete auch bei höheren Drehzahlen eine Leistungsentfaltung, die zu Cadillacs Vorstellung einer modernen Luxusmarke passte. In Fahrzeugen wie Allanté, Seville und Eldorado erhielt diese Idee unterschiedliche, unverwechselbar amerikanische Ausdrucksformen.",
+        "Besonders interessant ist die Entwicklung innerhalb der Familie. Auf die frühen quer eingebauten Ausführungen folgten Varianten für längs eingebaute Antriebe. Die späteren, kompressoraufgeladenen 4,4-Liter-Versionen wurden gezielt für höhere mechanische und thermische Belastungen weiterentwickelt. Sie zeigen, wie weit die Ingenieure das ursprüngliche Konzept ausbauen konnten.",
+        "Der Northstar gehört deshalb als Ausdruck technischen Ehrgeizes in diese Sammlung. Sein Reiz liegt in der Verbindung zweier Eigenschaften, die Cadillac zusammenführen wollte: der entspannten Haltung eines großen amerikanischen Automobils und der Präzision eines modernen Vierventiltriebwerks. Er steht für eine Marke, die ihre Tradition nicht nur bewahren, sondern mit einer eigenen anspruchsvollen Konstruktion fortschreiben wollte."
+      ],
+      "image": {
+        "file": "/assets/v8/northstar-1992.webp",
+        "caption": "Northstar 4.6: Schnittdarstellung im Einführungsbericht von April 1992.",
+        "source": "https://www.hotrod.com/features/the-northstar-rises-april-1992-982-1494-16-1",
+        "credit": "Hot Rod / Hearst · ursprünglicher Bildnachweis noch zu klären",
+        "rights": "Bildrechte ungeklärt"
+      },
+      "previous": "nissan-vh45de",
+      "next": "mercedes-m119"
+    },
+    {
+      "title": "Mercedes-Benz M119",
+      "slug": "mercedes-m119",
+      "country": "Deutschland",
+      "code": "M119",
+      "number": "06",
+      "subtitle": "Die klassische Schule des großen Mercedes",
+      "spec": "Hier im Mittelpunkt: der 5,0-Liter-V8 · Aluminiumblock · 32 Ventile · Vier obenliegende Nockenwellen",
+      "paragraphs": [
+        "Der M119 gehört zu jenen Motoren, die eine Epoche von Mercedes-Benz besonders anschaulich machen. 1989 im neuen SL vorgestellt, fand er später unter anderem im 500 E und in der S-Klasse der Baureihe W140 seinen Platz. Damit war er gleichermaßen Antrieb eines offenen Reisewagens, einer sportlichen Limousine und eines großen Repräsentationsautomobils.",
+        "Seine technische Ausführung war anspruchsvoll: Aluminiumblock, vier Ventile je Zylinder, zwei obenliegende Nockenwellen pro Zylinderbank und verstellbare Einlassnockenwellen. In der frühen Ausführung des 500 E entwickelte der Fünfliter 326 PS. Doch diese Zahl beschreibt nur einen Teil seiner Bedeutung.",
+        "Interessanter ist die Verbindung aus Leistungsfähigkeit und kultivierter Kraftentfaltung. Der M119 passt zu einer Vorstellung von Mercedes-Benz, bei der ein Automobil schnell sein durfte, ohne seine Ruhe aufzugeben. Seine konstruktive Aufwendigkeit stand im Dienst eines breit gefächerten Anspruchs: gute Füllung der Zylinder, nutzbare Kraftreserven und souveränes Reisen.",
+        "Für unsere Sammlung verkörpert er die klassische deutsche Schule des Vierventil-Achtzylinders. Nicht als abstraktes Ausstellungsstück, sondern als Motor für Fahrzeuge, deren besondere Qualitäten sich erst in Bewegung vollständig erschließen. Sein Charakter verbindet technische Ernsthaftigkeit mit einer gewissen Zurückhaltung – eine Kombination, die den großen Mercedes jener Jahre bis heute reizvoll macht."
+      ],
+      "image": {
+        "file": "/assets/v8/m119-wolfgang-kalbhenn.jpg",
+        "caption": "Wolfgang Kalbhenn, an der Entwicklung des M119 beteiligter Mercedes-Motorenentwickler. Späteres Zeitzeugenporträt aus dem Motorikonen-Beitrag; Aufnahmedatum nicht angegeben, keine historische Entwicklungsaufnahme.",
+        "source": "https://motorikonen.de/folgen/der-mercedes-sl-r129-mit-marc-christiansen/",
+        "credit": "Motorikonen · Fotograf nicht ausgewiesen",
+        "rights": "Bildrechte ungeklärt"
+      },
+      "previous": "cadillac-northstar",
+      "next": "mercedes-m113"
+    },
+    {
+      "title": "Mercedes-Benz M113",
+      "slug": "mercedes-m113",
+      "country": "Deutschland",
+      "code": "M113",
+      "number": "07",
+      "subtitle": "Die Kunst des richtigen Maßes",
+      "spec": "Hier im Mittelpunkt: der 5,0-Liter-Saugmotor · Drei Ventile und zwei Zündkerzen je Zylinder",
+      "paragraphs": [
+        "Der M113 zeigt, dass eine neue Motorengeneration nicht zwangsläufig mehr Bauteile und größere Komplexität benötigt. Mercedes-Benz wählte bei dieser ab 1997 eingeführten Familie einen anderen Weg als beim M119: eine obenliegende Nockenwelle je Zylinderbank, drei Ventile und zwei Zündkerzen pro Zylinder.",
+        "Hinter dieser Entscheidung stand ein abgestimmtes Konzept aus Gemischverbrennung, Reibungsverminderung und Alltagstauglichkeit. Die Dreiventiltechnik schuf Raum für die Doppelzündung; die Konstruktion konzentrierte sich auf die Eigenschaften, die im normalen Fahrbetrieb besonders häufig gefragt sind. Dass dabei Leistungsfähigkeit keineswegs verloren gehen musste, zeigt der Fünfliter im CLS 500 mit 306 PS und einem über einen breiten Drehzahlbereich verfügbaren Drehmoment von 460 Newtonmetern.",
+        "Gerade als Saugmotor besitzt der M113 einen überzeugenden Charakter. Er steht für unmittelbares Ansprechen, kräftigen Durchzug und eine ruhige Art, Geschwindigkeit aufzubauen. Seine Attraktivität liegt weniger im demonstrativen technischen Aufwand als im stimmigen Verhältnis seiner Eigenschaften.",
+        "In unserer Sammlung ist er deshalb ein wichtiger Gegenpol zum M119. Beide verkörpern Ingenieurskunst, aber mit unterschiedlichen Mitteln. Der M113 erinnert daran, dass konstruktive Reife auch durch Konzentration entstehen kann: nicht alles technisch Denkbare vorzusehen, sondern die gewählten Lösungen so zusammenzuführen, dass daraus ein angenehmer, vielseitiger und souveräner Antrieb wird."
+      ],
+      "image": null,
+      "previous": "mercedes-m119",
+      "next": "gm-ls1"
+    },
+    {
+      "title": "General Motors LS1",
+      "slug": "gm-ls1",
+      "country": "USA",
+      "code": "LS1",
+      "number": "08",
+      "subtitle": "Die Intelligenz des einfachen Entwurfs",
+      "spec": "5,7 Liter · Aluminiumblock und Aluminiumköpfe · Zentrale Nockenwelle · 16 Ventile",
+      "paragraphs": [
+        "Mit dem LS1 begann 1997 in der Corvette C5 ein neues Kapitel der amerikanischen Achtzylindertradition. General Motors hielt an einem vertrauten Grundgedanken fest: viel nutzbarer Hubraum in einer vergleichsweise kompakten Konstruktion. Zugleich wurde dieser Gedanke mit Aluminium, moderner Motorsteuerung und einer neu entwickelten Motorengeneration fortgeführt.",
+        "Die zentrale Nockenwelle betätigt die Ventile über Stößelstangen und Kipphebel. Gegenüber Konstruktionen mit mehreren obenliegenden Nockenwellen ermöglicht dieses Prinzip kompakte Zylinderköpfe. Beim LS1 ist es deshalb nicht als bloßes Festhalten an der Vergangenheit interessant, sondern als bewusste technische Lösung mit eigenen Vorteilen.",
+        "Sein Charakter entspricht diesem Entwurf: großzügiger Hubraum, kräftiger Antritt und eine unmittelbare Verbindung zwischen Fahrerwunsch und Beschleunigung. Die Ingenieursleistung liegt dabei nicht allein in einem einzelnen Bauteil, sondern im Verhältnis von Leistung, Gewicht, Abmessungen und Herstellbarkeit.",
+        "Dass die Konstruktion auch über den gewöhnlichen Straßeneinsatz hinaus Substanz besaß, zeigte ihr Einsatz in der amerikanischen ASA-Rennserie. GM Racing dokumentierte, wie ein seriennaher LS1 mit vergleichsweise begrenzten Änderungen aufwendige Spezialtriebwerke ersetzen konnte.",
+        "Für unsere Sammlung ist dieser Motor deshalb unverzichtbar. Er widerlegt nicht andere Konstruktionswege, sondern bereichert sie um einen eigenen: Technische Eleganz kann auch darin bestehen, mit überschaubaren Mitteln sehr viel zu erreichen."
+      ],
+      "image": {
+        "file": "/assets/v8/ls1-entwurf-1992.jpg",
+        "caption": "Gen III: früher Konstruktionsentwurf, Ende 1991 / Anfang 1992.",
+        "source": "https://www.lsenginediy.com/history-gen-iii-ls1-v-8-engine/",
+        "credit": "CarTech / LS Engine DIY · ursprünglicher Zeichner nicht ausgewiesen",
+        "rights": "Bildrechte ungeklärt"
+      },
+      "previous": "mercedes-m113",
+      "next": "ford-modular-46-3v",
+      "person": {
+        "file": "/assets/v8/ls1-koerner-1997.jpg",
+        "caption": "Ed Koerner (rechts), Chief Engineer des LS1-Projekts, bei der Wards-Auszeichnung für den Gen III im Jahr 1997.",
+        "source": "https://www.lsenginediy.com/history-gen-iii-ls1-v-8-engine/",
+        "credit": "CarTech / LS Engine DIY · Fotograf nicht ausgewiesen",
+        "rights": "Bildrechte ungeklärt"
+      }
+    },
+    {
+      "title": "Ford Modular 4.6 3V",
+      "slug": "ford-modular-46-3v",
+      "country": "USA",
+      "code": "4.6 3V",
+      "number": "09",
+      "subtitle": "Der Achtzylinder des amerikanischen Alltags",
+      "spec": "4,6 Liter · 24 Ventile · Eine obenliegende Nockenwelle je Zylinderbank · Variable Nockenwellensteuerung",
+      "paragraphs": [
+        "Der Dreiventiler der Ford-Modular-Familie steht für eine andere Seite der Achtzylinderkultur. Er war nicht allein für die automobile Spitze bestimmt, sondern für Fahrzeuge mit sehr unterschiedlichen Aufgaben. Im Mustang GT des Modelljahres 2005 trat er als sportlicher Antrieb auf; ab Modelljahr 2006 arbeitete er auch im Explorer.",
+        "Sein technischer Ansatz verbindet zwei Einlassventile und ein Auslassventil je Zylinder mit variabler Nockenwellensteuerung. Ford entwickelte damit die vorhandene Motorenfamilie weiter, ohne auf eine Vierventilkonstruktion mit vier Nockenwellen umzustellen. Zugleich wurde der Motor an seine jeweiligen Einsatzbedingungen angepasst: Im Mustang kam ein Aluminiumblock zum Einsatz, im Explorer ein Graugussblock.",
+        "Diese Vielseitigkeit macht den 4.6 3V interessant. Er gehört sowohl zur Welt des klassischen amerikanischen Sportcoupés als auch zu jener großer Familien- und Zugfahrzeuge. Seine Bedeutung liegt deshalb nicht nur in technischen Einzelheiten, sondern darin, wie breit die Idee des Achtzylinders hier im Alltag verankert war.",
+        "In unserer Sammlung vertritt er diese bodenständige Seite. Der V8 erscheint nicht als exklusives Privileg, sondern als vertraute Form souveräner Motorisierung. Der Ford erinnert daran, dass automobile Kultur nicht ausschließlich aus seltenen Spitzenmodellen besteht. Sie entsteht ebenso durch Konstruktionen, die vielen Fahrzeugen einen unverwechselbaren Charakter geben."
+      ],
+      "image": {
+        "file": "/assets/v8/ford-3v-zylinderkopf-2005.jpg",
+        "caption": "Schnittdarstellung des Dreiventil-Zylinderkopfs für den Mustang GT 4.6 3V. Zeitgenössische Ford-Produktinformation zum Modelljahr 2005, gedruckte Seite 6 (PDF-Seite 7), Bildausschnitt. Technische Illustration, keine Prüfstandsaufnahme.",
+        "source": "https://shnack.com/docs/05_mustang_product_guide.pdf#page=7",
+        "credit": "Ford Motor Company · Product Information Book 2005 · Scan: shnack.com",
+        "rights": "Bildrechte ungeklärt"
+      },
+      "previous": "gm-ls1",
+      "next": "toyota-1uz-fe"
+    }
+  ]
+}
