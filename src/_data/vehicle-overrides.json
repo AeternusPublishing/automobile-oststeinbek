@@ -67,6 +67,7 @@
     "preserveDescription": true
   },
   "51741058414464": {
+    "excludeFromWebsite": true,
     "images": [
       "/assets/vehicles/forester-xt/front-1600.webp",
       "/assets/vehicles/forester-xt/side-1600.webp",

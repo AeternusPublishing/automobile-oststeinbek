@@ -153,6 +153,7 @@ try { existing = JSON.parse(readFileSync(OUT, "utf8")); } catch {}
 const overrides = JSON.parse(readFileSync(OVERRIDES, "utf8"));
 let sold = [];
 try { sold = JSON.parse(readFileSync(SOLD, "utf8")); } catch {}
+const isExcluded = (vehicle) => overrides[vehicle.id]?.excludeFromWebsite === true;
 const keepFor = (title) =>
   existing.find((e) => e.title && title && (title.includes(e.title) || e.title.includes(title)));
 
@@ -234,7 +235,7 @@ const vehicles = ads.map((ad) => {
     description,
     url: adId ? `https://suchen.mobile.de/fahrzeuge/details.html?id=${adId}` : "",
   };
-}).filter((v) => v.title);
+}).filter((v) => v.title && !isExcluded(v));
 
 // Volle Fotogalerie + Beschreibung je Inserat über den Detail-Endpunkt nachladen
 // (die Listen-Suche liefert nur das Titelbild)
@@ -326,9 +327,9 @@ const sameVehicle = (a, b) => a.title === b.title
   && a.specs?.find((s) => s.label === "Erstzulassung")?.value === b.specs?.find((s) => s.label === "Erstzulassung")?.value
   && a.specs?.find((s) => s.label === "Kilometerstand")?.value === b.specs?.find((s) => s.label === "Kilometerstand")?.value;
 const pinned = existing
-  .filter((e) => e.pinned && e.id && !activeIds.has(e.id) && !vehicles.some((v) => sameVehicle(e, v)))
+  .filter((e) => e.pinned && !isExcluded(e) && e.id && !activeIds.has(e.id) && !vehicles.some((v) => sameVehicle(e, v)))
   .map((e) => ({ ...e, url: "" })); // Website-only cars have no active mobile.de link.
-const gone = existing.filter((e) => e.id && !activeIds.has(e.id) && !e.pinned && !sold.some((s) => s.id === e.id));
+const gone = existing.filter((e) => e.id && !isExcluded(e) && !activeIds.has(e.id) && !e.pinned && !sold.some((s) => s.id === e.id));
 
 // Slug-Kollisionen auflösen (zwei gleiche Modelle im Bestand, auch gegen gepinnte Autos)
 const seenSlugs = new Set(pinned.map((p) => p.slug));
